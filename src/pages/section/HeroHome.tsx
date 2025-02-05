@@ -109,7 +109,7 @@ const Hero = () => {
             {/* Main image */}
             <Image
               alt="Exium Hero Image"
-              src={`${IMAGES_PATH}/logo_graphic3.png`}
+              src={`${IMAGES_PATH}/logo_graphic.png`}
               w={"100%"}
               m={"auto"}
               zIndex={15}
