@@ -7,6 +7,7 @@ import TheWayWeWork from "./section/TheWayWeWork";
 import ClientStory from "./section/ClientStory";
 import Footer from "./section/Footer";
 import useScrollToTop from "@/hooks/useScrollToTop";
+import WAWidget from "@/components/widget/WAWidget";
 
 const RootPage = () => {
   useScrollToTop();
@@ -20,6 +21,8 @@ const RootPage = () => {
       <TheWayWeWork />
       <ClientStory />
       <Footer />
+
+      <WAWidget />
     </CContainer>
   );
 };

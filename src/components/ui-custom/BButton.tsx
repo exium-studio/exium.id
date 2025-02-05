@@ -27,6 +27,7 @@ export default function BButton({
       className={finalClassName}
       fontSize={"bold !important"}
       size={size}
+      borderRadius={0}
       {...props}
     >
       {children}

@@ -5,7 +5,7 @@ import {
   BreadcrumbCurrentLink,
   BreadcrumbRoot,
 } from "@/components/ui/breadcrumb";
-import WorkCard from "@/components/widget/presentational/WorkCard";
+import WorkCard from "@/components/widget/WorkCard";
 import navs from "@/constant/navs";
 import { responsiveSpacing2, responsiveSpacing3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";

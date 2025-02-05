@@ -1,32 +1,31 @@
-import { useColorModeValue } from "@/components/ui/color-mode";
+import BButton from "@/components/ui-custom/BButton";
 import navs from "@/constant/navs";
 import { useLang } from "@/hooks/useLang";
 import useScreen from "@/hooks/useScreen";
-import { Box, BoxProps, Button, HStack, Image } from "@chakra-ui/react";
+import { Box, BoxProps, Button, HStack, Icon } from "@chakra-ui/react";
+import { IconArrowRight, IconMoodHappy } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Container from "./Container";
 import NavDrawer from "./NavDrawer";
-import { useDarkLightColor } from "@/constant/colors";
 
 type Props = {
   activeNavIndex?: number;
 } & BoxProps;
 const TopNav = ({ activeNavIndex, ...props }: Props) => {
-  const darkLightColor = useDarkLightColor();
-
   const { sw } = useScreen();
   const { lang } = useLang();
   const { pathname } = useLocation();
 
   const [scrollYPos, setScrollYPos] = useState<number>(window.scrollY);
-  const [trigger, setTrigger] = useState<boolean>(true);
+  // const [trigger, setTrigger] = useState<boolean>(true);
   const [navTop, setNavTop] = useState<number>(0);
+  // const scrollTop = scrollYPos === 0;
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
 
-    setTrigger(currentScrollY <= 10);
+    // setTrigger(currentScrollY <= 10);
 
     if (currentScrollY > scrollYPos) {
       setNavTop(-56);
@@ -54,28 +53,28 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
       top={`${navTop}px`}
       left={0}
       transition={"400ms"}
-      color={darkLightColor}
       animation={"flyInFromTop 1s"}
-      bg={!trigger ? "#303030df" : ""}
-      backdropFilter={!trigger ? "blur(5px)" : ""}
+      bg={"body"}
+      // color={darkLightColor}
+      // bg={!trigger ? "darktrans" : ""}
+      // backdropFilter={!trigger ? "blur(5px)" : ""}
       {...props}
     >
       <Container>
-        <HStack justify={"space-between"} py={2} w={"100%"}>
+        <HStack
+          justify={"space-between"}
+          py={2}
+          w={"100%"}
+          // h={scrollTop ? "80px" : "56px"}
+          h={"64px"}
+          transition={"300ms"}
+        >
           <HStack flexShrink={0} w={"100px"}>
-            <Link to={"/"}>
-              <Image
-                loading={"lazy"}
-                src={useColorModeValue(
-                  `/assets/svgs/${
-                    trigger ? "logo_dark.svg" : "logo_light.svg"
-                  }`,
-                  "/assets/svgs/logo_light.svg"
-                )}
-                h={"24px"}
-                borderRadius={"0 !important"}
-              />
-            </Link>
+            <NavDrawer
+              activeNavIndex={activeNavIndex}
+              aria-label="Drawer Navs"
+              color={"current"}
+            />
           </HStack>
 
           {sw > 900 ? (
@@ -97,7 +96,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
                         color: "p.500",
                       }}
                       transition={"200ms"}
-                      color={!trigger ? "white" : "current"}
+                      color={"current"}
                       fontWeight={"500 !important"}
                       fontSize={"1rem !important"}
                     >
@@ -112,34 +111,25 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
           )}
 
           <HStack flexShrink={0} w={[null, null, "100px"]} justify={"flex-end"}>
-            <NavDrawer
-              activeNavIndex={activeNavIndex}
-              aria-label="Drawer Navs"
-              color={!trigger ? "white" : "current"}
-            />
-
-            {/* <ColorModeButton
-              ml={0}
-              borderRadius={"full"}
-              color={!trigger ? "white" : "current"}
-              className="btn"
-              size={"md"}
-            />
-
-            <LangSwitcher
-              borderRadius={"full"}
-              color={!trigger ? "white" : "current"}
-            />
-
-            {sw <= 900 && (
-              <NavDrawer
-                activeNavIndex={activeNavIndex}
-                aria-label="Drawer Navs"
-                // color={trigger ? "white" : darkLightColor}
-                borderRadius={"full"}
-                color={"white"}
-              />
-            )} */}
+            <BButton
+              colorPalette={"p"}
+              position={"fixed"}
+              top={0}
+              right={0}
+              size={"2xl"}
+              fontSize={"lg !important"}
+              // h={scrollTop ? "80px" : "56px"}
+              h={"64px"}
+              transition={"300ms"}
+            >
+              <Icon transform={"rotate(-20deg)"}>
+                <IconMoodHappy />
+              </Icon>
+              Let's Talk
+              <Icon>
+                <IconArrowRight />
+              </Icon>
+            </BButton>
           </HStack>
         </HStack>
       </Container>

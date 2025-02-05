@@ -1477,9 +1477,10 @@ const contents = {
     ],
   },
   contact: {
-    address: "Jl. Tampomas Dalam Raya No. 12, Semarang",
+    address: "Remotely, based on Semarang, Central Java, Indonesia",
     email: "contact@exium.com",
-    phone: "+62 857-2621-8466",
+    phone: "+6282352222001",
+    wa: "https://wa.me/6282352222001?text=Halo%2C%20saya%20tertarik%20untuk%20mendiskusikan%20lebih%20lanjut%20mengenai%20aplikasi%20HR%20yang%20Anda%20tawarkan.%20Apakah%20saya%20bisa%20mendapatkan%20informasi%20lebih%20detail%20atau%20jadwal%20untuk%20berdiskusi%20lebih%20lanjut%3F%20Terima%20kasih%21",
   },
   sosmeds: {
     label: { id: "Sosial Media", en: "Social Links" },
@@ -1488,8 +1489,8 @@ const contents = {
         name: "Whatsappp",
         icon: WhatsappLogo,
         number: "+6285726218466",
-        link: "https://wa.me/+6285726218466",
-        disabled: true,
+        link: "https://wa.me/6282352222001?text=Halo%2C%20saya%20tertarik%20untuk%20mendiskusikan%20lebih%20lanjut%20mengenai%20aplikasi%20HR%20yang%20Anda%20tawarkan.%20Apakah%20saya%20bisa%20mendapatkan%20informasi%20lebih%20detail%20atau%20jadwal%20untuk%20berdiskusi%20lebih%20lanjut%3F%20Terima%20kasih%21",
+        disabled: false,
       },
       {
         name: "Instagram",
