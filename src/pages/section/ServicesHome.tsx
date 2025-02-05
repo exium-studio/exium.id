@@ -10,7 +10,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import contents from "@/constant/contents";
-import { responsiveSpacing3 } from "@/constant/sizes";
+import { R_SPACING3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
 import {
   Badge,
@@ -34,7 +34,7 @@ const Problem = () => {
     <CContainer py={20} bg={"dark"} color={"light"}>
       <Container mb={20}>
         <Grid
-          gap={responsiveSpacing3}
+          gap={R_SPACING3}
           templateColumns={["repeat(1, 1fr)", null, "repeat(4, 1fr)"]}
         >
           <GridItem>

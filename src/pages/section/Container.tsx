@@ -1,4 +1,4 @@
-import { responsiveSpacing2 } from "@/constant/sizes";
+import { R_SPACING2 } from "@/constant/sizes";
 import { StackProps, VStack } from "@chakra-ui/react";
 
 interface Props extends StackProps {
@@ -13,9 +13,9 @@ export default function Container({ children, fRef, ...props }: Props) {
       className="container"
       flex={0}
       gap={0}
-      px={responsiveSpacing2}
+      px={R_SPACING2}
       w={"100%"}
-      maxW={"1280px"}
+      maxW={"1440px"}
       mx={"auto"}
       align={"stretch"}
       {...props}

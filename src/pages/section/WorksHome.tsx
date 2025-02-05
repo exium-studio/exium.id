@@ -2,7 +2,7 @@ import BButton from "@/components/ui-custom/BButton";
 import CContainer from "@/components/ui-custom/CContainer";
 import Heading3 from "@/components/ui-custom/Heading3";
 import contents from "@/constant/contents";
-import { responsiveSpacing, responsiveSpacing2 } from "@/constant/sizes";
+import { R_SPACING, R_SPACING2 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
 import {
   Grid,
@@ -35,7 +35,7 @@ const WorksHome = () => {
         >
           {/* Header */}
           <GridItem>
-            <CContainer gap={responsiveSpacing} h={"100%"}>
+            <CContainer gap={R_SPACING} h={"100%"}>
               <Heading3 fontWeight={"semibold"}>
                 {contents.home.works.title[lang]}
               </Heading3>
@@ -69,7 +69,7 @@ const WorksHome = () => {
               _hover={{
                 bg: `${work_1.color}40`,
               }}
-              gap={responsiveSpacing2}
+              gap={R_SPACING2}
               overflow={"clip"}
             >
               <CContainer
@@ -105,7 +105,7 @@ const WorksHome = () => {
                 maxH={"340px"}
                 flex={1}
                 align={"center"}
-                p={responsiveSpacing}
+                p={R_SPACING}
               >
                 <Image
                   alt={work_1.title}
@@ -126,7 +126,7 @@ const WorksHome = () => {
               _hover={{
                 bg: `${work_4.color}40`,
               }}
-              gap={responsiveSpacing2}
+              gap={R_SPACING2}
               overflow={"clip"}
             >
               <CContainer flex={1} p={[5, null, null, 8]} gap={5}>
@@ -174,7 +174,7 @@ const WorksHome = () => {
               _hover={{
                 bg: `${work_4.color}40`,
               }}
-              gap={responsiveSpacing2}
+              gap={R_SPACING2}
               overflow={"clip"}
             >
               <CContainer flex={1} p={[5, null, null, 8]} gap={5}>
@@ -222,7 +222,7 @@ const WorksHome = () => {
               _hover={{
                 bg: `${work_4.color}40`,
               }}
-              gap={responsiveSpacing2}
+              gap={R_SPACING2}
               overflow={"clip"}
             >
               <CContainer p={[5, null, null, 8]} gap={5}>
@@ -271,7 +271,7 @@ const WorksHome = () => {
               _hover={{
                 bg: `${work_5.color}40`,
               }}
-              gap={responsiveSpacing2}
+              gap={R_SPACING2}
               overflow={"clip"}
             >
               <CContainer
@@ -307,7 +307,7 @@ const WorksHome = () => {
                 maxH={"340px"}
                 flex={1}
                 align={"center"}
-                p={responsiveSpacing}
+                p={R_SPACING}
               >
                 <Image
                   alt={work_5.title}

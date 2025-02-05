@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import WorkCard from "@/components/widget/WorkCard";
 import navs from "@/constant/navs";
-import { responsiveSpacing2, responsiveSpacing3 } from "@/constant/sizes";
+import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
 import useScrollToTop from "@/hooks/useScrollToTop";
 import {
@@ -48,7 +48,7 @@ const WorksPage = () => {
     <CContainer>
       {/* Header */}
       <CContainer py={20}>
-        <Container gap={responsiveSpacing3}>
+        <Container gap={R_SPACING3}>
           <BreadcrumbRoot size={"lg"} mx={"auto"}>
             <Link to={"/"}>
               <HStack>
@@ -76,7 +76,7 @@ const WorksPage = () => {
       {/* Content */}
       <CContainer mb={20}>
         <Container>
-          <HStack wrap={"wrap"} justify={"center"} mb={responsiveSpacing2}>
+          <HStack wrap={"wrap"} justify={"center"} mb={R_SPACING2}>
             <BButton
               size={"sm"}
               variant={filter === undefined ? "solid" : "subtle"}
@@ -102,7 +102,7 @@ const WorksPage = () => {
 
           {fd.length === 0 && <FeedbackNotFound />}
 
-          <SimpleGrid columns={[2, null, 4]} gap={5} gapY={responsiveSpacing2}>
+          <SimpleGrid columns={[2, null, 4]} gap={5} gapY={R_SPACING2}>
             {fd.map((work, i) => {
               const ok = filter === work.category || filter === undefined;
 
@@ -139,7 +139,7 @@ const WorksPage = () => {
                 }
                 border={"1px solid"}
                 borderColor={"var(--divider2)"}
-                p={responsiveSpacing2}
+                p={R_SPACING2}
                 transition={"400ms"}
                 _hover={{ bg: "bg.muted" }}
                 onMouseEnter={() => {

@@ -3,7 +3,7 @@ import CContainer from "@/components/ui-custom/CContainer";
 import Heading1 from "@/components/ui-custom/Heading1";
 import Heading5 from "@/components/ui-custom/Heading5";
 import { IMAGES_PATH } from "@/constant/path";
-import { responsiveSpacing2, responsiveSpacing3 } from "@/constant/sizes";
+import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
 import { HStack, Icon, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import { ArrowRight } from "@phosphor-icons/react";
@@ -47,14 +47,14 @@ const Hero = () => {
       h={["", null, null, "calc(100vh - 56px)"]}
       maxH={["", null, null, "900px"]}
     >
-      <Container flex={1} px={0} py={responsiveSpacing2}>
+      <Container flex={1} px={0} py={R_SPACING2}>
         <SimpleGrid
           columns={[1, null, null, 3]}
-          gap={responsiveSpacing3}
-          p={responsiveSpacing2}
+          gap={R_SPACING3}
+          p={R_SPACING2}
           flex={1}
         >
-          <CContainer justify={"space-between"} gap={responsiveSpacing2}>
+          <CContainer justify={"space-between"} gap={R_SPACING2}>
             <HStack gap={0}>
               <Heading1 fontWeight={"bold"} fontSize={72}>
                 Exium
@@ -73,7 +73,7 @@ const Hero = () => {
             </Text>
           </CContainer>
 
-          <CContainer position={"relative"} my={responsiveSpacing2}>
+          <CContainer position={"relative"} my={R_SPACING2}>
             {Array.from({ length: 2 }).map((_, i) => (
               <Image
                 key={i}
@@ -116,7 +116,7 @@ const Hero = () => {
             />
           </CContainer>
 
-          <CContainer gap={responsiveSpacing2}>
+          <CContainer gap={R_SPACING2}>
             <CContainer gap={2}>
               <Heading5
                 textAlign={["left", null, null, "right"]}

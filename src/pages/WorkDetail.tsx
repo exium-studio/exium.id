@@ -1,6 +1,6 @@
 import CContainer from "@/components/ui-custom/CContainer";
 import Heading3 from "@/components/ui-custom/Heading3";
-import { responsiveSpacing2, responsiveSpacing3 } from "@/constant/sizes";
+import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
 import { Grid, GridItem, HStack, Icon, Image, Text } from "@chakra-ui/react";
 import { Link, useParams } from "react-router-dom";
@@ -47,7 +47,7 @@ const WorkDetail = () => {
 
           <HStack
             flexDir={["column-reverse", null, "row"]}
-            gap={responsiveSpacing2}
+            gap={R_SPACING2}
             justify={"space-between"}
             align={"start"}
           >
@@ -68,10 +68,10 @@ const WorkDetail = () => {
         <Container gap={20}>
           <Grid
             templateColumns={["repeat(1, 1fr)", null, "repeat(4, 1fr)"]}
-            gap={responsiveSpacing3}
+            gap={R_SPACING3}
           >
             <GridItem>
-              <CContainer gap={responsiveSpacing2}>
+              <CContainer gap={R_SPACING2}>
                 <CContainer gap={2}>
                   <Text fontSize={"1rem"} color={"fg.subtle"}>
                     {contents.workDetail.clientLabel[lang]}
@@ -135,7 +135,7 @@ const WorkDetail = () => {
             <Grid
               key={i}
               templateColumns={["repeat(1, 1fr)", null, "repeat(4, 1fr)"]}
-              gap={responsiveSpacing3}
+              gap={R_SPACING3}
             >
               <GridItem>
                 <Heading3 maxW={["", null, "300px"]} fontWeight={"semibold"}>

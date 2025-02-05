@@ -5,7 +5,7 @@ import Heading5 from "@/components/ui-custom/Heading5";
 import { BreadcrumbRoot } from "@/components/ui/breadcrumb";
 import navs from "@/constant/navs";
 import { IMAGES_PATH } from "@/constant/path";
-import { responsiveSpacing2, responsiveSpacing3 } from "@/constant/sizes";
+import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
 import useScrollToTop from "@/hooks/useScrollToTop";
 import {
@@ -67,7 +67,7 @@ const AboutUsPage = () => {
     <CContainer>
       {/* Header */}
       <CContainer py={20}>
-        <Container gap={responsiveSpacing3}>
+        <Container gap={R_SPACING3}>
           <BreadcrumbRoot size={"lg"} mx={"auto"}>
             <Link to={"/"}>
               <HStack>
@@ -107,7 +107,7 @@ const AboutUsPage = () => {
             {contents.aboutUs.intro[lang]}
           </Text>
 
-          <SimpleGrid columns={[1, null, 2]} gap={responsiveSpacing3}>
+          <SimpleGrid columns={[1, null, 2]} gap={R_SPACING3}>
             <Text color={"fg.muted"} fontSize={"1rem"}>
               {contents.aboutUs.intro2[lang]}
             </Text>
@@ -116,7 +116,7 @@ const AboutUsPage = () => {
             </Text>
           </SimpleGrid>
 
-          <SimpleGrid columns={[2, null, 4]} gap={responsiveSpacing2} mt={20}>
+          <SimpleGrid columns={[2, null, 4]} gap={R_SPACING2} mt={20}>
             {contents.stats.map((stat, i) => (
               <CContainer key={i}>
                 <Text fontSize={"2rem"}>{stat.value[lang]}</Text>
@@ -189,9 +189,9 @@ const AboutUsPage = () => {
         {/* <Container>
           <SimpleGrid
             columns={[1, null, 2]}
-            gap={responsiveSpacing3}
+            gap={R_SPACING3}
             mt={20}
-            mb={responsiveSpacing3}
+            mb={R_SPACING3}
           >
             <Heading3 fontWeight={"semibold"}>
               {contents.aboutUs.teamLabel[lang]}
@@ -224,11 +224,7 @@ const AboutUsPage = () => {
           // borderColor={"var(--divider2)"}
         >
           <Container>
-            <SimpleGrid
-              columns={[1, null, 2]}
-              gap={responsiveSpacing3}
-              mb={responsiveSpacing3}
-            >
+            <SimpleGrid columns={[1, null, 2]} gap={R_SPACING3} mb={R_SPACING3}>
               <Heading3 fontWeight={"semibold"}>
                 {contents.aboutUs.valuesLabel[lang]}
               </Heading3>

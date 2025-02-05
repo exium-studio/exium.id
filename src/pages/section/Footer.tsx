@@ -4,7 +4,7 @@ import Heading1 from "@/components/ui-custom/Heading1";
 import contents from "@/constant/contents";
 import navs from "@/constant/navs";
 import { ASSETS_PATH, SVGS_PATH } from "@/constant/path";
-import { responsiveSpacing3 } from "@/constant/sizes";
+import { R_SPACING3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
 import {
   Grid,
@@ -43,7 +43,7 @@ const Footer = () => {
             opacity={0.2}
           />
 
-          <SimpleGrid columns={[1, null, 2]} gap={responsiveSpacing3}>
+          <SimpleGrid columns={[1, null, 2]} gap={R_SPACING3}>
             <CContainer gap={5}>
               <Text fontSize={"2rem"} fontWeight={"semibold"}>
                 {contents.footer.cta.title[lang]}
@@ -80,7 +80,7 @@ const Footer = () => {
           <Container>
             <Grid
               templateColumns={["repeat(1, 1fr)", null, null, "repeat(4, 1fr)"]}
-              gap={responsiveSpacing3}
+              gap={R_SPACING3}
             >
               <GridItem>
                 <HStack gap={4} w={"100%"}>
@@ -99,7 +99,7 @@ const Footer = () => {
               <GridItem></GridItem>
 
               <GridItem colSpan={2}>
-                <SimpleGrid columns={[1, null, 2]} gap={responsiveSpacing3}>
+                <SimpleGrid columns={[1, null, 2]} gap={R_SPACING3}>
                   <CContainer align={"start"} gap={2}>
                     <Text fontSize={"1rem"} color={"var(--divider-text)"}>
                       {contents.footer.navigationLabel[lang]}
@@ -173,7 +173,7 @@ const Footer = () => {
             borderColor={"var(--divider3)"}
             py={20}
           >
-            <SimpleGrid columns={[1, null, 3]} gap={responsiveSpacing3}>
+            <SimpleGrid columns={[1, null, 3]} gap={R_SPACING3}>
               <CContainer gap={2}>
                 <Text fontSize={"1.25rem"}>{contents.contact.email}</Text>
                 <Text fontSize={"1.25rem"}>{contents.contact.phone}</Text>
@@ -206,7 +206,7 @@ const Footer = () => {
 
         <CContainer py={8}>
           <Container>
-            <SimpleGrid columns={[1, null, 2]} gap={responsiveSpacing3}>
+            <SimpleGrid columns={[1, null, 2]} gap={R_SPACING3}>
               <Text fontSize={"1rem"} opacity={0.4}>
                 Copyright {new Date().getFullYear()} © Exium. All right
                 reserved.

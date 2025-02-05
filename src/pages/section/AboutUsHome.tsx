@@ -1,7 +1,7 @@
 import CContainer from "@/components/ui-custom/CContainer";
 import Heading5 from "@/components/ui-custom/Heading5";
 import contents from "@/constant/contents";
-import { responsiveSpacing2, responsiveSpacing3 } from "@/constant/sizes";
+import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
 import {
   Center,
@@ -22,7 +22,7 @@ const AboutUsHome = () => {
     <CContainer pt={20} borderTop={"2px solid"} borderColor={"border.muted"}>
       <Container mb={20}>
         <Grid
-          gap={responsiveSpacing3}
+          gap={R_SPACING3}
           templateColumns={["repeat(1, 1fr)", null, "repeat(4, 1fr)"]}
         >
           <GridItem>
@@ -36,7 +36,7 @@ const AboutUsHome = () => {
               {contents.home.aboutUs.intro[lang]}
             </Text>
 
-            <SimpleGrid columns={[2, null, 4]} gap={responsiveSpacing2}>
+            <SimpleGrid columns={[2, null, 4]} gap={R_SPACING2}>
               {contents.stats.map((stat, i) => (
                 <CContainer key={i}>
                   <Text fontSize={"2rem"}>{stat.value[lang]}</Text>
@@ -70,7 +70,7 @@ const AboutUsHome = () => {
                 }
                 border={"1px solid"}
                 borderColor={"var(--divider2)"}
-                p={responsiveSpacing2}
+                p={R_SPACING2}
                 transition={"400ms"}
                 _hover={{ bg: "bg.muted" }}
                 onMouseEnter={() => {

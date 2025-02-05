@@ -2,7 +2,7 @@ import CContainer from "@/components/ui-custom/CContainer";
 import Heading4 from "@/components/ui-custom/Heading4";
 import { Avatar } from "@/components/ui/avatar";
 import contents from "@/constant/contents";
-import { responsiveSpacing2, responsiveSpacing3 } from "@/constant/sizes";
+import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
 import {
   Box,
@@ -36,11 +36,11 @@ const ClientStory = () => {
             <Box key={i} w={"100vw"} scrollSnapAlign={"center"}>
               <Container>
                 <Grid
-                  gap={responsiveSpacing3}
+                  gap={R_SPACING3}
                   templateColumns={["repeat(1, 1fr)", null, "repeat(4, 1fr)"]}
                 >
                   <GridItem>
-                    <CContainer h={"100%"} gap={responsiveSpacing2}>
+                    <CContainer h={"100%"} gap={R_SPACING2}>
                       <Avatar name={item.name} src={item.image} size={"2xl"} />
                       <CContainer gap={2}>
                         <Heading4 fontWeight={"semibold"}>{item.name}</Heading4>
@@ -77,13 +77,13 @@ const ClientStory = () => {
 
       <Container>
         <Grid
-          gap={responsiveSpacing3}
+          gap={R_SPACING3}
           templateColumns={["repeat(1, 1fr)", null, "repeat(4, 1fr)"]}
         >
           <GridItem></GridItem>
 
           <GridItem colSpan={3}>
-            <CContainer mt={responsiveSpacing3}>
+            <CContainer mt={R_SPACING3}>
               <HStack wrap={"wrap"} justify={"space-between"}>
                 <Text fontSize={"1.25rem"} fontWeight={"semibold"}>
                   {activeIndex + 1}/{contents.clientStories.length}

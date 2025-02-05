@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/popover";
 import contents from "@/constant/contents";
 import navs from "@/constant/navs";
-import { responsiveSpacing2, responsiveSpacing3 } from "@/constant/sizes";
+import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
 import useScrollToTop from "@/hooks/useScrollToTop";
 import {
@@ -43,7 +43,7 @@ const ServicesPage = () => {
     <CContainer>
       {/* Header */}
       <CContainer py={20}>
-        <Container gap={responsiveSpacing3}>
+        <Container gap={R_SPACING3}>
           <BreadcrumbRoot size={"lg"} mx={"auto"}>
             <Link to={"/"}>
               <HStack>
@@ -70,10 +70,10 @@ const ServicesPage = () => {
 
       {/* Content */}
       <Container>
-        <SimpleGrid columns={[1, 2, null, 4]} gap={responsiveSpacing2}>
+        <SimpleGrid columns={[1, 2, null, 4]} gap={R_SPACING2}>
           {contents.services.list.map((service, i) => (
             <CContainer
-              p={responsiveSpacing2}
+              p={R_SPACING2}
               py={12}
               bgGradient={"to-bl"}
               gradientFrom={"var(--divider)"}
@@ -138,7 +138,7 @@ const ServicesPage = () => {
             >
               <GridItem>
                 <Container
-                  p={responsiveSpacing2}
+                  p={R_SPACING2}
                   h={"100%"}
                   justify={"center"}
                   border={"1px solid var(--divider2)"}
@@ -160,7 +160,7 @@ const ServicesPage = () => {
 
               <GridItem colSpan={3}>
                 <Container
-                  p={responsiveSpacing2}
+                  p={R_SPACING2}
                   h={"100%"}
                   justify={"center"}
                   border={"1px solid var(--divider2)"}

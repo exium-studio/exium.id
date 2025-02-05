@@ -8,7 +8,7 @@ import {
   AccordionRoot,
 } from "@/components/ui/accordion";
 import contents from "@/constant/contents";
-import { responsiveSpacing2, responsiveSpacing3 } from "@/constant/sizes";
+import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
 import { Grid, GridItem, HStack, Icon, Text } from "@chakra-ui/react";
 import Container from "./Container";
@@ -23,7 +23,7 @@ const TheWayWeWork = () => {
     <CContainer py={20}>
       <Container>
         <Grid
-          gap={responsiveSpacing3}
+          gap={R_SPACING3}
           templateColumns={["repeat(1, 1fr)", null, "repeat(4, 1fr)"]}
         >
           <GridItem>
@@ -35,7 +35,7 @@ const TheWayWeWork = () => {
           <GridItem colSpan={3}>
             <Text fontSize={"1.5rem"}>{contents.home.tww.intro[lang]}</Text>
 
-            <CContainer mt={responsiveSpacing2}>
+            <CContainer mt={R_SPACING2}>
               <AccordionRoot
                 collapsible
                 defaultValue={["0"]}
@@ -64,7 +64,7 @@ const TheWayWeWork = () => {
                       </HStack>
                     </AccordionItemTrigger>
 
-                    <AccordionItemContent px={responsiveSpacing2}>
+                    <AccordionItemContent px={R_SPACING2}>
                       <Text fontSize={"1rem"} color={"fg.muted"}>
                         {item.description[lang]}
                       </Text>
