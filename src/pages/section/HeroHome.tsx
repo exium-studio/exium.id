@@ -1,4 +1,3 @@
-import BButton from "@/components/ui-custom/BButton";
 import CContainer from "@/components/ui-custom/CContainer";
 import Heading5 from "@/components/ui-custom/Heading5";
 import Rating from "@/components/widget/Rating";
@@ -11,13 +10,11 @@ import {
   Center,
   Circle,
   HStack,
-  Icon,
   Image,
   SimpleGrid,
   Text,
   VStack,
 } from "@chakra-ui/react";
-import { IconLighter } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 import Container from "./Container";
 
@@ -108,7 +105,7 @@ const Clock = () => {
 
 const Hero = () => {
   const { lang } = useLang();
-  const [lighter, setLighter] = useState(false);
+  // const [lighter, setLighter] = useState(false);
   // const [lightPos, setLightPos] = useState({ x: 0, y: 0 });
   // const [hover, setHover] = useState(false);
   // function handleMouseMove(e: MouseEvent) {
@@ -211,7 +208,7 @@ const Hero = () => {
               GMT+7
             </Text>
 
-            <BButton
+            {/* <BButton
               mt={4}
               onClick={() => {
                 setLighter((ps) => !ps);
@@ -223,7 +220,7 @@ const Hero = () => {
                 <IconLighter />
               </Icon>
               Lighter
-            </BButton>
+            </BButton> */}
           </CContainer>
         </SimpleGrid>
       </Container>
