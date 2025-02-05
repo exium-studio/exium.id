@@ -45,7 +45,7 @@ const Hero = () => {
   return (
     <CContainer
       h={["", null, null, "calc(100vh - 56px)"]}
-      maxH={["", null, null, "1200px"]}
+      maxH={["", null, null, "900px"]}
     >
       <Container flex={1} px={0} py={responsiveSpacing2}>
         <SimpleGrid
