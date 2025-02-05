@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2.92756in" height="2.92756in" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 393.11 393.11"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#B4B2AF;stroke-width:0.93;stroke-miterlimit:2.61313}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2941561557744">
+   <circle class="fil0 str0" cx="196.55" cy="196.55" r="196.09"/>
+   <ellipse class="fil0 str0" cx="196.55" cy="196.55" rx="128.88" ry="196.09"/>
+   <ellipse class="fil0 str0" cx="196.55" cy="196.55" rx="43.45" ry="196.09"/>
+   <path class="fil0 str0" d="M196.55 34.07c70.57,0 143.89,24.71 170.37,65.36 38.44,58.99 -29.23,130.73 -170.37,130.73 -141.14,0 -208.82,-71.74 -170.37,-130.73 26.49,-40.65 99.8,-65.36 170.37,-65.36z"/>
+   <path class="fil0 str0" d="M196.55 0.47c31.06,0 63.33,6.62 74.99,17.52 16.92,15.81 -12.87,35.04 -74.99,35.04 -62.13,0 -91.91,-19.23 -74.99,-35.04 11.66,-10.9 43.93,-17.52 74.99,-17.52z"/>
+   <path class="fil0 str0" d="M196.55 160.26c70.57,0 143.89,24.71 170.37,65.37 38.44,58.99 -29.23,130.73 -170.37,130.73 -141.14,0 -208.82,-71.74 -170.37,-130.73 26.49,-40.65 99.8,-65.37 170.37,-65.37z"/>
+  </g>
+ </g>
+</svg>
