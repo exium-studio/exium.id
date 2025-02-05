@@ -32,7 +32,7 @@ const AboutUsHome = () => {
           </GridItem>
 
           <GridItem colSpan={3}>
-            <Text fontSize={"1.5rem"} mb={20}>
+            <Text fontSize={"1.5rem"} fontWeight={"medium"} mb={20}>
               {contents.home.aboutUs.intro[lang]}
             </Text>
 

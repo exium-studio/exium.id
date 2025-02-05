@@ -28,6 +28,7 @@ export default function BButton({
       fontSize={"bold !important"}
       size={size}
       borderRadius={0}
+      fontWeight={"medium"}
       {...props}
     >
       {children}

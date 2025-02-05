@@ -1,13 +1,14 @@
 import contents from "@/constant/contents";
 import { useLang } from "@/hooks/useLang";
-import { Box, HStack, Icon, Text } from "@chakra-ui/react";
+import { HStack, Icon, Text } from "@chakra-ui/react";
 import { IconBrandWhatsappFilled } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 import BButton from "../ui-custom/BButton";
+import CContainer from "../ui-custom/CContainer";
 
 const WAWidget = () => {
   const [hover, setHover] = useState(false);
-  const [position, setPosition] = useState({ y: 16 });
+  const [position, setPosition] = useState({ y: 0 });
   const [yBefore, setYBefore] = useState<number | null>(null);
   const [dragging, setDragging] = useState(false);
 
@@ -65,31 +66,32 @@ const WAWidget = () => {
     <HStack
       position="fixed"
       bottom={position.y + "px"}
-      right={"16px"}
+      right={0}
       w="fit-content"
       cursor="grab"
       onMouseDown={handleDragStart}
       onTouchStart={handleDragStart}
       zIndex={99}
+      align={"stretch"}
+      gap={0}
     >
-      <Box
+      <CContainer
         bg="body"
         px={4}
         py={2}
-        borderRadius="full"
         border="1px solid"
         borderColor="border.muted"
         visibility={hover ? "visible" : "hidden"}
         opacity={hover ? 1 : 0}
         transition="200ms"
       >
-        <Text>{contents.footer.cta.buttonLabel[lang]}</Text>
-      </Box>
+        <Text my={"auto"}>{contents.footer.cta.buttonLabel[lang]}</Text>
+      </CContainer>
 
       <BButton
         iconButton
         size="2xl"
-        borderRadius="full"
+        borderRadius={0}
         colorPalette="green"
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}

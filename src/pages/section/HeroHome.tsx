@@ -56,7 +56,7 @@ const Hero = () => {
         >
           <CContainer justify={"space-between"} gap={responsiveSpacing2}>
             <HStack gap={0}>
-              <Heading1 fontWeight={800} fontSize={72}>
+              <Heading1 fontWeight={"bold"} fontSize={72}>
                 Exium
               </Heading1>
               <Text fontSize={"2.5rem"}>™</Text>
@@ -109,7 +109,7 @@ const Hero = () => {
             {/* Main image */}
             <Image
               alt="Exium Hero Image"
-              src={`${IMAGES_PATH}/logo_graphic.png`}
+              src={`${IMAGES_PATH}/logo_graphic3.png`}
               w={"100%"}
               m={"auto"}
               zIndex={15}
@@ -121,6 +121,7 @@ const Hero = () => {
               <Heading5
                 textAlign={["left", null, null, "right"]}
                 color={"fg.muted"}
+                fontWeight={"medium"}
               >
                 Semarang, Indonesia
               </Heading5>
@@ -130,6 +131,7 @@ const Hero = () => {
               <Heading5
                 textAlign={["left", null, null, "right"]}
                 color={"fg.muted"}
+                fontWeight={"medium"}
               >
                 GMT+7
               </Heading5>

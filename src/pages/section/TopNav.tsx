@@ -2,7 +2,7 @@ import BButton from "@/components/ui-custom/BButton";
 import navs from "@/constant/navs";
 import { useLang } from "@/hooks/useLang";
 import useScreen from "@/hooks/useScreen";
-import { Box, BoxProps, Button, HStack, Icon } from "@chakra-ui/react";
+import { Box, BoxProps, HStack, Icon } from "@chakra-ui/react";
 import { IconArrowRight, IconMoodHappy } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
@@ -82,7 +82,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
               {navs?.map((nav, i) => {
                 return (
                   <Link key={i} to={nav.link}>
-                    <Button
+                    <BButton
                       flexShrink={0}
                       className="btn-clear"
                       borderRadius={0}
@@ -97,11 +97,10 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
                       }}
                       transition={"200ms"}
                       color={"current"}
-                      fontWeight={"500 !important"}
                       fontSize={"1rem !important"}
                     >
                       {nav.label[lang]}
-                    </Button>
+                    </BButton>
                   </Link>
                 );
               })}

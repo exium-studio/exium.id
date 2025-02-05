@@ -59,11 +59,11 @@ export default function NavDrawer({ activeNavIndex, ...props }: Props) {
         px={0}
         {...props}
       >
-        Menu
         <CContainer gap={"6px"}>
           <Box w={"20px"} h={"2px"} bg={props?.color} />
           <Box w={"20px"} h={"2px"} bg={props?.color} />
         </CContainer>
+        Menu
       </BButton>
 
       <Portal>

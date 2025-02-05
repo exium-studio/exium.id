@@ -36,7 +36,7 @@ const WorksHome = () => {
           {/* Header */}
           <GridItem>
             <CContainer gap={responsiveSpacing} h={"100%"}>
-              <Heading3 fontWeight={"bold"}>
+              <Heading3 fontWeight={"semibold"}>
                 {contents.home.works.title[lang]}
               </Heading3>
 
@@ -226,7 +226,7 @@ const WorksHome = () => {
               overflow={"clip"}
             >
               <CContainer p={[5, null, null, 8]} gap={5}>
-                <Text fontSize={"1.25rem"} fontWeight={"bold"}>
+                <Text fontSize={"1.25rem"} fontWeight={"semibold"}>
                   {work_4.title}
                 </Text>
 
