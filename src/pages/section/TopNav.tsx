@@ -3,7 +3,7 @@ import navs from "@/constant/navs";
 import { useLang } from "@/hooks/useLang";
 import useScreen from "@/hooks/useScreen";
 import { Box, BoxProps, HStack, Icon } from "@chakra-ui/react";
-import { IconArrowRight, IconMoodHappy } from "@tabler/icons-react";
+import { IconArrowRight, IconMoodSmile } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Container from "./Container";
@@ -28,7 +28,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
     // setTrigger(currentScrollY <= 10);
 
     if (currentScrollY > scrollYPos) {
-      setNavTop(-56);
+      setNavTop(-64);
     } else {
       setNavTop(0);
     }
@@ -121,8 +121,8 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
               h={"64px"}
               transition={"300ms"}
             >
-              <Icon transform={"rotate(-20deg)"}>
-                <IconMoodHappy />
+              <Icon animation={"rotate 10s linear infinite"}>
+                <IconMoodSmile />
               </Icon>
               Let's Talk
               <Icon>

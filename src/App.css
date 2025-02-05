@@ -676,7 +676,6 @@ button {
     transform: translate(-50%, -50%);
   }
 }
-
 @keyframes hero-top-1 {
   0% {
     opacity: 0.06;
@@ -698,7 +697,6 @@ button {
     transform: translate(-50%, -50%);
   }
 }
-
 @keyframes hero-bottom-0 {
   0% {
     opacity: 0.06;
@@ -720,7 +718,6 @@ button {
     transform: translate(-50%, -50%);
   }
 }
-
 @keyframes hero-bottom-1 {
   0% {
     opacity: 0.06;
@@ -742,7 +739,6 @@ button {
     transform: translate(-50%, -50%);
   }
 }
-
 @keyframes flyInFromTop {
   0% {
     transform: translateY(-100%);
@@ -753,7 +749,6 @@ button {
     opacity: 1;
   }
 }
-
 @keyframes ripple {
   to {
     width: 260px;
@@ -800,11 +795,6 @@ button {
     transform: translateY("5px");
   }
 }
-
-.skeleton {
-  animation: flashing 1s ease-out infinite;
-}
-
 @keyframes flashing {
   0% {
     opacity: 1;
@@ -816,7 +806,19 @@ button {
     opacity: 1;
   }
 }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /* Keyframes */
+
+.skeleton {
+  animation: flashing 1s ease-out infinite;
+}
 
 .chakra-popover__close-btn > svg {
   width: 10px !important;
