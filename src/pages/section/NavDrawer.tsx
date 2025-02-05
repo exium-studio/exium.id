@@ -72,7 +72,7 @@ export default function NavDrawer({ activeNavIndex, ...props }: Props) {
           top={open ? "0" : "-100dvh"}
           left={0}
           zIndex={99}
-          bg={"#303030df"}
+          bg={"darktrans"}
           color={"white"}
           backdropFilter={"blur(5px)"}
           transition={"200ms"}

@@ -23,8 +23,12 @@ const contents = {
   home: {
     hero: {
       intro: {
-        id: "Kami adalah ahli rekayasa visioner yang merancang solusi inovatif untuk tantangan modern, menciptakan pengalaman efisien dan berdampak jangka panjang.",
-        en: "We are visionary engineers who design innovative solutions to modern challenges, creating efficient and impactful experiences that last.",
+        id: "Kami mengembangkan solusi inovatif untuk tantangan modern, menciptakan pengalaman efisien dan berdampak jangka panjang.",
+        en: "We develop innovative solutions to modern challenges, creating efficient and impactful experiences that last.",
+      },
+      averageRating: {
+        label: { id: "Penilaian Rata-rata", en: "Average Rating" },
+        value: 5,
       },
       cta: {
         id: "Mari diskusi",

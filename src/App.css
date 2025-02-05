@@ -346,11 +346,6 @@ td {
 }
 
 /* Typgography */
-a,
-p {
-  text-decoration: none !important;
-  font-size: 0.875rem;
-}
 h1,
 h2,
 h3,

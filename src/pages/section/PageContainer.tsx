@@ -12,12 +12,7 @@ const PageContainer = ({ children, activeNavIndex, withNav = true }: Props) => {
     <CContainer minH={"100dvh"}>
       {withNav && <TopNav activeNavIndex={activeNavIndex} />}
 
-      <CContainer
-        pt={"56px"}
-        minH={`calc(100dvh - ${withNav ? "56px" : "0px"})`}
-      >
-        {children}
-      </CContainer>
+      <CContainer minH={`100dvh`}>{children}</CContainer>
     </CContainer>
   );
 };

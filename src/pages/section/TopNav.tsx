@@ -18,14 +18,14 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
   const { pathname } = useLocation();
 
   const [scrollYPos, setScrollYPos] = useState<number>(window.scrollY);
-  // const [trigger, setTrigger] = useState<boolean>(true);
+  const [trigger, setTrigger] = useState<boolean>(true);
   const [navTop, setNavTop] = useState<number>(0);
   // const scrollTop = scrollYPos === 0;
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
 
-    // setTrigger(currentScrollY <= 10);
+    setTrigger(currentScrollY <= 10);
 
     if (currentScrollY > scrollYPos) {
       setNavTop(-64);
@@ -54,9 +54,9 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
       left={0}
       transition={"400ms"}
       animation={"flyInFromTop 1s"}
-      bg={"body"}
+      bg={!trigger ? "body" : ""}
+      // bg={"body"}
       // color={darkLightColor}
-      // bg={!trigger ? "darktrans" : ""}
       // backdropFilter={!trigger ? "blur(5px)" : ""}
       {...props}
     >
@@ -73,7 +73,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
             <NavDrawer
               activeNavIndex={activeNavIndex}
               aria-label="Drawer Navs"
-              color={"current"}
+              color={trigger ? "light" : "current"}
             />
           </HStack>
 
@@ -96,7 +96,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
                         color: "p.500",
                       }}
                       transition={"200ms"}
-                      color={"current"}
+                      color={trigger ? "light" : "current"}
                       fontSize={"1rem !important"}
                     >
                       {nav.label[lang]}
