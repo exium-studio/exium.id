@@ -67,21 +67,17 @@ const Problem = () => {
 
       <CContainer
         borderTop={"1px solid"}
-        borderBottom={"1px solid"}
-        borderColor={"var(--divider2)"}
+        borderBottom={["none", null, null, "1px solid"]}
+        borderColor={"d2 !important"}
       >
         <Container px={0}>
-          <SimpleGrid
-            columns={[1, 2, 2, 4]}
-            borderLeft={"1px solid"}
-            borderRight={"1px solid"}
-            borderColor={"var(--divider2)"}
-          >
+          <SimpleGrid columns={[1, 2, null, 4]}>
             {contents.services.list.map((service, i) => (
               <CContainer
                 key={i}
-                border={"1px solid"}
-                borderColor={"var(--divider2)"}
+                borderLeft={i !== 0 ? "1px solid" : ""}
+                borderBottom={["1px solid", null, null, "none"]}
+                borderColor={"d2 !important"}
                 p={[5, null, 8]}
                 gap={5}
               >
