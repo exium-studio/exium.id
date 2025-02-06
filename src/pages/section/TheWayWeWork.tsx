@@ -27,10 +27,7 @@ const TheWayWeWork = () => {
             bg={"d1"}
             color={"d3"}
             position={"absolute"}
-            // rotate={"-45deg"}
-            // top={8}
             w={"100vw"}
-            // left={-20}
             zIndex={1}
             minH={"100px"}
           >
@@ -46,7 +43,7 @@ const TheWayWeWork = () => {
 
         <Text
           fontSize={"2xl"}
-          textAlign={"center"}
+          textAlign={["left", null, "center"]}
           maxW={"800px"}
           mx={"auto"}
           mb={40}

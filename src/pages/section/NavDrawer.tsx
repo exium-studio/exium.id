@@ -49,6 +49,18 @@ export default function NavDrawer({ activeNavIndex, ...props }: Props) {
     };
   }, [open]);
 
+  useEffect(() => {
+    function handleMouseUp(e: KeyboardEvent) {
+      if (e.key === "Escape") back();
+    }
+
+    window.addEventListener("keyup", handleMouseUp);
+
+    return () => {
+      window.removeEventListener("keyup", handleMouseUp);
+    };
+  }, []);
+
   return (
     <>
       <BButton
@@ -69,14 +81,14 @@ export default function NavDrawer({ activeNavIndex, ...props }: Props) {
       <Portal>
         <CContainer
           position={"fixed"}
-          top={open ? "0" : "-100dvh"}
+          top={open ? "0" : "-130dvh"}
           left={0}
           zIndex={99}
           bg={"darktrans"}
           color={"white"}
           backdropFilter={"blur(5px)"}
           transition={"200ms"}
-          minH={"100dvh"}
+          h={"100dvh"}
           overflow={"auto"}
         >
           <Container>
@@ -117,6 +129,7 @@ export default function NavDrawer({ activeNavIndex, ...props }: Props) {
             justify={"center"}
             gap={8}
             p={5}
+            overflowY={"auto"}
           >
             {navs.map((nav, i) => (
               <Heading2
@@ -134,61 +147,61 @@ export default function NavDrawer({ activeNavIndex, ...props }: Props) {
                 {nav.label[lang]}
               </Heading2>
             ))}
-          </CContainer>
 
-          <CContainer flex={0} p={5}>
-            <HStack mx={"auto"}>
-              <ColorModeButton
-                color={"white"}
-                borderRadius={"full"}
-                className={"btn"}
-                size={"lg"}
-              />
+            <CContainer p={5}>
+              <HStack mx={"auto"}>
+                <ColorModeButton
+                  color={"white"}
+                  borderRadius={"full"}
+                  className={"btn"}
+                  size={"lg"}
+                />
 
-              <LangSwitcher
-                color={"white"}
-                borderRadius={"full"}
-                size={"lg"}
-                fontSize={"1rem !important"}
-              />
-            </HStack>
+                <LangSwitcher
+                  color={"white"}
+                  borderRadius={"full"}
+                  size={"lg"}
+                  fontSize={"1rem !important"}
+                />
+              </HStack>
 
-            <HStack wrap={"wrap"} justify={"center"} gapX={4}>
-              {contents.sosmeds.list.map((item, i) => {
-                const disabled = i > 0;
+              <HStack wrap={"wrap"} justify={"center"} gapX={4}>
+                {contents.sosmeds.list.map((item, i) => {
+                  const disabled = i > 0;
 
-                return (
-                  <Link
-                    key={i}
-                    to={!disabled ? item.link : ""}
-                    target={!disabled ? "_blank" : undefined}
-                  >
-                    <BButton
-                      mt={1}
-                      className="btn-clear"
-                      color={"white"}
-                      disabled={disabled}
-                      opacity={0.5}
-                      ml={[0, null, "auto"]}
-                      fontWeight={400}
-                      cursor={disabled ? "not-allowed" : "pointer"} // Ubah cursor jika disabled
+                  return (
+                    <Link
+                      key={i}
+                      to={!disabled ? item.link : ""}
+                      target={!disabled ? "_blank" : undefined}
                     >
-                      {item.name}
-                    </BButton>
-                  </Link>
-                );
-              })}
-            </HStack>
+                      <BButton
+                        mt={1}
+                        className="btn-clear"
+                        color={"white"}
+                        disabled={disabled}
+                        opacity={0.5}
+                        ml={[0, null, "auto"]}
+                        fontWeight={400}
+                        cursor={disabled ? "not-allowed" : "pointer"} // Ubah cursor jika disabled
+                      >
+                        {item.name}
+                      </BButton>
+                    </Link>
+                  );
+                })}
+              </HStack>
 
-            <Text
-              mt={5}
-              textAlign={"center"}
-              opacity={0.5}
-              className="initDrawerContent"
-            >
-              Copyright {new Date().getFullYear()} © Bimtech. All right
-              reserved.
-            </Text>
+              <Text
+                mt={5}
+                textAlign={"center"}
+                opacity={0.5}
+                className="initDrawerContent"
+              >
+                Copyright {new Date().getFullYear()} © Bimtech. All right
+                reserved.
+              </Text>
+            </CContainer>
           </CContainer>
         </CContainer>
       </Portal>

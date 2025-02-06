@@ -21,11 +21,17 @@ const WorksHome = () => {
     <CContainer py={20}>
       <Container px={0}>
         <Box w={"fit"} position={"relative"} px={4} mx={"auto"} mb={12}>
-          <Heading1 fontWeight={"semibold"} textAlign={"center"} mb={4}>
+          <Heading1
+            fontWeight={"semibold"}
+            textAlign={["left", null, "center"]}
+            mb={4}
+          >
             {contents.home.works.title[lang]}
           </Heading1>
 
-          <Text color={"fg.muted"}>{contents.works.summary[lang]}</Text>
+          <Text color={"fg.muted"} textAlign={["left", null, "center"]}>
+            {contents.works.summary[lang]}
+          </Text>
 
           <Center
             bg={"p.500"}

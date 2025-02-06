@@ -49,12 +49,10 @@ const Problem = () => {
               position={"absolute"}
               rotate={"-6deg"}
             >
-              <Heading1 fontSize={"2xl"} fontWeight={"medium"}>
-                {content.tag[lang]}
-              </Heading1>
+              <Heading1 fontWeight={"medium"}>{content.tag[lang]}</Heading1>
             </Center>
 
-            <Heading5 mt={20} ml={2} color={"fg.subtle"}>
+            <Heading5 mt={28} ml={2} color={"fg.subtle"}>
               {content.title[lang]}
             </Heading5>
           </GridItem>
@@ -75,7 +73,11 @@ const Problem = () => {
             {contents.services.list.map((service, i) => (
               <CContainer
                 key={i}
-                borderLeft={i !== 0 ? "1px solid" : ""}
+                borderLeft={[
+                  "",
+                  i % 2 !== 0 ? "1px solid" : "",
+                  i !== 0 ? "1px solid" : "",
+                ]}
                 borderBottom={["1px solid", null, null, "none"]}
                 borderColor={"d2 !important"}
                 p={[5, null, 8]}

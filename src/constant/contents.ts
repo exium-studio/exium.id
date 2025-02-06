@@ -702,11 +702,11 @@ const contents = {
         icon: Devices,
         problem: {
           id: "Limited Access to Apps on Specific Platforms?",
-          en: "Limited access to apps on specific platforms.",
+          en: "Akses Terbatas ke Aplikasi di Platform Tertentu?",
         },
         problem2: {
           id: "Limited access to apps on specific platforms.",
-          en: "Limited access to apps on specific platforms.",
+          en: "Akses terbatas ke aplikasi pada platform tertentu.",
         },
         solution: {
           id: "Platform-Agnostic PWA That's Easy to Manage",
@@ -737,11 +737,11 @@ const contents = {
         icon: ChartLineDown,
         problem: {
           id: "Difficult to Manage and Scale Your App?",
-          en: "Difficult to manage and scale your app.",
+          en: "Sulit Mengelola dan Menskalakan Aplikasi Anda?",
         },
         problem2: {
           id: "Difficult to manage and scale your app.",
-          en: "Difficult to manage and scale your app.",
+          en: "Sulit Mengelola dan Menskalakan Aplikasi Anda.",
         },
         solution: {
           id: "Modular System That's Easy to Maintain and Expand",
@@ -765,11 +765,11 @@ const contents = {
         icon: DeviceMobile,
         problem: {
           id: "App Not Responsive and Hard to Use on Mobile?",
-          en: "App not responsive and hard to use on mobile.",
+          en: "Aplikasi Tidak Responsif dan Sulit Digunakan di Ponsel?",
         },
         problem2: {
           id: "App not responsive and hard to use on mobile.",
-          en: "App not responsive and hard to use on mobile.",
+          en: "Aplikasi Tidak Responsif dan Sulit Digunakan di Ponsel.",
         },
         solution: {
           id: "Responsive Design and Mobile Optimization",
@@ -793,11 +793,11 @@ const contents = {
         icon: DesktopTower,
         problem: {
           id: "Difficulty Managing Growing User Data?",
-          en: "Difficulty managing growing user data.",
+          en: "Kesulitan Mengelola Data Pengguna yang Berkembang?",
         },
         problem2: {
           id: "Difficulty managing growing user data.",
-          en: "Difficulty managing growing user data.",
+          en: "Kesulitan Mengelola Data Pengguna yang Berkembang.",
         },
         solution: {
           id: "Efficient Data Management with Cloud-Based Systems",

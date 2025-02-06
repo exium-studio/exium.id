@@ -75,12 +75,14 @@ const StatsHome = () => {
               return (
                 <CContainer
                   key={i}
-                  borderLeft={i !== 0 ? "1px solid" : ""}
+                  borderLeft={[
+                    "",
+                    i % 2 !== 0 ? "1px solid" : "",
+                    i !== 0 ? "1px solid" : "",
+                  ]}
                   borderBottom={["1px solid", null, null, "none"]}
                   borderColor={"gray.muted !important"}
                   p={R_SPACING2}
-                  // pl={i === 0 ? 0 : ""}
-                  // pr={i === contents.stats.length - 1 ? 0 : ""}
                   gap={4}
                 >
                   <Text fontSize={"1.5rem"}>{item.emoji}</Text>
