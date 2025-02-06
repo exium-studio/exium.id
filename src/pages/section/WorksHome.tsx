@@ -156,7 +156,7 @@ const WorksHome = () => {
           </CContainer>
 
           <Container>
-            <CContainer flex={1} px={R_SPACING2} gap={2}>
+            <CContainer flex={1} gap={2}>
               <Text fontWeight={"medium"} color={"fg.muted"}>
                 {work_4.title}
               </Text>
