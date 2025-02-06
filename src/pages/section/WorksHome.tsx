@@ -1,325 +1,180 @@
 import BButton from "@/components/ui-custom/BButton";
 import CContainer from "@/components/ui-custom/CContainer";
-import Heading3 from "@/components/ui-custom/Heading3";
+import Heading1 from "@/components/ui-custom/Heading1";
 import contents from "@/constant/contents";
-import { R_SPACING, R_SPACING2 } from "@/constant/sizes";
+import { R_SPACING2 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
-import {
-  Grid,
-  GridItem,
-  Icon,
-  Image,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
-import { ArrowUpRight } from "@phosphor-icons/react";
+import { Box, Center, Icon, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { ArrowRight } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 import Container from "./Container";
 
 const WorksHome = () => {
   const { lang } = useLang();
 
-  const work_1 = contents.works.list[3];
-  const work_2 = contents.works.list[1];
-  const work_3 = contents.works.list[0];
-  const work_4 = contents.works.list[2];
-  const work_5 = contents.works.list[3];
+  const work_1 = contents.works.list[1];
+  const work_2 = contents.works.list[2];
+  const work_3 = contents.works.list[3];
+  const work_4 = contents.works.list[0];
 
   return (
-    <CContainer py={20} bg={"var(--divider)"}>
-      <Container>
-        <Grid
-          templateRows={["repeat(1, 1fr)", null, null, "repeat(4, 1fr)"]}
-          templateColumns={["repeat(1, 1fr)", null, null, "repeat(4, 1fr)"]}
-          gap={5}
-        >
-          {/* Header */}
-          <GridItem>
-            <CContainer gap={R_SPACING} h={"100%"}>
-              <Heading3 fontWeight={"semibold"}>
-                {contents.home.works.title[lang]}
-              </Heading3>
+    <CContainer py={20}>
+      <Container px={0}>
+        <Box w={"fit"} position={"relative"} px={4} mx={"auto"} mb={12}>
+          <Heading1 fontWeight={"semibold"} textAlign={"center"} mb={4}>
+            {contents.home.works.title[lang]}
+          </Heading1>
 
-              {/* <Text color={"fg.muted"}>{contents.home.works.intro[lang]}</Text> */}
+          <Text color={"fg.muted"}>{contents.works.summary[lang]}</Text>
 
-              <Link to={"/works"}>
-                <BButton
-                  fontSize={"1rem !important"}
-                  size={"xl"}
-                  h={"52px"}
-                  w={"fit"}
-                >
-                  {contents.home.works.cta[lang]}
-                  <Icon fontSize={"lg"}>
-                    <ArrowUpRight />
+          <Center
+            bg={"p.500"}
+            color={"light"}
+            px={4}
+            py={1}
+            position={"absolute"}
+            top={["-30px", null, "-30px"]}
+            right={["100px", null, "200px"]}
+            transform={"rotate(-6deg)"}
+            // borderRadius={6}
+          >
+            <Text fontSize={"2xl"} fontWeight={"4edium"}>
+              10+
+            </Text>
+          </Center>
+        </Box>
+      </Container>
+
+      <CContainer gap={12}>
+        <CContainer gap={12} overflow={"clip"}>
+          <CContainer flex={1} align={"center"} bg={"d1"} py={12}>
+            <Image
+              alt={work_1.title}
+              src={work_1.featuredImage}
+              objectFit={"cover"}
+              w={"full"}
+            />
+          </CContainer>
+
+          <Container px={0}>
+            <CContainer flex={1} px={R_SPACING2} gap={2}>
+              <Text fontWeight={"medium"} color={"fg.muted"}>
+                {work_1.title}
+              </Text>
+
+              <Text fontSize={"2xl"} fontWeight={"medium"} maxW={"420px"}>
+                {work_1.summary[lang]}
+              </Text>
+
+              <Link to={`/work/${work_1.index}`}>
+                <BButton w={"fit"} size={"sm"} variant={"subtle"} mt={2}>
+                  {contents.home.works.detailWorkLabel[lang]}
+                  <Icon>
+                    <ArrowRight />
                   </Icon>
                 </BButton>
               </Link>
             </CContainer>
-          </GridItem>
+          </Container>
+        </CContainer>
 
-          {/* 1 */}
-          <GridItem colSpan={[1, null, null, 3]}>
-            <SimpleGrid
-              columns={[1, null, 2]}
-              minH={"100%"}
-              borderRadius={8}
-              bg={"var(--divider)"}
-              transition={"200ms"}
-              _hover={{
-                bg: `${work_1.color}40`,
-              }}
-              gap={R_SPACING2}
-              overflow={"clip"}
-            >
-              <CContainer
-                flex={1}
-                p={[5, null, null, 8]}
-                gap={5}
-                justify={"center"}
-              >
-                <Text fontSize={"1.25rem"} fontWeight={"semibold"}>
-                  {work_1.title}
-                </Text>
-
-                <Text fontSize={"sm"} color={"fg.muted"}>
-                  {work_1.summary[lang]}
-                </Text>
-
-                <Link to={`/work/${work_1.index}`}>
-                  <BButton
-                    w={"fit"}
-                    size={"sm"}
-                    variant={"outline"}
-                    className="btn-outline"
-                  >
-                    {contents.home.works.detailWorkLabel[lang]}
-                    <Icon>
-                      <ArrowUpRight />
-                    </Icon>
-                  </BButton>
-                </Link>
-              </CContainer>
-
-              <CContainer
-                maxH={"340px"}
-                flex={1}
-                align={"center"}
-                p={R_SPACING}
-              >
-                <Image
-                  alt={work_1.title}
-                  src={work_1.featuredImage}
-                  objectFit={"contain"}
-                  w={"100%"}
-                />
-              </CContainer>
-            </SimpleGrid>
-          </GridItem>
-
-          {/* 2 */}
-          <GridItem rowSpan={[1, null, null, 2]} colSpan={[1, null, null, 2]}>
-            <CContainer
-              borderRadius={8}
-              bg={"var(--divider)"}
-              transition={"200ms"}
-              _hover={{
-                bg: `${work_4.color}40`,
-              }}
-              gap={R_SPACING2}
-              overflow={"clip"}
-            >
-              <CContainer flex={1} p={[5, null, null, 8]} gap={5}>
-                <Text fontSize={"1.25rem"} fontWeight={"semibold"}>
-                  {work_2.title}
-                </Text>
-
-                <Text fontSize={"sm"} color={"fg.muted"}>
-                  {work_2.summary[lang]}
-                </Text>
-
-                <Link to={`/work/${work_2.index}`}>
-                  <BButton
-                    w={"fit"}
-                    size={"sm"}
-                    variant={"outline"}
-                    className="btn-outline"
-                  >
-                    {contents.home.works.detailWorkLabel[lang]}
-                    <Icon>
-                      <ArrowUpRight />
-                    </Icon>
-                  </BButton>
-                </Link>
-              </CContainer>
-
-              <CContainer maxH={"340px"} flex={1} align={"center"}>
+        <Container px={0}>
+          <SimpleGrid columns={[1, null, 2]} gap={[12, null, 0]}>
+            <CContainer gap={12} overflow={"clip"}>
+              <CContainer flex={1} align={"center"} bg={"bg.subtle"} pt={8}>
                 <Image
                   alt={work_2.title}
                   src={work_2.featuredImage}
                   objectFit={"cover"}
-                  w={"100%"}
+                  objectPosition={"top"}
+                  w={"full"}
+                  aspectRatio={16 / 10}
                 />
               </CContainer>
-            </CContainer>
-          </GridItem>
 
-          {/* 3 */}
-          <GridItem rowSpan={[1, null, null, 2]}>
-            <CContainer
-              h={"100%"}
-              borderRadius={8}
-              bg={"var(--divider)"}
-              transition={"200ms"}
-              _hover={{
-                bg: `${work_4.color}40`,
-              }}
-              gap={R_SPACING2}
-              overflow={"clip"}
-            >
-              <CContainer flex={1} p={[5, null, null, 8]} gap={5}>
-                <Text fontSize={"1.25rem"} fontWeight={"semibold"}>
-                  {work_3.title}
+              <CContainer flex={1} px={R_SPACING2} gap={2}>
+                <Text fontWeight={"medium"} color={"fg.muted"}>
+                  {work_2.title}
                 </Text>
 
-                <Text fontSize={"sm"} color={"fg.muted"}>
-                  {work_3.summary[lang]}
+                <Text fontSize={"2xl"} fontWeight={"medium"} maxW={"420px"}>
+                  {work_2.summary[lang]}
                 </Text>
 
-                <Link to={`/work/${work_3.index}`}>
-                  <BButton
-                    w={"fit"}
-                    size={"sm"}
-                    variant={"outline"}
-                    className="btn-outline"
-                  >
+                <Link to={`/work/${work_2.index}`}>
+                  <BButton w={"fit"} size={"sm"} variant={"subtle"} mt={2}>
                     {contents.home.works.detailWorkLabel[lang]}
                     <Icon>
-                      <ArrowUpRight />
+                      <ArrowRight />
                     </Icon>
                   </BButton>
                 </Link>
               </CContainer>
+            </CContainer>
 
-              <CContainer flex={1} align={"center"} p={[5, null, null, 8]}>
+            <CContainer gap={12} overflow={"clip"} mt={["", null, "200px"]}>
+              <CContainer flex={1} align={"center"} bg={"bg.subtle"} p={12}>
                 <Image
                   alt={work_3.title}
                   src={work_3.featuredImage}
                   objectFit={"contain"}
-                  flex={1}
+                  w={"full"}
+                  aspectRatio={16 / 10}
                 />
               </CContainer>
-            </CContainer>
-          </GridItem>
 
-          {/* 4 */}
-          <GridItem rowSpan={[1, null, null, 3]}>
-            <CContainer
-              h={"100%"}
-              borderRadius={8}
-              bg={"var(--divider)"}
-              transition={"200ms"}
-              _hover={{
-                bg: `${work_4.color}40`,
-              }}
-              gap={R_SPACING2}
-              overflow={"clip"}
-            >
-              <CContainer p={[5, null, null, 8]} gap={5}>
-                <Text fontSize={"1.25rem"} fontWeight={"semibold"}>
-                  {work_4.title}
+              <CContainer flex={1} px={R_SPACING2} gap={2}>
+                <Text fontWeight={"medium"} color={"fg.muted"}>
+                  {work_3.title}
                 </Text>
 
-                <Text fontSize={"sm"} color={"fg.muted"}>
-                  {work_4.summary[lang]}
+                <Text fontSize={"2xl"} fontWeight={"medium"} maxW={"420px"}>
+                  {work_3.summary[lang]}
                 </Text>
 
-                <Link to={`/work/${work_4.index}`}>
-                  <BButton
-                    w={"fit"}
-                    size={"sm"}
-                    variant={"outline"}
-                    className="btn-outline"
-                  >
+                <Link to={`/work/${work_3.index}`}>
+                  <BButton w={"fit"} size={"sm"} variant={"subtle"} mt={2}>
                     {contents.home.works.detailWorkLabel[lang]}
                     <Icon>
-                      <ArrowUpRight />
+                      <ArrowRight />
                     </Icon>
                   </BButton>
                 </Link>
               </CContainer>
-
-              <CContainer flex={1} align={"center"}>
-                <Image
-                  alt={work_4.title}
-                  src={work_4.featuredImage}
-                  objectFit={"cover"}
-                  flex={1}
-                />
-              </CContainer>
             </CContainer>
-          </GridItem>
+          </SimpleGrid>
+        </Container>
 
-          {/* 5 */}
-          <GridItem colSpan={[1, null, null, 3]}>
-            <SimpleGrid
-              columns={[1, null, 2]}
-              minH={"100%"}
-              borderRadius={8}
-              bg={"var(--divider)"}
-              transition={"200ms"}
-              _hover={{
-                bg: `${work_5.color}40`,
-              }}
-              gap={R_SPACING2}
-              overflow={"clip"}
-            >
-              <CContainer
-                flex={1}
-                p={[5, null, null, 8]}
-                gap={5}
-                justify={"center"}
-              >
-                <Text fontSize={"1.25rem"} fontWeight={"semibold"}>
-                  {work_5.title}
-                </Text>
+        <CContainer gap={12} overflow={"clip"}>
+          <CContainer flex={1} align={"center"} bg={"d1"} p={12}>
+            <Image
+              alt={work_4.title}
+              src={work_4.featuredImage}
+              objectFit={"cover"}
+              w={"full"}
+            />
+          </CContainer>
 
-                <Text fontSize={"sm"} color={"fg.muted"}>
-                  {work_5.summary[lang]}
-                </Text>
+          <CContainer flex={1} px={R_SPACING2} gap={2}>
+            <Text fontWeight={"medium"} color={"fg.muted"}>
+              {work_4.title}
+            </Text>
 
-                <Link to={`/work/${work_5.index}`}>
-                  <BButton
-                    w={"fit"}
-                    size={"sm"}
-                    variant={"outline"}
-                    className="btn-outline"
-                  >
-                    {contents.home.works.detailWorkLabel[lang]}
-                    <Icon>
-                      <ArrowUpRight />
-                    </Icon>
-                  </BButton>
-                </Link>
-              </CContainer>
+            <Text fontSize={"2xl"} fontWeight={"medium"} maxW={"420px"}>
+              {work_4.summary[lang]}
+            </Text>
 
-              <CContainer
-                maxH={"340px"}
-                flex={1}
-                align={"center"}
-                p={R_SPACING}
-              >
-                <Image
-                  alt={work_5.title}
-                  src={work_5.featuredImage}
-                  objectFit={"contain"}
-                  w={"100%"}
-                />
-              </CContainer>
-            </SimpleGrid>
-          </GridItem>
-        </Grid>
-      </Container>
+            <Link to={`/work/${work_4.index}`}>
+              <BButton w={"fit"} size={"sm"} variant={"subtle"} mt={2}>
+                {contents.home.works.detailWorkLabel[lang]}
+                <Icon>
+                  <ArrowRight />
+                </Icon>
+              </BButton>
+            </Link>
+          </CContainer>
+        </CContainer>
+      </CContainer>
     </CContainer>
   );
 };

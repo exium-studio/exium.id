@@ -99,7 +99,7 @@ export default function NavDrawer({ activeNavIndex, ...props }: Props) {
                     e.stopPropagation();
                     back();
                   }}
-                  {...props}
+                  color={"light"}
                 >
                   Close
                   <Icon fontSize={"xl"}>

@@ -2,8 +2,8 @@ import BButton from "@/components/ui-custom/BButton";
 import navs from "@/constant/navs";
 import { useLang } from "@/hooks/useLang";
 import useScreen from "@/hooks/useScreen";
-import { Box, BoxProps, HStack, Icon } from "@chakra-ui/react";
-import { IconArrowRight, IconMoodSmile } from "@tabler/icons-react";
+import { Box, BoxProps, HStack, Icon, Text } from "@chakra-ui/react";
+import { IconArrowRight, IconMessage } from "@tabler/icons-react";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Container from "./Container";
@@ -47,7 +47,8 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
   return (
     <Box
       id="topNav"
-      w={"100%"}
+      w={"calc(100% - 100px)"}
+      // borderRadius={10}
       zIndex={99}
       position={"fixed"}
       top={`${navTop}px`}
@@ -64,7 +65,6 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
         <HStack
           justify={"space-between"}
           py={2}
-          w={"100%"}
           // h={scrollTop ? "80px" : "56px"}
           h={"64px"}
           transition={"300ms"}
@@ -78,7 +78,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
           </HStack>
 
           {sw > 900 ? (
-            <HStack gap={5}>
+            <HStack gap={5} ml={"100px"}>
               {navs?.map((nav, i) => {
                 return (
                   <Link key={i} to={nav.link}>
@@ -109,28 +109,37 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
             ""
           )}
 
-          <HStack flexShrink={0} w={[null, null, "100px"]} justify={"flex-end"}>
-            <BButton
-              colorPalette={"p"}
-              position={"fixed"}
-              top={0}
-              right={0}
-              size={"2xl"}
-              fontSize={"lg !important"}
-              // h={scrollTop ? "80px" : "56px"}
-              h={"64px"}
-              transition={"300ms"}
-            >
-              <Icon animation={"rotate 10s linear infinite"}>
-                <IconMoodSmile />
-              </Icon>
-              Let's Talk
-              <Icon>
-                <IconArrowRight />
-              </Icon>
-            </BButton>
-          </HStack>
+          <HStack
+            flexShrink={0}
+            w={[null, null, "100px"]}
+            justify={"flex-end"}
+          ></HStack>
         </HStack>
+
+        <BButton
+          colorPalette={"p"}
+          position={"fixed"}
+          top={0}
+          right={0}
+          size={"2xl"}
+          fontSize={"lg !important"}
+          // h={scrollTop ? "80px" : "56px"}
+          h={"64px"}
+          transition={"300ms"}
+          // borderRadius={10}
+          w={"204px"}
+        >
+          <Icon
+            transform={"rotate(-10deg)"}
+            // animation={"rotate 10s linear infinite"}
+          >
+            <IconMessage />
+          </Icon>
+          <Text mt={"-2px"}> Let's Talk</Text>
+          <Icon mt={"-2px"}>
+            <IconArrowRight />
+          </Icon>
+        </BButton>
       </Container>
     </Box>
   );

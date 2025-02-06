@@ -127,7 +127,14 @@ const Hero = () => {
             />
           </Center>
 
-          <HStack color={"dt"} mt={4} gap={4}>
+          <HStack
+            wrap={"wrap"}
+            justify={"center"}
+            color={"dt"}
+            mt={4}
+            gapX={4}
+            px={R_SPACING2}
+          >
             <Heading5>#Creative</Heading5>
             <Heading5>#Innovative</Heading5>
             <Heading5>#Vissionary</Heading5>

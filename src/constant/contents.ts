@@ -210,30 +210,30 @@ const contents = {
       en: "Exium's Quality Works to Meet Client Needs",
     },
     summary: {
-      id: "Proyek unggulan kami seperti Metro Mall Kebayoran, The Wave and Ocea, serta Holland Village, mencerminkan keahlian kami dalam survei umum dan pemindaian ke BIM.",
-      en: "Our standout projects like Metro Mall Kebayoran, The Wave and Ocea, and Holland Village highlight our expertise in general survey services and scan-to-BIM.",
+      id: "Selama 2 tahun terakhir, Exium telah memberi solusi digital pada lebih dari 10 proyek. Jelajahi karya terbaru kami.",
+      en: "Over the past 2 years, Exium has provided digital solutions to more than 10 projects. Explore our latest work.",
     },
     backgroundLabel: { id: "Latar Belakang", en: "Background" },
     list: [
-      // Poltekkes
+      // Gis
       {
-        index: 0,
-        category: 1,
+        index: 2,
+        category: 2,
         client: {
-          name: "Poltekkes",
-          logo: `${ASSETS_PATH}/images/clients/poltekkes.png`,
+          name: "Bandung",
+          logo: `${ASSETS_PATH}/images/clients/rski.png`,
         },
-        color: "#34BFAC",
-        thumbnail: `${IMAGES_PATH}/works/rski_personalia/thumbnail.png`,
-        thumbnail_gray: `${IMAGES_PATH}/works/rski_personalia/thumbnail_gray.png`,
-        image_1: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
-        image_2: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
-        featuredImage: `${IMAGES_PATH}/works/silaban/featured_image.png`,
-        title: "Silaban",
-        tag: { id: "Dashboard", en: "Dashboard" },
+        color: "#3e97ff",
+        thumbnail: `${IMAGES_PATH}/works/gis/thumbnail.png`,
+        thumbnail_gray: `${IMAGES_PATH}/works/gis/thumbnail_gray.png`,
+        image_1: `${IMAGES_PATH}/works/gis/image_1.png`,
+        image_2: `${IMAGES_PATH}/works/gis/image_1.png`,
+        featuredImage: `${IMAGES_PATH}/works/gis/featured_image.png`,
+        title: "Geo Information System",
+        tag: { id: "HRIS", en: "HRIS" },
         summary: {
-          id: "Platform untuk Transaksi Pengujian Laboratorium dan Dasboard Admin",
-          en: "",
+          id: "Data tanah yang terdigitalisasi dengan fitur deteksi cerdas gap & overlap",
+          en: "Digitized land data with intelligent gap & overlap detection features",
         },
         problem: {
           id: "Aute laborum ut et id ipsum esse in elit Lorem tempor in. Sunt deserunt commodo aliquip incididunt irure voluptate.",
@@ -243,7 +243,7 @@ const contents = {
           id: "Dummy Solution | Dummy Solution | Dummy Solution",
           en: "",
         },
-        duration: { id: "2 Bulan", en: "2 Months" },
+        duration: { id: "3 Bulan", en: "3 Months" },
         background: [
           {
             id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
@@ -313,8 +313,8 @@ const contents = {
         title: "RSKI Personalia",
         tag: { id: "HRIS", en: "HRIS" },
         summary: {
-          id: "Aplikasi HR untuk Rumah Sakit Kasih Ibu Surakarta",
-          en: "",
+          id: "Exium membantu manajemen SDM RSKI agar lebih praktis, efisien dan efektif",
+          en: "Exium help hospital HR management to be more practical, efficient and effective",
         },
         problem: {
           id: "Aute laborum ut et id ipsum esse in elit Lorem tempor in. Sunt deserunt commodo aliquip incididunt irure voluptate.",
@@ -392,8 +392,8 @@ const contents = {
         title: "RSKI Karyawan",
         tag: { id: "HRIS", en: "HRIS" },
         summary: {
-          id: "Aplikasi Karyawan untuk Rumah Sakit Kasih Ibu Surakarta",
-          en: "",
+          id: "Aplikasi karyawan yang memudahkan proses absensi dan kebutuhan karyawan lainnya",
+          en: "Employee app that makes the attendance process easier and other employee needs",
         },
         problem: {
           id: "Aute laborum ut et id ipsum esse in elit Lorem tempor in. Sunt deserunt commodo aliquip incididunt irure voluptate.",
@@ -456,104 +456,25 @@ const contents = {
         ],
       },
 
-      // Gis
+      // Poltekkes
       {
-        index: 2,
-        category: 2,
-        client: {
-          name: "Bandung",
-          logo: `${ASSETS_PATH}/images/clients/rski.png`,
-        },
-        color: "#3e97ff",
-        thumbnail: `${IMAGES_PATH}/works/gis/thumbnail.png`,
-        thumbnail_gray: `${IMAGES_PATH}/works/gis/thumbnail_gray.png`,
-        image_1: `${IMAGES_PATH}/works/gis/image_1.png`,
-        image_2: `${IMAGES_PATH}/works/gis/image_1.png`,
-        featuredImage: `${IMAGES_PATH}/works/gis/featured_image.png`,
-        title: "Geo Information System",
-        tag: { id: "HRIS", en: "HRIS" },
-        summary: {
-          id: "Aplikasi Karyawan untuk Rumah Sakit Kasih Ibu Surakarta",
-          en: "",
-        },
-        problem: {
-          id: "Aute laborum ut et id ipsum esse in elit Lorem tempor in. Sunt deserunt commodo aliquip incididunt irure voluptate.",
-          en: "",
-        },
-        solution: {
-          id: "Dummy Solution | Dummy Solution | Dummy Solution",
-          en: "",
-        },
-        duration: { id: "3 Bulan", en: "3 Months" },
-        background: [
-          {
-            id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-            en: "",
-          },
-          {
-            id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-            en: "",
-          },
-        ],
-        narratives: [
-          {
-            title: { id: "Latar Belakang", en: "Background" },
-            contents: [
-              {
-                id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-                en: "",
-              },
-              {
-                id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-                en: "",
-              },
-            ],
-          },
-          {
-            title: {
-              id: "Ullamco anim velit sint",
-              en: "",
-            },
-            contents: [
-              {
-                id: "Esse occaecat sit amet aliqua laborum do quis id tempor exercitation nulla dolor elit. Magna esse ex et anim officia qui esse. Irure ex laborum adipisicing deserunt quis Lorem cupidatat velit esse Lorem. Pariatur culpa irure velit qui ut exercitation excepteur. Incididunt ut voluptate quis commodo veniam magna et enim dolore eu ad tempor tempor.",
-                en: "",
-              },
-              {
-                id: "Esse occaecat sit amet aliqua laborum do quis id tempor exercitation nulla dolor elit. Magna esse ex et anim officia qui esse. Irure ex laborum adipisicing deserunt quis Lorem cupidatat velit esse Lorem. Pariatur culpa irure velit qui ut exercitation excepteur. Incididunt ut voluptate quis commodo veniam magna et enim dolore eu ad tempor tempor.",
-                en: "",
-              },
-            ],
-          },
-          {
-            title: { id: "Laborum consequat anim", en: "" },
-            contents: [
-              {
-                id: "Aliquip labore ex irure mollit irure adipisicing dolor elit qui proident quis consequat nulla irure. Adipisicing sunt ipsum officia anim. Ea cillum consectetur ullamco velit Lorem Lorem sunt eiusmod labore ipsum in.",
-                en: "",
-              },
-            ],
-          },
-        ],
-      },
-
-      // Dummy
-      {
-        index: 1,
+        index: 0,
         category: 1,
         client: {
-          name: "Rumah Sakit Kasih Ibu Surakarta",
-          logo: `${IMAGES_PATH}/clients/rski.png`,
+          name: "Poltekkes",
+          logo: `${ASSETS_PATH}/images/clients/poltekkes.png`,
         },
+        color: "#34BFAC",
         thumbnail: `${IMAGES_PATH}/works/rski_personalia/thumbnail.png`,
         thumbnail_gray: `${IMAGES_PATH}/works/rski_personalia/thumbnail_gray.png`,
         image_1: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
         image_2: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
-        title: "RSKI Personalia",
-        tag: { id: "HRIS", en: "HRIS" },
+        featuredImage: `${IMAGES_PATH}/works/silaban/featured_image.png`,
+        title: "Silaban",
+        tag: { id: "Dashboard", en: "Dashboard" },
         summary: {
-          id: "Aplikasi HR untuk Rumah Sakit Kasih Ibu Surakarta",
-          en: "",
+          id: "Platform yang memudahkan transaksi pengujian laboratorium admin",
+          en: "Platform that makes it easy to transact lab tests",
         },
         problem: {
           id: "Aute laborum ut et id ipsum esse in elit Lorem tempor in. Sunt deserunt commodo aliquip incididunt irure voluptate.",
@@ -563,240 +484,7 @@ const contents = {
           id: "Dummy Solution | Dummy Solution | Dummy Solution",
           en: "",
         },
-        duration: { id: "3 Bulan", en: "3 Months" },
-        background: [
-          {
-            id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-            en: "",
-          },
-          {
-            id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-            en: "",
-          },
-        ],
-        narratives: [
-          {
-            title: { id: "Latar Belakang", en: "Background" },
-            contents: [
-              {
-                id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-                en: "",
-              },
-              {
-                id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-                en: "",
-              },
-            ],
-          },
-          {
-            title: {
-              id: "Ullamco anim velit sint",
-              en: "",
-            },
-            contents: [
-              {
-                id: "Esse occaecat sit amet aliqua laborum do quis id tempor exercitation nulla dolor elit. Magna esse ex et anim officia qui esse. Irure ex laborum adipisicing deserunt quis Lorem cupidatat velit esse Lorem. Pariatur culpa irure velit qui ut exercitation excepteur. Incididunt ut voluptate quis commodo veniam magna et enim dolore eu ad tempor tempor.",
-                en: "",
-              },
-              {
-                id: "Esse occaecat sit amet aliqua laborum do quis id tempor exercitation nulla dolor elit. Magna esse ex et anim officia qui esse. Irure ex laborum adipisicing deserunt quis Lorem cupidatat velit esse Lorem. Pariatur culpa irure velit qui ut exercitation excepteur. Incididunt ut voluptate quis commodo veniam magna et enim dolore eu ad tempor tempor.",
-                en: "",
-              },
-            ],
-          },
-          {
-            title: { id: "Laborum consequat anim", en: "" },
-            contents: [
-              {
-                id: "Aliquip labore ex irure mollit irure adipisicing dolor elit qui proident quis consequat nulla irure. Adipisicing sunt ipsum officia anim. Ea cillum consectetur ullamco velit Lorem Lorem sunt eiusmod labore ipsum in.",
-                en: "",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        index: 2,
-        category: 2,
-        client: {
-          name: "Rumah Sakit Kasih Ibu Surakarta",
-          logo: `${ASSETS_PATH}/images/clients/rski.png`,
-        },
-        thumbnail: `${IMAGES_PATH}/works/rski_karyawan/thumbnail.png`,
-        thumbnail_gray: `${IMAGES_PATH}/works/rski_karyawan/thumbnail_gray.png`,
-        image_1: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
-        image_2: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
-        title: "RSKI Karyawan",
-        tag: { id: "HRIS", en: "HRIS" },
-        summary: {
-          id: "Aplikasi Karyawan untuk Rumah Sakit Kasih Ibu Surakarta",
-          en: "",
-        },
-        problem: {
-          id: "Aute laborum ut et id ipsum esse in elit Lorem tempor in. Sunt deserunt commodo aliquip incididunt irure voluptate.",
-          en: "",
-        },
-        solution: {
-          id: "Dummy Solution | Dummy Solution | Dummy Solution",
-          en: "",
-        },
-        duration: { id: "3 Bulan", en: "3 Months" },
-        backgroundLabel: { id: "Latar Belakang", en: "" },
-        background: [
-          {
-            id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-            en: "",
-          },
-          {
-            id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-            en: "",
-          },
-        ],
-        narratives: [
-          {
-            title: { id: "Latar Belakang", en: "Background" },
-            contents: [
-              {
-                id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-                en: "",
-              },
-              {
-                id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-                en: "",
-              },
-            ],
-          },
-          {
-            title: {
-              id: "Ullamco anim velit sint",
-              en: "",
-            },
-            contents: [
-              {
-                id: "Esse occaecat sit amet aliqua laborum do quis id tempor exercitation nulla dolor elit. Magna esse ex et anim officia qui esse. Irure ex laborum adipisicing deserunt quis Lorem cupidatat velit esse Lorem. Pariatur culpa irure velit qui ut exercitation excepteur. Incididunt ut voluptate quis commodo veniam magna et enim dolore eu ad tempor tempor.",
-                en: "",
-              },
-              {
-                id: "Esse occaecat sit amet aliqua laborum do quis id tempor exercitation nulla dolor elit. Magna esse ex et anim officia qui esse. Irure ex laborum adipisicing deserunt quis Lorem cupidatat velit esse Lorem. Pariatur culpa irure velit qui ut exercitation excepteur. Incididunt ut voluptate quis commodo veniam magna et enim dolore eu ad tempor tempor.",
-                en: "",
-              },
-            ],
-          },
-          {
-            title: { id: "Laborum consequat anim", en: "" },
-            contents: [
-              {
-                id: "Aliquip labore ex irure mollit irure adipisicing dolor elit qui proident quis consequat nulla irure. Adipisicing sunt ipsum officia anim. Ea cillum consectetur ullamco velit Lorem Lorem sunt eiusmod labore ipsum in.",
-                en: "",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        index: 1,
-        category: 1,
-        client: {
-          name: "Rumah Sakit Kasih Ibu Surakarta",
-          logo: `${IMAGES_PATH}/clients/rski.png`,
-        },
-        thumbnail: `${IMAGES_PATH}/works/rski_personalia/thumbnail.png`,
-        thumbnail_gray: `${IMAGES_PATH}/works/rski_personalia/thumbnail_gray.png`,
-        image_1: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
-        image_2: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
-        title: "RSKI Personalia",
-        tag: { id: "HRIS", en: "HRIS" },
-        summary: {
-          id: "Aplikasi HR untuk Rumah Sakit Kasih Ibu Surakarta",
-          en: "",
-        },
-        problem: {
-          id: "Aute laborum ut et id ipsum esse in elit Lorem tempor in. Sunt deserunt commodo aliquip incididunt irure voluptate.",
-          en: "",
-        },
-        solution: {
-          id: "Dummy Solution | Dummy Solution | Dummy Solution",
-          en: "",
-        },
-        duration: { id: "3 Bulan", en: "3 Months" },
-        background: [
-          {
-            id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-            en: "",
-          },
-          {
-            id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-            en: "",
-          },
-        ],
-        narratives: [
-          {
-            title: { id: "Latar Belakang", en: "Background" },
-            contents: [
-              {
-                id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-                en: "",
-              },
-              {
-                id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-                en: "",
-              },
-            ],
-          },
-          {
-            title: {
-              id: "Ullamco anim velit sint",
-              en: "",
-            },
-            contents: [
-              {
-                id: "Esse occaecat sit amet aliqua laborum do quis id tempor exercitation nulla dolor elit. Magna esse ex et anim officia qui esse. Irure ex laborum adipisicing deserunt quis Lorem cupidatat velit esse Lorem. Pariatur culpa irure velit qui ut exercitation excepteur. Incididunt ut voluptate quis commodo veniam magna et enim dolore eu ad tempor tempor.",
-                en: "",
-              },
-              {
-                id: "Esse occaecat sit amet aliqua laborum do quis id tempor exercitation nulla dolor elit. Magna esse ex et anim officia qui esse. Irure ex laborum adipisicing deserunt quis Lorem cupidatat velit esse Lorem. Pariatur culpa irure velit qui ut exercitation excepteur. Incididunt ut voluptate quis commodo veniam magna et enim dolore eu ad tempor tempor.",
-                en: "",
-              },
-            ],
-          },
-          {
-            title: { id: "Laborum consequat anim", en: "" },
-            contents: [
-              {
-                id: "Aliquip labore ex irure mollit irure adipisicing dolor elit qui proident quis consequat nulla irure. Adipisicing sunt ipsum officia anim. Ea cillum consectetur ullamco velit Lorem Lorem sunt eiusmod labore ipsum in.",
-                en: "",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        index: 2,
-        category: 2,
-        client: {
-          name: "Rumah Sakit Kasih Ibu Surakarta",
-          logo: `${ASSETS_PATH}/images/clients/rski.png`,
-        },
-        thumbnail: `${IMAGES_PATH}/works/rski_karyawan/thumbnail.png`,
-        thumbnail_gray: `${IMAGES_PATH}/works/rski_karyawan/thumbnail_gray.png`,
-        image_1: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
-        image_2: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
-        title: "RSKI Karyawan",
-        tag: { id: "HRIS", en: "HRIS" },
-        summary: {
-          id: "Aplikasi Karyawan untuk Rumah Sakit Kasih Ibu Surakarta",
-          en: "",
-        },
-        problem: {
-          id: "Aute laborum ut et id ipsum esse in elit Lorem tempor in. Sunt deserunt commodo aliquip incididunt irure voluptate.",
-          en: "",
-        },
-        solution: {
-          id: "Dummy Solution | Dummy Solution | Dummy Solution",
-          en: "",
-        },
-        duration: { id: "3 Bulan", en: "3 Months" },
-        backgroundLabel: { id: "Latar Belakang", en: "" },
+        duration: { id: "2 Bulan", en: "2 Months" },
         background: [
           {
             id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
@@ -867,6 +555,21 @@ const contents = {
     durationLabel: { id: "Durasi", en: "Duration" },
   },
   clients: [
+    {
+      logo: `${IMAGES_PATH}/clients/kawanmina.png`,
+      logoGray: `${IMAGES_PATH}/clients/kawanmina_g.webp`,
+      name: "Kawan Mina",
+    },
+    {
+      logo: `${IMAGES_PATH}/clients/khalifah.png`,
+      logoGray: `${IMAGES_PATH}/clients/khalifah_g.webp`,
+      name: "Khalifah One",
+    },
+    {
+      logo: `${IMAGES_PATH}/clients/yohana.png`,
+      logoGray: `${IMAGES_PATH}/clients/yohana_g.webp`,
+      name: "PT Yohana Sentosa Pramata",
+    },
     {
       logo: `${IMAGES_PATH}/clients/demokrat.png`,
       logoGray: `${IMAGES_PATH}/clients/demokrat_g.webp`,

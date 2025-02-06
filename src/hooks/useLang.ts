@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { LanguageOptions } from "../constant/interfaces";
 
-const DEFAULT_LANGUAGE: LanguageOptions = "en";
+const DEFAULT_LANGUAGE: LanguageOptions = "id";
 
 const getLang = (): LanguageOptions => {
   const langString = localStorage.getItem("lang");
