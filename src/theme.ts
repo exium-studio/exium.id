@@ -22,7 +22,7 @@ const customConfig = defineConfig({
           800: { value: "#002793" },
           900: { value: "#001B7A" },
         },
-        light: { value: "#FAFAFA" },
+        light: { value: "#F8F8FF" },
         dark: { value: "#080808" },
         darktrans: { value: "#252525df" },
         gray: {
@@ -89,7 +89,8 @@ const customConfig = defineConfig({
           },
           contrast: { value: "{colors.orange.100} !important" },
         },
-        body: { value: { base: "#FFF", _dark: "#080808" } },
+        body: { value: { base: "#F8F8FF", _dark: "#080808" } },
+        current: { value: { base: "#080808", _dark: "#F8F8FF" } },
         ibody: { value: { base: "#080808", _dark: "#FAFAFC" } },
       },
     },
