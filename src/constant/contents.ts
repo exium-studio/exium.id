@@ -815,64 +815,79 @@ const contents = {
   },
   stats: [
     {
-      value: { id: "2M+", en: "2Jt+" },
+      emoji: "🏆",
+      value: { id: "2+", en: "2+" },
       label: {
-        id: "Pengguna aktif",
-        en: "Active users",
+        id: "Kami memiliki lebih dari 2 tahun pengalaman di industri",
+        en: "We have more than 2 years of experience in the industry",
+      },
+      description: {
+        id: "Kita bekerja dengan berbagai jenis perusahaan dari yayasan hingga PT.",
+        en: "We work with various types of companies from foundations to PT.",
       },
     },
     {
-      value: { id: "80+", en: "80+" },
+      emoji: "🧑‍💻",
+      value: { id: "10+", en: "10+" },
       label: {
-        id: "Proyek selesai",
-        en: "Project completed",
+        id: "Kami mengerjakan lebih dari 10 proyek untuk berbagai industri",
+        en: "We did over 10 projects for various industries",
+      },
+      description: {
+        id: "Termasuk kesehatan, politik, manajemen SDM, geospasial dll",
+        en: "Including crime, politics, HR management, geospatial etc.",
       },
     },
     {
+      emoji: "😊",
       value: { id: "140+", en: "140+" },
       label: {
-        id: "Mitra dan klien yang bahagia",
-        en: "Happy partners and clients",
+        id: "95% klien puas dengan solusi yang kami berikan.",
+        en: "95% of clients are satisfied with our solutions.",
+      },
+      description: {
+        id: "Kami berkomitmen memberikan layanan terbaik yang sesuai dengan kebutuhan klien.",
+        en: "We are committed to providing the best services tailored to our clients' needs.",
       },
     },
     {
+      emoji: "💡",
       value: { id: "5+", en: "5+" },
       label: {
-        id: "Tahun dalam bisnis",
-        en: "Years in the business",
+        id: "Memiliki keahlian di berbagai bidang teknologi dan bisnis",
+        en: "Has expertise in various technology and business fields.",
+      },
+      description: {
+        id: "Dari pengembangan perangkat lunak hingga strategi bisnis, kami siap membantu.",
+        en: "From software development to business strategy, we are ready to assist.",
       },
     },
   ],
   clients: [
     {
+      logo: `${IMAGES_PATH}/clients/demokrat.png`,
+      logoGray: `${IMAGES_PATH}/clients/demokrat_g.webp`,
+      name: "Partai Demokrat Semarang",
+    },
+    {
       logo: `${IMAGES_PATH}/clients/rski.png`,
-      logoGray: `${IMAGES_PATH}/clients/rski_gray.png`,
-      name: "Lorem Ipsum",
+      logoGray: `${IMAGES_PATH}/clients/rski_g.webp`,
+      name: "Rumah Sakit Kasih Ibu Surakarta",
     },
     {
       logo: `${IMAGES_PATH}/clients/gerindra.png`,
-      logoGray: `${IMAGES_PATH}/clients/gerindra_gray.png`,
-      name: "Lorem Ipsum",
+      logoGray: `${IMAGES_PATH}/clients/gerindra_g.webp`,
+      name: "Partai Gerindra Semarang",
     },
     {
       logo: `${IMAGES_PATH}/clients/poltekkes.png`,
-      logoGray: `${IMAGES_PATH}/clients/poltekkes_gray.png`,
-      name: "Lorem Ipsum",
+      logoGray: `${IMAGES_PATH}/clients/poltekkes_g.webp`,
+      name: "Poltekkes Kemenkes Semarang",
     },
     {
       logo: `${IMAGES_PATH}/clients/bpjs.png`,
-      logoGray: `${IMAGES_PATH}/clients/bpjs_gray.png`,
-      name: "Lorem Ipsum",
-    },
-    {
-      logo: `${IMAGES_PATH}/clients/poltekkes.png`,
-      logoGray: `${IMAGES_PATH}/clients/poltekkes_gray.png`,
-      name: "Lorem Ipsum",
-    },
-    {
-      logo: `${IMAGES_PATH}/clients/gerindra.png`,
-      logoGray: `${IMAGES_PATH}/clients/gerindra_gray.png`,
-      name: "Lorem Ipsum",
+      logoGray: `${IMAGES_PATH}/clients/bpjs_g.webp`,
+      name: "BPJS Kesehatan",
     },
   ],
   iconicClients: [

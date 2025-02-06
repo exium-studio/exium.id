@@ -8,6 +8,7 @@ import ClientStory from "./section/ClientStory";
 import Footer from "./section/Footer";
 import useScrollToTop from "@/hooks/useScrollToTop";
 import WAWidget from "@/components/widget/WAWidget";
+import Stats from "./section/Stats";
 
 const RootPage = () => {
   useScrollToTop();
@@ -15,6 +16,7 @@ const RootPage = () => {
   return (
     <CContainer>
       <HeroHome />
+      <Stats />
       <WorksHome />
       <AboutUsHome />
       <ServicesHome />
