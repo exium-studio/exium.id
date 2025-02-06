@@ -1,12 +1,13 @@
 import CContainer from "@/components/ui-custom/CContainer";
 import Heading5 from "@/components/ui-custom/Heading5";
+import BgGila from "@/components/widget/BgGila";
 import Rating from "@/components/widget/Rating";
 import contents from "@/constant/contents";
 import { IMAGES_PATH } from "@/constant/path";
 import { R_SPACING2 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
+import useScreen from "@/hooks/useScreen";
 import {
-  Box,
   Center,
   Circle,
   HStack,
@@ -17,63 +18,6 @@ import {
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import Container from "./Container";
-import useScreen from "@/hooks/useScreen";
-
-const BgGila = () => {
-  function generateRandomTextForViewport(): string {
-    const allChars =
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~\t\n\r\x0b\x0c";
-    const charsLength = allChars.length;
-
-    const charWidth = 10; // approx char per pixel
-    const viewportWidth = window.innerWidth;
-    const viewportHeight = window.innerHeight;
-
-    const numCharsWidth = Math.floor(viewportWidth / charWidth);
-    const numCharsHeight = Math.floor(viewportHeight / charWidth);
-
-    const totalChars = numCharsWidth * numCharsHeight;
-
-    let randomText = "";
-    for (let i = 0; i < totalChars; i++) {
-      const randomIndex = Math.floor(Math.random() * charsLength);
-      randomText += allChars[randomIndex];
-    }
-
-    return randomText;
-  }
-
-  const [text, setText] = useState(generateRandomTextForViewport());
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setText(generateRandomTextForViewport());
-    }, 200);
-
-    return () => clearInterval(interval);
-  }, []);
-  return (
-    <Box
-      w={"100%"}
-      h={"100%"}
-      overflow={"clip"}
-      flex={1}
-      position={"absolute"}
-      className="radial-mask"
-      zIndex={2}
-    >
-      <Text
-        color={"#121212"}
-        // opacity={0.2}
-        wordBreak={"break-all"}
-        overflow={"hidden"}
-        fontSize={"2xl"}
-      >
-        {text}
-      </Text>
-    </Box>
-  );
-};
 
 const Clock = () => {
   const [clock, setClock] = useState(new Date());

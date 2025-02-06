@@ -38,7 +38,7 @@ const Problem = () => {
       <Container mb={20}>
         <Grid
           gap={R_SPACING3}
-          templateColumns={["repeat(1, 1fr)", null, "repeat(4, 1fr)"]}
+          templateColumns={["repeat(1, 1fr)", null, null, "repeat(4, 1fr)"]}
         >
           <GridItem position={"relative"}>
             <Center
@@ -49,7 +49,9 @@ const Problem = () => {
               position={"absolute"}
               rotate={"-6deg"}
             >
-              <Heading1 fontWeight={"medium"}>{content.tag[lang]}</Heading1>
+              <Heading1 fontSize={"4xl"} fontWeight={"medium"}>
+                {content.tag[lang]}
+              </Heading1>
             </Center>
 
             <Heading5 mt={28} ml={2} color={"fg.subtle"}>

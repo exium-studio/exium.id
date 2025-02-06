@@ -1,39 +1,29 @@
 import BButton from "@/components/ui-custom/BButton";
 import CContainer from "@/components/ui-custom/CContainer";
+import FeedbackNotFound from "@/components/ui-custom/FeedbackNotFound";
 import Heading2 from "@/components/ui-custom/Heading2";
 import {
   BreadcrumbCurrentLink,
   BreadcrumbRoot,
 } from "@/components/ui/breadcrumb";
 import WorkCard from "@/components/widget/WorkCard";
+import contents from "@/constant/contents";
 import navs from "@/constant/navs";
 import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
 import useScrollToTop from "@/hooks/useScrollToTop";
-import {
-  Box,
-  Center,
-  HStack,
-  Icon,
-  Image,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
+import { Box, HStack, Icon, SimpleGrid, Text } from "@chakra-ui/react";
 import { HouseSimple } from "@phosphor-icons/react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Container from "./section/Container";
 import Footer from "./section/Footer";
-import ClientStory from "./section/ClientStory";
-import contents from "@/constant/contents";
-import FeedbackNotFound from "@/components/ui-custom/FeedbackNotFound";
 
 const WorksPage = () => {
   useScrollToTop();
 
   const { lang } = useLang();
   const [filter, setFilter] = useState<number | undefined>(undefined);
-  const [itemHover, setitemHover] = useState<number | undefined>(undefined);
 
   const fd = contents.works.list
     .slice()
@@ -117,51 +107,6 @@ const WorksPage = () => {
           </SimpleGrid>
         </Container>
       </CContainer>
-
-      {/* Iconic client */}
-      <CContainer
-        borderTop={"1px solid"}
-        borderBottom={"1px solid"}
-        borderColor={"var(--divider2)"}
-      >
-        <Container>
-          <SimpleGrid
-            columns={[2, null, 6]}
-            borderLeft={"1px solid"}
-            borderRight={"1px solid"}
-            borderColor={"var(--divider2)"}
-          >
-            {contents.clients.map((tech, i) => (
-              <Center
-                key={i}
-                borderRight={
-                  i < contents.techstack.length - 1 ? "2px solid" : ""
-                }
-                border={"1px solid"}
-                borderColor={"var(--divider2)"}
-                p={R_SPACING2}
-                transition={"400ms"}
-                _hover={{ bg: "bg.muted" }}
-                onMouseEnter={() => {
-                  setitemHover(i);
-                }}
-                onMouseLeave={() => {
-                  setitemHover(undefined);
-                }}
-              >
-                <Image
-                  alt={`Logo ${tech.name}`}
-                  src={itemHover === i ? tech.logo : tech.logoGray}
-                  // src={tech.logo}
-                  h={"80px"}
-                  maxW={"120px"}
-                />
-              </Center>
-            ))}
-          </SimpleGrid>
-        </Container>
-      </CContainer>
-      <ClientStory />
 
       <Footer />
     </CContainer>

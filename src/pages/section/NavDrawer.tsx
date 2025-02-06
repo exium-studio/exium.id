@@ -131,22 +131,24 @@ export default function NavDrawer({ activeNavIndex, ...props }: Props) {
             p={5}
             overflowY={"auto"}
           >
-            {navs.map((nav, i) => (
-              <Heading2
-                key={i}
-                fontWeight={"500 !important"}
-                cursor={"pointer"}
-                onClick={() => {
-                  navigate(nav.link);
-                }}
-                transition={"200ms"}
-                _hover={{ color: "p.500" }}
-                borderBottom={"2px solid"}
-                borderColor={activeNavIndex === i ? "p.500" : "transparent"}
-              >
-                {nav.label[lang]}
-              </Heading2>
-            ))}
+            <CContainer gap={8} align={"center"} my={"auto"}>
+              {navs.map((nav, i) => (
+                <Heading2
+                  key={i}
+                  fontWeight={"500 !important"}
+                  cursor={"pointer"}
+                  onClick={() => {
+                    navigate(nav.link);
+                  }}
+                  transition={"200ms"}
+                  _hover={{ color: "p.500" }}
+                  borderBottom={"2px solid"}
+                  borderColor={activeNavIndex === i ? "p.500" : "transparent"}
+                >
+                  {nav.label[lang]}
+                </Heading2>
+              ))}
+            </CContainer>
 
             <CContainer p={5}>
               <HStack mx={"auto"}>

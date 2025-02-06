@@ -12,7 +12,7 @@ import {
   WhatsappLogo,
 } from "@phosphor-icons/react";
 import { BiLogoInstagram, BiLogoLinkedin } from "react-icons/bi";
-import { ASSETS_PATH, IMAGES_PATH } from "./path";
+import { ASSETS_PATH, IMAGES_PATH, SVGS_PATH } from "./path";
 
 const contents = {
   headline: {
@@ -157,7 +157,7 @@ const contents = {
             en: "We begin with a comprehensive analysis of your digital infrastructure, business processes, and specific challenges. Our expert team conducts in-depth interviews to understand every aspect of your technological needs.",
           },
           icon: UsersThree,
-          emoji: "🗣️",
+          image: `${SVGS_PATH}/brainstorming.svg`,
         },
         {
           title: {
@@ -169,7 +169,7 @@ const contents = {
             en: "Based on consultation findings, we design personalized technological solutions. Each strategy is developed with precision to address unique challenges and optimize your business's digital performance.",
           },
           icon: ChatTeardropDots,
-          emoji: "🎨",
+          image: `${SVGS_PATH}/designing.svg`,
         },
         {
           title: {
@@ -181,7 +181,7 @@ const contents = {
             en: "Our professional tech team implements solutions with a phased and measured approach. We ensure minimal disruption, provide comprehensive training, and support the adaptation of new technologies within your organization.",
           },
           icon: Devices,
-          emoji: "🧑‍💻",
+          image: `${SVGS_PATH}/coding.svg`,
         },
         {
           title: {
@@ -193,7 +193,7 @@ const contents = {
             en: "Our commitment doesn't stop after implementation. We provide ongoing support including periodic monitoring, system maintenance, continuous optimization, and consultation to ensure your technological solutions remain cutting-edge and effective.",
           },
           icon: Trophy,
-          emoji: "📞",
+          image: `${SVGS_PATH}/coding.svg`,
         },
       ],
     },
@@ -701,19 +701,19 @@ const contents = {
       {
         icon: Devices,
         problem: {
-          id: "Limited Access to Apps on Specific Platforms?",
-          en: "Akses Terbatas ke Aplikasi di Platform Tertentu?",
+          id: "Akses Terbatas ke Aplikasi di Platform Tertentu?",
+          en: "Limited Access to Apps on Specific Platforms?",
         },
         problem2: {
-          id: "Limited access to apps on specific platforms.",
-          en: "Akses terbatas ke aplikasi pada platform tertentu.",
+          id: "Akses terbatas ke aplikasi pada platform tertentu.",
+          en: "Limited access to apps on specific platforms.",
         },
         solution: {
-          id: "Platform-Agnostic PWA That's Easy to Manage",
+          id: "Platform-Agnostic PWA yang Mudah Dikelola",
           en: "Platform-Agnostic PWA That's Easy to Manage",
         },
         description: {
-          id: "Struggling with apps that are limited to desktop or specific platforms? We transform the way your apps are accessed. With a web app that can turn into a PWA, you can provide a seamless experience across all devices, whether desktop or mobile, without the hassle of developing separate native apps. It's more flexible, cost-effective, and efficient.",
+          id: "Kesulitan dengan aplikasi yang terbatas pada desktop atau platform tertentu? Kami mengubah cara aplikasi Anda diakses. Dengan aplikasi web yang dapat diubah menjadi PWA, Anda dapat memberikan pengalaman yang lancar di semua perangkat, baik desktop maupun seluler, tanpa perlu repot mengembangkan aplikasi asli yang terpisah. Lebih fleksibel, hemat biaya, dan efisien.",
           en: "Struggling with apps that are limited to desktop or specific platforms? We transform the way your apps are accessed. With a web app that can turn into a PWA, you can provide a seamless experience across all devices, whether desktop or mobile, without the hassle of developing separate native apps. It's more flexible, cost-effective, and efficient.",
         },
         notes: [
@@ -736,19 +736,19 @@ const contents = {
       {
         icon: ChartLineDown,
         problem: {
-          id: "Difficult to Manage and Scale Your App?",
-          en: "Sulit Mengelola dan Menskalakan Aplikasi Anda?",
+          id: "Sulit Mengelola dan Menskalakan Aplikasi Anda?",
+          en: "Difficult to Manage and Scale Your App?",
         },
         problem2: {
-          id: "Difficult to manage and scale your app.",
-          en: "Sulit Mengelola dan Menskalakan Aplikasi Anda.",
+          id: "Sulit Mengelola dan Menskalakan Aplikasi Anda.",
+          en: "Difficult to manage and scale your app.",
         },
         solution: {
-          id: "Modular System That's Easy to Maintain and Expand",
+          id: "Sistem Modular yang Mudah Dirawat dan Diperluas",
           en: "Modular System That's Easy to Maintain and Expand",
         },
         description: {
-          id: "Struggling with apps that are hard to manage and scale? Our modular approach helps divide your app into small, independent components, making maintenance, updates, and improvements easier without affecting the entire system. With this approach, your app can evolve over time, and new features can be added without disrupting existing functionality.",
+          id: "Kesulitan dengan aplikasi yang sulit dikelola dan ditingkatkan skalanya? Pendekatan modular kami membantu membagi aplikasi Anda menjadi komponen-komponen kecil yang independen, sehingga memudahkan pemeliharaan, pembaruan, dan peningkatan tanpa memengaruhi keseluruhan sistem. Dengan pendekatan ini, aplikasi Anda dapat berkembang seiring waktu, dan fitur-fitur baru dapat ditambahkan tanpa mengganggu fungsionalitas yang ada.",
           en: "Struggling with apps that are hard to manage and scale? Our modular approach helps divide your app into small, independent components, making maintenance, updates, and improvements easier without affecting the entire system. With this approach, your app can evolve over time, and new features can be added without disrupting existing functionality.",
         },
         notes: [
@@ -764,15 +764,15 @@ const contents = {
       {
         icon: DeviceMobile,
         problem: {
-          id: "App Not Responsive and Hard to Use on Mobile?",
-          en: "Aplikasi Tidak Responsif dan Sulit Digunakan di Ponsel?",
+          id: "Aplikasi Tidak Responsif dan Sulit Digunakan di Ponsel?",
+          en: "App Not Responsive and Hard to Use on Mobile?",
         },
         problem2: {
-          id: "App not responsive and hard to use on mobile.",
-          en: "Aplikasi Tidak Responsif dan Sulit Digunakan di Ponsel.",
+          id: "Aplikasi Tidak Responsif dan Sulit Digunakan di Ponsel.",
+          en: "App not responsive and hard to use on mobile.",
         },
         solution: {
-          id: "Responsive Design and Mobile Optimization",
+          id: "Desain Responsif dan Optimasi Seluler",
           en: "Responsive Design and Mobile Optimization",
         },
         description: {
@@ -792,19 +792,19 @@ const contents = {
       {
         icon: DesktopTower,
         problem: {
-          id: "Difficulty Managing Growing User Data?",
-          en: "Kesulitan Mengelola Data Pengguna yang Berkembang?",
+          id: "Kesulitan Mengelola Data Pengguna yang Berkembang?",
+          en: "Difficulty Managing Growing User Data?",
         },
         problem2: {
-          id: "Difficulty managing growing user data.",
-          en: "Kesulitan Mengelola Data Pengguna yang Berkembang.",
+          id: "Kesulitan Mengelola Data Pengguna yang Berkembang.",
+          en: "Difficulty managing growing user data.",
         },
         solution: {
-          id: "Efficient Data Management with Cloud-Based Systems",
+          id: "Manajemen Data Efisien dengan Sistem Berbasis Cloud",
           en: "Efficient Data Management with Cloud-Based Systems",
         },
         description: {
-          id: "As user data continues to grow, managing and storing data becomes a significant challenge. We offer cloud-based data management solutions that provide secure, easy-to-access, and scalable storage. This ensures data is safe while enabling real-time data analysis to help you understand user needs and create effective business strategies.",
+          id: "Seiring dengan terus bertambahnya data pengguna, pengelolaan dan penyimpanan data menjadi tantangan yang signifikan. Kami menawarkan solusi pengelolaan data berbasis cloud yang menyediakan penyimpanan yang aman, mudah diakses, dan dapat diskalakan. Hal ini memastikan data tetap aman sekaligus memungkinkan analisis data secara real-time untuk membantu Anda memahami kebutuhan pengguna dan membuat strategi bisnis yang efektif.",
           en: "As user data continues to grow, managing and storing data becomes a significant challenge. We offer cloud-based data management solutions that provide secure, easy-to-access, and scalable storage. This ensures data is safe while enabling real-time data analysis to help you understand user needs and create effective business strategies.",
         },
         notes: [
