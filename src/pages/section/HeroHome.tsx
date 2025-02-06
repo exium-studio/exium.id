@@ -18,30 +18,30 @@ import {
 import { useEffect, useState } from "react";
 import Container from "./Container";
 
-function generateRandomTextForViewport(): string {
-  const allChars =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~\t\n\r\x0b\x0c";
-  const charsLength = allChars.length;
+const BgGila = () => {
+  function generateRandomTextForViewport(): string {
+    const allChars =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~\t\n\r\x0b\x0c";
+    const charsLength = allChars.length;
 
-  const charWidth = 10; // approx char per pixel
-  const viewportWidth = window.innerWidth;
-  const viewportHeight = window.innerHeight;
+    const charWidth = 10; // approx char per pixel
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
 
-  const numCharsWidth = Math.floor(viewportWidth / charWidth);
-  const numCharsHeight = Math.floor(viewportHeight / charWidth);
+    const numCharsWidth = Math.floor(viewportWidth / charWidth);
+    const numCharsHeight = Math.floor(viewportHeight / charWidth);
 
-  const totalChars = numCharsWidth * numCharsHeight;
+    const totalChars = numCharsWidth * numCharsHeight;
 
-  let randomText = "";
-  for (let i = 0; i < totalChars; i++) {
-    const randomIndex = Math.floor(Math.random() * charsLength);
-    randomText += allChars[randomIndex];
+    let randomText = "";
+    for (let i = 0; i < totalChars; i++) {
+      const randomIndex = Math.floor(Math.random() * charsLength);
+      randomText += allChars[randomIndex];
+    }
+
+    return randomText;
   }
 
-  return randomText;
-}
-
-const BgGila = () => {
   const [text, setText] = useState(generateRandomTextForViewport());
 
   useEffect(() => {
@@ -66,6 +66,7 @@ const BgGila = () => {
         // opacity={0.2}
         wordBreak={"break-all"}
         overflow={"hidden"}
+        fontSize={"2xl"}
       >
         {text}
       </Text>
