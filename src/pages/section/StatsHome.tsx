@@ -16,7 +16,7 @@ const StatsHome = () => {
           px={16}
           gap={32}
           w={"max"}
-          animation={"infinite-scroll-r 40s linear infinite"}
+          animation={"infinite-scroll-r 80s linear infinite"}
           _hover={{ animationPlayState: "paused" }}
         >
           {contents.clients.map((item, i) => {

@@ -1,5 +1,6 @@
 import BButton from "@/components/ui-custom/BButton";
 import CContainer from "@/components/ui-custom/CContainer";
+import Heading1 from "@/components/ui-custom/Heading1";
 import Heading5 from "@/components/ui-custom/Heading5";
 import {
   PopoverBody,
@@ -15,6 +16,7 @@ import { useLang } from "@/hooks/useLang";
 import {
   Badge,
   Box,
+  Center,
   Grid,
   GridItem,
   HStack,
@@ -29,6 +31,7 @@ import Container from "./Container";
 
 const Problem = () => {
   const { lang } = useLang();
+  const content = contents.home.services;
 
   return (
     <CContainer py={20} bg={"dark"} color={"light"}>
@@ -37,16 +40,27 @@ const Problem = () => {
           gap={R_SPACING3}
           templateColumns={["repeat(1, 1fr)", null, "repeat(4, 1fr)"]}
         >
-          <GridItem>
-            <Heading5 color={"fg.subtle"}>
-              {contents.home.services.title[lang]}
+          <GridItem position={"relative"}>
+            <Center
+              px={8}
+              py={4}
+              bg={"p.500"}
+              color={"light"}
+              position={"absolute"}
+              rotate={"-6deg"}
+            >
+              <Heading1 fontSize={"2xl"} fontWeight={"medium"}>
+                {content.tag[lang]}
+              </Heading1>
+            </Center>
+
+            <Heading5 mt={20} ml={2} color={"fg.subtle"}>
+              {content.title[lang]}
             </Heading5>
           </GridItem>
 
           <GridItem colSpan={3}>
-            <Text fontSize={"1.5rem"}>
-              {contents.home.services.intro[lang]}
-            </Text>
+            <Text fontSize={"2xl"}>{content.intro[lang]}</Text>
           </GridItem>
         </Grid>
       </Container>
@@ -88,7 +102,7 @@ const Problem = () => {
                       mt={"-1px"}
                       color={"var(--divider-text)"}
                     >
-                      {contents.home.services.solutionLabel[lang]}
+                      {content.solutionLabel[lang]}
                     </Text>
                   </HStack>
 
@@ -96,26 +110,6 @@ const Problem = () => {
                     {service.solution[lang]}
                   </Text>
                 </CContainer>
-
-                {/* <PopoverRoot>
-                  <PopoverTrigger>
-                    <Text
-                      textAlign={"left"}
-                      fontSize={"1rem"}
-                      color={"var(--divider-text)"}
-                      lineClamp={3}
-                      cursor={"pointer"}
-                    >
-                      {service.description[lang]}
-                    </Text>
-                  </PopoverTrigger>
-                  <PopoverContent>
-                    <PopoverCloseTrigger />
-                    <PopoverBody>
-                      <Text lineHeight={1.6}>{service.description[lang]}</Text>
-                    </PopoverBody>
-                  </PopoverContent>
-                </PopoverRoot> */}
 
                 {/* Citation */}
                 <HStack wrap={"wrap"} mt={"auto"}>
@@ -163,7 +157,7 @@ const Problem = () => {
             color={"white"}
             textDecor={"underline"}
           >
-            {contents.home.services.cta[lang]}
+            {content.cta[lang]}
             <Icon fontSize={"lg"}>
               <ArrowUpRight />
             </Icon>

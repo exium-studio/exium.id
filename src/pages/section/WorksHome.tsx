@@ -35,7 +35,7 @@ const WorksHome = () => {
             position={"absolute"}
             top={["-30px", null, "-30px"]}
             right={["100px", null, "200px"]}
-            transform={"rotate(-6deg)"}
+            rotate={"-6deg"}
             // borderRadius={6}
           >
             <Text fontSize={"2xl"} fontWeight={"4edium"}>
@@ -67,7 +67,7 @@ const WorksHome = () => {
               </Text>
 
               <Link to={`/work/${work_1.index}`}>
-                <BButton w={"fit"} size={"sm"} variant={"subtle"} mt={2}>
+                <BButton w={"fit"} size={"sm"} variant={"outline"} mt={2}>
                   {contents.home.works.detailWorkLabel[lang]}
                   <Icon>
                     <ArrowRight />
@@ -81,7 +81,7 @@ const WorksHome = () => {
         <Container px={0}>
           <SimpleGrid columns={[1, null, 2]} gap={[12, null, 0]}>
             <CContainer gap={12} overflow={"clip"}>
-              <CContainer flex={1} align={"center"} bg={"bg.subtle"} pt={8}>
+              <CContainer flex={1} align={"center"} bg={"d1"} pt={8}>
                 <Image
                   alt={work_2.title}
                   src={work_2.featuredImage}
@@ -102,7 +102,7 @@ const WorksHome = () => {
                 </Text>
 
                 <Link to={`/work/${work_2.index}`}>
-                  <BButton w={"fit"} size={"sm"} variant={"subtle"} mt={2}>
+                  <BButton w={"fit"} size={"sm"} variant={"outline"} mt={2}>
                     {contents.home.works.detailWorkLabel[lang]}
                     <Icon>
                       <ArrowRight />
@@ -113,7 +113,7 @@ const WorksHome = () => {
             </CContainer>
 
             <CContainer gap={12} overflow={"clip"} mt={["", null, "200px"]}>
-              <CContainer flex={1} align={"center"} bg={"bg.subtle"} p={12}>
+              <CContainer flex={1} align={"center"} bg={"d1"} p={12}>
                 <Image
                   alt={work_3.title}
                   src={work_3.featuredImage}
@@ -133,7 +133,7 @@ const WorksHome = () => {
                 </Text>
 
                 <Link to={`/work/${work_3.index}`}>
-                  <BButton w={"fit"} size={"sm"} variant={"subtle"} mt={2}>
+                  <BButton w={"fit"} size={"sm"} variant={"outline"} mt={2}>
                     {contents.home.works.detailWorkLabel[lang]}
                     <Icon>
                       <ArrowRight />
@@ -155,24 +155,26 @@ const WorksHome = () => {
             />
           </CContainer>
 
-          <CContainer flex={1} px={R_SPACING2} gap={2}>
-            <Text fontWeight={"medium"} color={"fg.muted"}>
-              {work_4.title}
-            </Text>
+          <Container>
+            <CContainer flex={1} px={R_SPACING2} gap={2}>
+              <Text fontWeight={"medium"} color={"fg.muted"}>
+                {work_4.title}
+              </Text>
 
-            <Text fontSize={"2xl"} fontWeight={"medium"} maxW={"420px"}>
-              {work_4.summary[lang]}
-            </Text>
+              <Text fontSize={"2xl"} fontWeight={"medium"} maxW={"420px"}>
+                {work_4.summary[lang]}
+              </Text>
 
-            <Link to={`/work/${work_4.index}`}>
-              <BButton w={"fit"} size={"sm"} variant={"subtle"} mt={2}>
-                {contents.home.works.detailWorkLabel[lang]}
-                <Icon>
-                  <ArrowRight />
-                </Icon>
-              </BButton>
-            </Link>
-          </CContainer>
+              <Link to={`/work/${work_4.index}`}>
+                <BButton w={"fit"} size={"sm"} variant={"outline"} mt={2}>
+                  {contents.home.works.detailWorkLabel[lang]}
+                  <Icon>
+                    <ArrowRight />
+                  </Icon>
+                </BButton>
+              </Link>
+            </CContainer>
+          </Container>
         </CContainer>
       </CContainer>
     </CContainer>

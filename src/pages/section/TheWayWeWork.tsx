@@ -1,80 +1,74 @@
 import CContainer from "@/components/ui-custom/CContainer";
-import Heading4 from "@/components/ui-custom/Heading4";
-import Heading5 from "@/components/ui-custom/Heading5";
-import {
-  AccordionItem,
-  AccordionItemContent,
-  AccordionItemTrigger,
-  AccordionRoot,
-} from "@/components/ui/accordion";
+import Heading1 from "@/components/ui-custom/Heading1";
 import contents from "@/constant/contents";
-import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
+import { IMAGES_PATH, SVGS_PATH } from "@/constant/path";
 import { useLang } from "@/hooks/useLang";
-import { Grid, GridItem, HStack, Icon, Text } from "@chakra-ui/react";
+import { Center, HStack, Image, Text } from "@chakra-ui/react";
 import Container from "./Container";
-import { useLightDarkColor } from "@/constant/colors";
 
 const TheWayWeWork = () => {
-  // SX
-  const lightDarkColor = useLightDarkColor();
   const { lang } = useLang();
+  const content = contents.home.tww;
 
   return (
-    <CContainer py={20}>
+    <CContainer py={20} overflowX={"clip"}>
       <Container>
-        <Grid
-          gap={R_SPACING3}
-          templateColumns={["repeat(1, 1fr)", null, "repeat(4, 1fr)"]}
+        <Center mx={"auto"} mt={20} mb={40} position={"relative"}>
+          <Image
+            alt="Exium Graphic Logo"
+            src={`${IMAGES_PATH}/logo_graphic.png`}
+            maxW={"300px"}
+            zIndex={2}
+          />
+
+          <Center
+            px={8}
+            py={4}
+            bg={"d1"}
+            color={"d3"}
+            position={"absolute"}
+            // rotate={"-45deg"}
+            // top={8}
+            w={"100vw"}
+            // left={-20}
+            zIndex={1}
+            minH={"100px"}
+          >
+            <Heading1
+              fontSize={"10vw"}
+              fontWeight={"semibold"}
+              whiteSpace={"nowrap"}
+            >
+              {content.title[lang]}
+            </Heading1>
+          </Center>
+        </Center>
+
+        <Text
+          fontSize={"2xl"}
+          textAlign={"center"}
+          maxW={"800px"}
+          mx={"auto"}
+          mb={40}
         >
-          <GridItem>
-            <Heading5 color={"fg.subtle"}>
-              {contents.home.tww.title[lang]}
-            </Heading5>
-          </GridItem>
+          {contents.home.tww.intro[lang]}
+        </Text>
 
-          <GridItem colSpan={3}>
-            <Text fontSize={"1.5rem"}>{contents.home.tww.intro[lang]}</Text>
+        <CContainer align={"center"} gap={"20px"}>
+          <CContainer>
+            <HStack wrap={"wrap"} gap={12}>
+              <CContainer flex={"1 1 0"} maxW={"300px"}>
+                <Image alt="" src={`${SVGS_PATH}/communication.svg`} />
+              </CContainer>
 
-            <CContainer mt={R_SPACING2}>
-              <AccordionRoot
-                collapsible
-                defaultValue={["0"]}
-                variant={"enclosed"}
-              >
-                {contents.home.tww.list.map((item, i) => (
-                  <AccordionItem
-                    key={i}
-                    value={i.toString()}
-                    bg={lightDarkColor}
-                  >
-                    <AccordionItemTrigger
-                      px={5}
-                      h={"80px"}
-                      indicatorPlacement="none"
-                    >
-                      <HStack w={"100%"} justify={"space-between"}>
-                        <HStack>
-                          <Heading4 mr={2}>{i + 1}.</Heading4>
-                          <Heading4> {item.title[lang]}</Heading4>
-                        </HStack>
-
-                        <Icon fontSize={"4xl"}>
-                          <item.icon />
-                        </Icon>
-                      </HStack>
-                    </AccordionItemTrigger>
-
-                    <AccordionItemContent px={R_SPACING2}>
-                      <Text fontSize={"1rem"} color={"fg.muted"}>
-                        {item.description[lang]}
-                      </Text>
-                    </AccordionItemContent>
-                  </AccordionItem>
-                ))}
-              </AccordionRoot>
-            </CContainer>
-          </GridItem>
-        </Grid>
+              <CContainer flex={"1 1 0"}>
+                <Text fontSize={"xl"} fontWeight={"semibold"}>
+                  {content.list[0].title[lang]}
+                </Text>
+              </CContainer>
+            </HStack>
+          </CContainer>
+        </CContainer>
       </Container>
     </CContainer>
   );

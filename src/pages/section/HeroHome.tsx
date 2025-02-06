@@ -17,6 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import Container from "./Container";
+import useScreen from "@/hooks/useScreen";
 
 const BgGila = () => {
   function generateRandomTextForViewport(): string {
@@ -106,11 +107,12 @@ const Clock = () => {
 
 const Hero = () => {
   const { lang } = useLang();
+  const { sh } = useScreen();
 
   return (
     <CContainer
-      h={["", null, null, null, "100vh"]}
-      maxH={["", null, null, null, "1200px"]}
+      h={sh > 1020 ? "100vh" : ""}
+      maxH={sh > 1020 ? "1200px" : ""}
       bg={"dark"}
       overflow={"clip"}
       position={"relative"}

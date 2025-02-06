@@ -11,8 +11,8 @@ import {
   UsersThree,
   WhatsappLogo,
 } from "@phosphor-icons/react";
-import { ASSETS_PATH, IMAGES_PATH } from "./path";
 import { BiLogoInstagram, BiLogoLinkedin } from "react-icons/bi";
+import { ASSETS_PATH, IMAGES_PATH } from "./path";
 
 const contents = {
   headline: {
@@ -120,8 +120,12 @@ const contents = {
     },
     services: {
       title: {
-        id: "Layanan oleh Exium",
-        en: "Services by Exium",
+        id: "oleh Exium",
+        en: "by Exium",
+      },
+      tag: {
+        id: "Layanan",
+        en: "Services",
       },
       intro: {
         id: "Jangan biarkan masalah teknologi menghambat bisnis Anda. Dengan solusi PWA yang fleksibel dan mudah diakses di semua perangkat, kami siap membantu Anda menjangkau lebih banyak pengguna tanpa batasan platform dan menjaga aplikasi tetap scalable seiring pertumbuhan bisnis Anda.",
@@ -139,8 +143,8 @@ const contents = {
         en: "The Way Exium Works",
       },
       intro: {
-        id: "Exium adalah mitra transformasi digital yang komprehensif, menghadirkan solusi teknologi canggih yang disesuaikan dengan kebutuhan unik setiap bisnis. Kami menggabungkan keahlian mendalam, inovasi mutakhir, dan pendekatan strategic untuk membantu organisasi Anda berkembang di era digital.",
-        en: "Exium is a comprehensive digital transformation partner, delivering cutting-edge technological solutions tailored to the unique needs of each business. We combine deep expertise, leading-edge innovation, and a strategic approach to help your organization thrive in the digital era.",
+        id: "Di Exium, kami percaya bahwa kesuksesan proyek digital dimulai dari cara kami bekerja. Dengan pendekatan terstruktur dan kolaboratif, kami memastikan setiap tahap proyek berjalan efisien, transparan, dan menghasilkan solusi yang tepat untuk kebutuhan bisnis Anda.",
+        en: "At Exium, we believe the success of digital projects starts with how we work. Through a structured and collaborative approach, we ensure every project phase is efficient, transparent, and delivers the right solutions for your business needs.",
       },
       list: [
         {
@@ -153,28 +157,31 @@ const contents = {
             en: "We begin with a comprehensive analysis of your digital infrastructure, business processes, and specific challenges. Our expert team conducts in-depth interviews to understand every aspect of your technological needs.",
           },
           icon: UsersThree,
+          emoji: "🗣️",
         },
         {
           title: {
-            id: "Desain Solusi Khusus",
-            en: "Custom Solution Design",
+            id: "Desain Solusi",
+            en: "Solution Design",
           },
           description: {
             id: "Berdasarkan temuan konsultasi, kami merancang solusi teknologi yang dipersonalisasi. Setiap strategi dikembangkan dengan presisi untuk menyelesaikan permasalahan unik dan mengoptimalkan kinerja digital bisnis Anda.",
             en: "Based on consultation findings, we design personalized technological solutions. Each strategy is developed with precision to address unique challenges and optimize your business's digital performance.",
           },
           icon: ChatTeardropDots,
+          emoji: "🎨",
         },
         {
           title: {
-            id: "Implementasi Cerdas",
-            en: "Intelligent Implementation",
+            id: "Implementasi",
+            en: "Implementation",
           },
           description: {
             id: "Tim teknisi profesional kami mengimplementasikan solusi dengan pendekatan bertahap dan terukur. Kami memastikan transisi minimal gangguan, memberikan pelatihan komprehensif, dan mendukung adaptasi teknologi baru dalam organisasi Anda.",
             en: "Our professional tech team implements solutions with a phased and measured approach. We ensure minimal disruption, provide comprehensive training, and support the adaptation of new technologies within your organization.",
           },
           icon: Devices,
+          emoji: "🧑‍💻",
         },
         {
           title: {
@@ -186,6 +193,7 @@ const contents = {
             en: "Our commitment doesn't stop after implementation. We provide ongoing support including periodic monitoring, system maintenance, continuous optimization, and consultation to ensure your technological solutions remain cutting-edge and effective.",
           },
           icon: Trophy,
+          emoji: "📞",
         },
       ],
     },

@@ -29,13 +29,13 @@ const navs: Interface__Nav[] = [
     },
     link: "/services",
   },
-  // {
-  //   label: {
-  //     id: "Produk",
-  //     en: "Products",
-  //   },
-  //   link: "/products",
-  // },
+  {
+    label: {
+      id: "Produk",
+      en: "Products",
+    },
+    link: "/products",
+  },
   // {
   //   label: {
   //     id: "FAQs",
