@@ -120,26 +120,6 @@ const Footer = () => {
                     ))}
                   </CContainer>
 
-                  {/* <CContainer align={"start"} gap={2}>
-                    <Text fontSize={"1rem"} color={"var(--divider-text)"}>
-                      {contents.footer.navigationLabel[lang]}
-                    </Text>
-
-                    {navs.map((nav, i) => (
-                      <Link key={i} to={nav.link}>
-                        <Text
-                          fontSize={"1.25rem"}
-                          w={"fit"}
-                          opacity={0.8}
-                          transition={"200ms"}
-                          _hover={{ color: "p.500" }}
-                        >
-                          {nav.label[lang]}
-                        </Text>
-                      </Link>
-                    ))}
-                  </CContainer> */}
-
                   <CContainer align={"start"} gap={2}>
                     <Text fontSize={"1rem"} color={"var(--divider-text)"}>
                       {contents.sosmeds.label[lang]}
@@ -207,19 +187,19 @@ const Footer = () => {
         <CContainer py={8}>
           <Container>
             <SimpleGrid columns={[1, null, 2]} gap={R_SPACING3}>
-              <Text fontSize={"1rem"} opacity={0.4}>
+              <Text fontSize={"1rem"} opacity={0.4} my={"auto"}>
                 Copyright {new Date().getFullYear()} © Exium. All right
                 reserved.
               </Text>
 
               <HStack gap={8} justify={["start", null, "end"]}>
-                <Text fontSize={"1rem"} opacity={0.4}>
+                {/* <Text fontSize={"1rem"} opacity={0.4}>
                   Privacy Policy
                 </Text>
 
                 <Text fontSize={"1rem"} opacity={0.4}>
                   Term and Conditions
-                </Text>
+                </Text> */}
 
                 <HStack>
                   <ColorModeButton
