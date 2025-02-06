@@ -67,7 +67,7 @@ const Stats = () => {
       <CContainer borderTop={"1px solid"} borderColor={"gray.muted"}>
         <Container px={0}>
           <SimpleGrid columns={[1, 2, null, 4]}>
-            {contents.stats.map((item, i) => {
+            {contents.home.stats.map((item, i) => {
               return (
                 <CContainer
                   key={i}
@@ -84,7 +84,7 @@ const Stats = () => {
                     {item.label[lang]}
                   </Text>
                   <Text fontWeight={"medium"} color={"fg.subtle"}>
-                    {item.label[lang]}
+                    {item.description[lang]}
                   </Text>
                 </CContainer>
               );

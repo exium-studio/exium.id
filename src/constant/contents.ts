@@ -39,6 +39,56 @@ const contents = {
         en: "Talk with our team",
       },
     },
+    stats: [
+      {
+        emoji: "🏆",
+        value: { id: "2+", en: "2+" },
+        label: {
+          id: "Kami telah berpengalaman lebih dari 2 tahun di industri.",
+          en: "We have over 2 years of experience in this industry.",
+        },
+        description: {
+          id: "Kami bekerja dengan berbagai perusahaan, dari yayasan hingga PT.",
+          en: "We collaborate with various companies, from foundations to PT.",
+        },
+      },
+      {
+        emoji: "🧑‍💻",
+        value: { id: "10+", en: "10+" },
+        label: {
+          id: "Lebih dari 10 proyek telah kami selesaikan di berbagai industri.",
+          en: "We have completed over 10 projects in various industries.",
+        },
+        description: {
+          id: "Termasuk sektor kesehatan, politik, SDM, serta geospasial.",
+          en: "Including healthcare, politics, HR, and geospatial sectors.",
+        },
+      },
+      {
+        emoji: "😊",
+        value: { id: "140+", en: "140+" },
+        label: {
+          id: "95% klien kami merasa puas dengan layanan yang diberikan.",
+          en: "95% of our clients are satisfied with the services provided.",
+        },
+        description: {
+          id: "Kami selalu memberikan solusi yang tepat sesuai kebutuhan klien.",
+          en: "We always provide the right solutions tailored to client needs.",
+        },
+      },
+      {
+        emoji: "💡",
+        value: { id: "5+", en: "5+" },
+        label: {
+          id: "Keahlian kami di berbagai bidang teknologi dan bisnis.",
+          en: "Our expertise spans various technology and business fields.",
+        },
+        description: {
+          id: "Mulai dari pengembangan software hingga strategi bisnis digital.",
+          en: "From software development to digital business strategy.",
+        },
+      },
+    ],
     works: {
       title: { id: "Karya Terbaru Exium", en: "Exium's Latest Works" },
       intro: {
@@ -813,56 +863,6 @@ const contents = {
     solutionLabel: { id: "Solusi", en: "Solution" },
     durationLabel: { id: "Durasi", en: "Duration" },
   },
-  stats: [
-    {
-      emoji: "🏆",
-      value: { id: "2+", en: "2+" },
-      label: {
-        id: "Kami memiliki lebih dari 2 tahun pengalaman di industri",
-        en: "We have more than 2 years of experience in the industry",
-      },
-      description: {
-        id: "Kita bekerja dengan berbagai jenis perusahaan dari yayasan hingga PT.",
-        en: "We work with various types of companies from foundations to PT.",
-      },
-    },
-    {
-      emoji: "🧑‍💻",
-      value: { id: "10+", en: "10+" },
-      label: {
-        id: "Kami mengerjakan lebih dari 10 proyek untuk berbagai industri",
-        en: "We did over 10 projects for various industries",
-      },
-      description: {
-        id: "Termasuk kesehatan, politik, manajemen SDM, geospasial dll",
-        en: "Including crime, politics, HR management, geospatial etc.",
-      },
-    },
-    {
-      emoji: "😊",
-      value: { id: "140+", en: "140+" },
-      label: {
-        id: "95% klien puas dengan solusi yang kami berikan.",
-        en: "95% of clients are satisfied with our solutions.",
-      },
-      description: {
-        id: "Kami berkomitmen memberikan layanan terbaik yang sesuai dengan kebutuhan klien.",
-        en: "We are committed to providing the best services tailored to our clients' needs.",
-      },
-    },
-    {
-      emoji: "💡",
-      value: { id: "5+", en: "5+" },
-      label: {
-        id: "Memiliki keahlian di berbagai bidang teknologi dan bisnis",
-        en: "Has expertise in various technology and business fields.",
-      },
-      description: {
-        id: "Dari pengembangan perangkat lunak hingga strategi bisnis, kami siap membantu.",
-        en: "From software development to business strategy, we are ready to assist.",
-      },
-    },
-  ],
   clients: [
     {
       logo: `${IMAGES_PATH}/clients/demokrat.png`,
