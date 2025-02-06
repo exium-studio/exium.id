@@ -680,6 +680,137 @@ const contents = {
       },
     },
   ],
+  services: {
+    title: {
+      id: "Solusi Tepat untuk Setiap Tantangan!",
+      en: "The Right Solutions for Every Challenge!",
+    },
+    intro: {
+      id: "Does the above problem sound familiar to you? Exium got you covered",
+      en: "Does the above problem sound familiar to you? Exium got you covered",
+    },
+    list: [
+      {
+        icon: Devices,
+        problem: {
+          id: "Limited Access to Apps on Specific Platforms?",
+          en: "Limited access to apps on specific platforms.",
+        },
+        problem2: {
+          id: "Limited access to apps on specific platforms.",
+          en: "Limited access to apps on specific platforms.",
+        },
+        solution: {
+          id: "Platform-Agnostic PWA That's Easy to Manage",
+          en: "Platform-Agnostic PWA That's Easy to Manage",
+        },
+        description: {
+          id: "Struggling with apps that are limited to desktop or specific platforms? We transform the way your apps are accessed. With a web app that can turn into a PWA, you can provide a seamless experience across all devices, whether desktop or mobile, without the hassle of developing separate native apps. It's more flexible, cost-effective, and efficient.",
+          en: "Struggling with apps that are limited to desktop or specific platforms? We transform the way your apps are accessed. With a web app that can turn into a PWA, you can provide a seamless experience across all devices, whether desktop or mobile, without the hassle of developing separate native apps. It's more flexible, cost-effective, and efficient.",
+        },
+        notes: [
+          {
+            label: { id: "PWA", en: "PWA" },
+            description: {
+              id: "Progressive Web Apps (PWAs) are web-based apps designed to look and function like native apps on both mobile and desktop devices. With PWAs, users can access apps directly from their browsers without downloading them from app stores, but still enjoy features like shortcuts on their home screens, push notifications, and even offline use. PWAs provide fast, responsive, and flexible experiences across platforms at a lower development cost than native apps.",
+              en: "Progressive Web Apps (PWAs) are web-based apps designed to look and function like native apps on both mobile and desktop devices. With PWAs, users can access apps directly from their browsers without downloading them from app stores, but still enjoy features like shortcuts on their home screens, push notifications, and even offline use. PWAs provide fast, responsive, and flexible experiences across platforms at a lower development cost than native apps.",
+            },
+          },
+          {
+            label: { id: "Platform-Agnostic", en: "Platform-Agnostic" },
+            description: {
+              id: "Platform-agnostic refers to a technology or system that can operate on various platforms or operating systems without being dependent on a specific environment. For example, a platform-agnostic app can run on Windows, macOS, and Linux without major modifications, offering greater flexibility for users with different operating systems. This ensures higher interoperability across devices and ecosystems, reaching a wider audience.",
+              en: "Platform-agnostic refers to a technology or system that can operate on various platforms or operating systems without being dependent on a specific environment. For example, a platform-agnostic app can run on Windows, macOS, and Linux without major modifications, offering greater flexibility for users with different operating systems. This ensures higher interoperability across devices and ecosystems, reaching a wider audience.",
+            },
+          },
+        ],
+      },
+      {
+        icon: ChartLineDown,
+        problem: {
+          id: "Difficult to Manage and Scale Your App?",
+          en: "Difficult to manage and scale your app.",
+        },
+        problem2: {
+          id: "Difficult to manage and scale your app.",
+          en: "Difficult to manage and scale your app.",
+        },
+        solution: {
+          id: "Modular System That's Easy to Maintain and Expand",
+          en: "Modular System That's Easy to Maintain and Expand",
+        },
+        description: {
+          id: "Struggling with apps that are hard to manage and scale? Our modular approach helps divide your app into small, independent components, making maintenance, updates, and improvements easier without affecting the entire system. With this approach, your app can evolve over time, and new features can be added without disrupting existing functionality.",
+          en: "Struggling with apps that are hard to manage and scale? Our modular approach helps divide your app into small, independent components, making maintenance, updates, and improvements easier without affecting the entire system. With this approach, your app can evolve over time, and new features can be added without disrupting existing functionality.",
+        },
+        notes: [
+          {
+            label: { id: "Modular", en: "Modular" },
+            description: {
+              id: "A modular approach to app development means breaking the app into small, self-contained components that function independently. Each module performs a specific function, so it can be managed, updated, or fixed without affecting the rest of the system. This approach makes development more flexible and scalable, allowing for easy feature additions or updates without disturbing other components.",
+              en: "A modular approach to app development means breaking the app into small, self-contained components that function independently. Each module performs a specific function, so it can be managed, updated, or fixed without affecting the rest of the system. This approach makes development more flexible and scalable, allowing for easy feature additions or updates without disturbing other components.",
+            },
+          },
+        ],
+      },
+      {
+        icon: DeviceMobile,
+        problem: {
+          id: "App Not Responsive and Hard to Use on Mobile?",
+          en: "App not responsive and hard to use on mobile.",
+        },
+        problem2: {
+          id: "App not responsive and hard to use on mobile.",
+          en: "App not responsive and hard to use on mobile.",
+        },
+        solution: {
+          id: "Responsive Design and Mobile Optimization",
+          en: "Responsive Design and Mobile Optimization",
+        },
+        description: {
+          id: "Apps that aren't responsive on mobile devices can negatively impact user satisfaction and retention. We offer responsive design that automatically adjusts the app’s layout to fit different screen sizes, ensuring a comfortable experience on all devices. Additionally, we optimize mobile performance with smart memory management and caching, making apps run faster, even with limited internet connectivity.",
+          en: "Apps that aren't responsive on mobile devices can negatively impact user satisfaction and retention. We offer responsive design that automatically adjusts the app’s layout to fit different screen sizes, ensuring a comfortable experience on all devices. Additionally, we optimize mobile performance with smart memory management and caching, making apps run faster, even with limited internet connectivity.",
+        },
+        notes: [
+          {
+            label: { id: "Responsive", en: "Responsive" },
+            description: {
+              id: "Responsiveness is the ability of an interface or app design to adapt its layout to different screen sizes and orientations. Responsive design automatically adjusts, resizes, or hides certain elements to ensure ease of access and aesthetics across various devices. It's crucial for enhancing user experience, ensuring optimal display, and supporting cross-device accessibility without the need to develop separate apps for each screen type.",
+              en: "Responsiveness is the ability of an interface or app design to adapt its layout to different screen sizes and orientations. Responsive design automatically adjusts, resizes, or hides certain elements to ensure ease of access and aesthetics across various devices. It's crucial for enhancing user experience, ensuring optimal display, and supporting cross-device accessibility without the need to develop separate apps for each screen type.",
+            },
+          },
+        ],
+      },
+      {
+        icon: DesktopTower,
+        problem: {
+          id: "Difficulty Managing Growing User Data?",
+          en: "Difficulty managing growing user data.",
+        },
+        problem2: {
+          id: "Difficulty managing growing user data.",
+          en: "Difficulty managing growing user data.",
+        },
+        solution: {
+          id: "Efficient Data Management with Cloud-Based Systems",
+          en: "Efficient Data Management with Cloud-Based Systems",
+        },
+        description: {
+          id: "As user data continues to grow, managing and storing data becomes a significant challenge. We offer cloud-based data management solutions that provide secure, easy-to-access, and scalable storage. This ensures data is safe while enabling real-time data analysis to help you understand user needs and create effective business strategies.",
+          en: "As user data continues to grow, managing and storing data becomes a significant challenge. We offer cloud-based data management solutions that provide secure, easy-to-access, and scalable storage. This ensures data is safe while enabling real-time data analysis to help you understand user needs and create effective business strategies.",
+        },
+        notes: [
+          {
+            label: { id: "Cloud", en: "Cloud" },
+            description: {
+              id: "Cloud computing is a service model that provides computing resources, such as storage, servers, databases, networking, and software over the internet. With cloud services, users can access and store data and run applications remotely, without needing to own or manage physical infrastructure. Cloud computing offers flexibility, cost savings, increased efficiency, and allows collaboration and accessibility from any device or location.",
+              en: "Cloud computing is a service model that provides computing resources, such as storage, servers, databases, networking, and software over the internet. With cloud services, users can access and store data and run applications remotely, without needing to own or manage physical infrastructure. Cloud computing offers flexibility, cost savings, increased efficiency, and allows collaboration and accessibility from any device or location.",
+            },
+          },
+        ],
+      },
+    ],
+  },
   aboutUs: {
     title: {
       id: "Ketahui Lebih Banyak Tentang Exium",
@@ -1008,137 +1139,6 @@ const contents = {
       logoGray: `${IMAGES_PATH}/techstack/gray/phosphoricon.png`,
     },
   ],
-  services: {
-    title: {
-      id: "Solusi Tepat untuk Setiap Tantangan!",
-      en: "The Right Solutions for Every Challenge!",
-    },
-    intro: {
-      id: "Does the above problem sound familiar to you? Exium got you covered",
-      en: "Does the above problem sound familiar to you? Exium got you covered",
-    },
-    list: [
-      {
-        icon: Devices,
-        problem: {
-          id: "Limited Access to Apps on Specific Platforms?",
-          en: "Limited access to apps on specific platforms.",
-        },
-        problem2: {
-          id: "Limited access to apps on specific platforms.",
-          en: "Limited access to apps on specific platforms.",
-        },
-        solution: {
-          id: "Platform-Agnostic PWA That's Easy to Manage",
-          en: "Platform-Agnostic PWA That's Easy to Manage",
-        },
-        description: {
-          id: "Struggling with apps that are limited to desktop or specific platforms? We transform the way your apps are accessed. With a web app that can turn into a PWA, you can provide a seamless experience across all devices, whether desktop or mobile, without the hassle of developing separate native apps. It's more flexible, cost-effective, and efficient.",
-          en: "Struggling with apps that are limited to desktop or specific platforms? We transform the way your apps are accessed. With a web app that can turn into a PWA, you can provide a seamless experience across all devices, whether desktop or mobile, without the hassle of developing separate native apps. It's more flexible, cost-effective, and efficient.",
-        },
-        notes: [
-          {
-            label: { id: "PWA", en: "PWA" },
-            description: {
-              id: "Progressive Web Apps (PWAs) are web-based apps designed to look and function like native apps on both mobile and desktop devices. With PWAs, users can access apps directly from their browsers without downloading them from app stores, but still enjoy features like shortcuts on their home screens, push notifications, and even offline use. PWAs provide fast, responsive, and flexible experiences across platforms at a lower development cost than native apps.",
-              en: "Progressive Web Apps (PWAs) are web-based apps designed to look and function like native apps on both mobile and desktop devices. With PWAs, users can access apps directly from their browsers without downloading them from app stores, but still enjoy features like shortcuts on their home screens, push notifications, and even offline use. PWAs provide fast, responsive, and flexible experiences across platforms at a lower development cost than native apps.",
-            },
-          },
-          {
-            label: { id: "Platform-Agnostic", en: "Platform-Agnostic" },
-            description: {
-              id: "Platform-agnostic refers to a technology or system that can operate on various platforms or operating systems without being dependent on a specific environment. For example, a platform-agnostic app can run on Windows, macOS, and Linux without major modifications, offering greater flexibility for users with different operating systems. This ensures higher interoperability across devices and ecosystems, reaching a wider audience.",
-              en: "Platform-agnostic refers to a technology or system that can operate on various platforms or operating systems without being dependent on a specific environment. For example, a platform-agnostic app can run on Windows, macOS, and Linux without major modifications, offering greater flexibility for users with different operating systems. This ensures higher interoperability across devices and ecosystems, reaching a wider audience.",
-            },
-          },
-        ],
-      },
-      {
-        icon: ChartLineDown,
-        problem: {
-          id: "Difficult to Manage and Scale Your App?",
-          en: "Difficult to manage and scale your app.",
-        },
-        problem2: {
-          id: "Difficult to manage and scale your app.",
-          en: "Difficult to manage and scale your app.",
-        },
-        solution: {
-          id: "Modular System That's Easy to Maintain and Expand",
-          en: "Modular System That's Easy to Maintain and Expand",
-        },
-        description: {
-          id: "Struggling with apps that are hard to manage and scale? Our modular approach helps divide your app into small, independent components, making maintenance, updates, and improvements easier without affecting the entire system. With this approach, your app can evolve over time, and new features can be added without disrupting existing functionality.",
-          en: "Struggling with apps that are hard to manage and scale? Our modular approach helps divide your app into small, independent components, making maintenance, updates, and improvements easier without affecting the entire system. With this approach, your app can evolve over time, and new features can be added without disrupting existing functionality.",
-        },
-        notes: [
-          {
-            label: { id: "Modular", en: "Modular" },
-            description: {
-              id: "A modular approach to app development means breaking the app into small, self-contained components that function independently. Each module performs a specific function, so it can be managed, updated, or fixed without affecting the rest of the system. This approach makes development more flexible and scalable, allowing for easy feature additions or updates without disturbing other components.",
-              en: "A modular approach to app development means breaking the app into small, self-contained components that function independently. Each module performs a specific function, so it can be managed, updated, or fixed without affecting the rest of the system. This approach makes development more flexible and scalable, allowing for easy feature additions or updates without disturbing other components.",
-            },
-          },
-        ],
-      },
-      {
-        icon: DeviceMobile,
-        problem: {
-          id: "App Not Responsive and Hard to Use on Mobile?",
-          en: "App not responsive and hard to use on mobile.",
-        },
-        problem2: {
-          id: "App not responsive and hard to use on mobile.",
-          en: "App not responsive and hard to use on mobile.",
-        },
-        solution: {
-          id: "Responsive Design and Mobile Optimization",
-          en: "Responsive Design and Mobile Optimization",
-        },
-        description: {
-          id: "Apps that aren't responsive on mobile devices can negatively impact user satisfaction and retention. We offer responsive design that automatically adjusts the app’s layout to fit different screen sizes, ensuring a comfortable experience on all devices. Additionally, we optimize mobile performance with smart memory management and caching, making apps run faster, even with limited internet connectivity.",
-          en: "Apps that aren't responsive on mobile devices can negatively impact user satisfaction and retention. We offer responsive design that automatically adjusts the app’s layout to fit different screen sizes, ensuring a comfortable experience on all devices. Additionally, we optimize mobile performance with smart memory management and caching, making apps run faster, even with limited internet connectivity.",
-        },
-        notes: [
-          {
-            label: { id: "Responsive", en: "Responsive" },
-            description: {
-              id: "Responsiveness is the ability of an interface or app design to adapt its layout to different screen sizes and orientations. Responsive design automatically adjusts, resizes, or hides certain elements to ensure ease of access and aesthetics across various devices. It's crucial for enhancing user experience, ensuring optimal display, and supporting cross-device accessibility without the need to develop separate apps for each screen type.",
-              en: "Responsiveness is the ability of an interface or app design to adapt its layout to different screen sizes and orientations. Responsive design automatically adjusts, resizes, or hides certain elements to ensure ease of access and aesthetics across various devices. It's crucial for enhancing user experience, ensuring optimal display, and supporting cross-device accessibility without the need to develop separate apps for each screen type.",
-            },
-          },
-        ],
-      },
-      {
-        icon: DesktopTower,
-        problem: {
-          id: "Difficulty Managing Growing User Data?",
-          en: "Difficulty managing growing user data.",
-        },
-        problem2: {
-          id: "Difficulty managing growing user data.",
-          en: "Difficulty managing growing user data.",
-        },
-        solution: {
-          id: "Efficient Data Management with Cloud-Based Systems",
-          en: "Efficient Data Management with Cloud-Based Systems",
-        },
-        description: {
-          id: "As user data continues to grow, managing and storing data becomes a significant challenge. We offer cloud-based data management solutions that provide secure, easy-to-access, and scalable storage. This ensures data is safe while enabling real-time data analysis to help you understand user needs and create effective business strategies.",
-          en: "As user data continues to grow, managing and storing data becomes a significant challenge. We offer cloud-based data management solutions that provide secure, easy-to-access, and scalable storage. This ensures data is safe while enabling real-time data analysis to help you understand user needs and create effective business strategies.",
-        },
-        notes: [
-          {
-            label: { id: "Cloud", en: "Cloud" },
-            description: {
-              id: "Cloud computing is a service model that provides computing resources, such as storage, servers, databases, networking, and software over the internet. With cloud services, users can access and store data and run applications remotely, without needing to own or manage physical infrastructure. Cloud computing offers flexibility, cost savings, increased efficiency, and allows collaboration and accessibility from any device or location.",
-              en: "Cloud computing is a service model that provides computing resources, such as storage, servers, databases, networking, and software over the internet. With cloud services, users can access and store data and run applications remotely, without needing to own or manage physical infrastructure. Cloud computing offers flexibility, cost savings, increased efficiency, and allows collaboration and accessibility from any device or location.",
-            },
-          },
-        ],
-      },
-    ],
-  },
   faqs: {
     title: {
       id: "Pertanyaan yang Sering Diajukan",

@@ -117,7 +117,7 @@ const AboutUsPage = () => {
           </SimpleGrid>
 
           <SimpleGrid columns={[2, null, 4]} gap={R_SPACING2} mt={20}>
-            {contents.stats.map((stat, i) => (
+            {contents.home.stats.map((stat, i) => (
               <CContainer key={i}>
                 <Text fontSize={"2rem"}>{stat.value[lang]}</Text>
                 <Text fontSize={"1rem"} color={"fg.muted"}>

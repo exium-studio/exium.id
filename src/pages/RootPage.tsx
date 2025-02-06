@@ -11,15 +11,15 @@ import WAWidget from "@/components/widget/WAWidget";
 import StatsHome from "./section/StatsHome";
 
 const RootPage = () => {
-  useScrollToTop();
+  // useScrollToTop();
 
   return (
     <CContainer>
       <HeroHome />
       <StatsHome />
       <WorksHome />
-      <AboutUsHome />
       <ServicesHome />
+      <AboutUsHome />
       <TheWayWeWork />
       <ClientStory />
       <Footer />

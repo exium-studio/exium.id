@@ -20,7 +20,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
   const [scrollYPos, setScrollYPos] = useState<number>(window.scrollY);
   const [trigger, setTrigger] = useState<boolean>(true);
   const [navTop, setNavTop] = useState<number>(0);
-  // const scrollTop = scrollYPos === 0;
+  const homeRoute = pathname === "/";
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
@@ -73,7 +73,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
             <NavDrawer
               activeNavIndex={activeNavIndex}
               aria-label="Drawer Navs"
-              color={trigger ? "light" : "current"}
+              color={trigger && homeRoute ? "light" : "current"}
             />
           </HStack>
 
@@ -96,7 +96,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
                         color: "p.500",
                       }}
                       transition={"200ms"}
-                      color={trigger ? "light" : "current"}
+                      color={trigger && homeRoute ? "light" : "current"}
                       fontSize={"1rem !important"}
                     >
                       {nav.label[lang]}
