@@ -106,24 +106,6 @@ const Clock = () => {
 
 const Hero = () => {
   const { lang } = useLang();
-  // const [lighter, setLighter] = useState(false);
-  // const [lightPos, setLightPos] = useState({ x: 0, y: 0 });
-  // const [hover, setHover] = useState(false);
-  // function handleMouseMove(e: MouseEvent) {
-  //   if (hover) {
-  //     setLightPos({
-  //       x: e.clientX - 50,
-  //       y: e.clientY - 50,
-  //     });
-  //   }
-  // }
-  // useEffect(() => {
-  //   window.addEventListener("mousemove", handleMouseMove);
-
-  //   return () => {
-  //     window.removeEventListener("mousemove", handleMouseMove);
-  //   };
-  // }, [hover]);
 
   return (
     <CContainer
@@ -132,29 +114,11 @@ const Hero = () => {
       bg={"dark"}
       overflow={"clip"}
       position={"relative"}
-      // onMouseEnter={() => {
-      //   setHover(true);
-      // }}
-      // onMouseLeave={() => {
-      //   setHover(false);
-      // }}
     >
-      {/* {lighter && hover && (
-        <Circle
-          w={"100px"}
-          h={"100px"}
-          bg={"dt"}
-          position={"fixed"}
-          top={`${lightPos.y}px`}
-          left={`${lightPos.x}px`}
-          zIndex={1}
-        />
-      )} */}
-
       <BgGila />
 
       <Container zIndex={3} flex={1} px={0} p={R_SPACING2}>
-        <VStack flex={1} px={4} py={40} justify={"center"}>
+        <VStack flex={1} px={4} py={"200px"} justify={"center"}>
           <Center position={"relative"}>
             <Image
               alt="Exium"
@@ -208,20 +172,6 @@ const Hero = () => {
             >
               GMT+7
             </Text>
-
-            {/* <BButton
-              mt={4}
-              onClick={() => {
-                setLighter((ps) => !ps);
-              }}
-              bg={lighter ? "p.500" : "white"}
-              color={lighter ? "white" : "dark"}
-            >
-              <Icon>
-                <IconLighter />
-              </Icon>
-              Lighter
-            </BButton> */}
           </CContainer>
         </SimpleGrid>
       </Container>
