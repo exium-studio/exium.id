@@ -18,7 +18,6 @@ import contents from "@/constant/contents";
 import navs from "@/constant/navs";
 import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
-import useScrollToTop from "@/hooks/useScrollToTop";
 import {
   Badge,
   Box,
@@ -35,7 +34,7 @@ import Container from "./section/Container";
 import Footer from "./section/Footer";
 
 const ServicesPage = () => {
-  useScrollToTop();
+  // useScrollToTop();
 
   const { lang } = useLang();
 
@@ -69,7 +68,7 @@ const ServicesPage = () => {
       </CContainer>
 
       {/* Content */}
-      <Container>
+      <Container maxW={"1280px"}>
         <SimpleGrid columns={[1, 2, null, 4]} gap={R_SPACING2}>
           {contents.services.list.map((service, i) => (
             <CContainer
@@ -125,89 +124,82 @@ const ServicesPage = () => {
         </Heading4>
       </Container>
 
-      <CContainer
-        borderTop={"1px solid"}
-        borderBottom={"1px solid"}
-        borderColor={"var(--divider2)"}
-      >
-        <Container px={0}>
-          {contents.services.list.map((service, i) => (
-            <Grid
-              key={i}
-              templateColumns={["repeat(1, 1fr)", null, "repeat(4, 1fr)"]}
-            >
-              <GridItem>
-                <Container
-                  p={R_SPACING2}
-                  h={"100%"}
-                  justify={"center"}
-                  border={"1px solid var(--divider2)"}
+      <CContainer borderTop={"1px solid"} borderColor={"gray.muted"}>
+        {contents.services.list.map((service, i) => (
+          <CContainer borderBottom={"1px solid"} borderColor={"gray.muted"}>
+            <Container px={0}>
+              <Grid
+                key={i}
+                templateColumns={["repeat(1, 1fr)", null, "repeat(4, 1fr)"]}
+              >
+                <GridItem
+                  borderBottom={["1px solid", null, ""]}
+                  borderColor={"gray.muted !important"}
                 >
-                  <HStack align={"start"} gap={4}>
-                    <Text
-                      fontSize={"1.25rem"}
-                      fontWeight={"medium"}
-                      color={"fg.subtle"}
-                    >
-                      {i + 1}.
-                    </Text>
-                    <Text fontSize={"1.25rem"} fontWeight={"medium"}>
-                      {service.solution[lang]}
-                    </Text>
-                  </HStack>
-                </Container>
-              </GridItem>
-
-              <GridItem colSpan={3}>
-                <Container
-                  p={R_SPACING2}
-                  h={"100%"}
-                  justify={"center"}
-                  border={"1px solid var(--divider2)"}
-                >
-                  <CContainer gap={5}>
-                    <Text color={"fg.muted"} lineHeight={1.8}>
-                      {service.description[lang]}
-                    </Text>
-
-                    <HStack wrap={"wrap"} mt={"auto"}>
-                      {service.notes.map((note, ii) => (
-                        <PopoverRoot key={ii}>
-                          <PopoverTrigger>
-                            <Badge
-                              className="btn-outline"
-                              size={"lg"}
-                              cursor={"pointer"}
-                            >
-                              {note.label[lang]}
-                            </Badge>
-                          </PopoverTrigger>
-
-                          <PopoverContent>
-                            <PopoverCloseTrigger />
-                            <PopoverHeader>
-                              <PopoverTitle fontWeight={"medium"}>
-                                {note.label[lang]}
-                              </PopoverTitle>
-                            </PopoverHeader>
-                            <PopoverBody>
-                              <Text lineHeight={1.6}>
-                                {note.description[lang]}
-                              </Text>
-                            </PopoverBody>
-                          </PopoverContent>
-                        </PopoverRoot>
-                      ))}
+                  <Container p={R_SPACING2} h={"100%"} justify={"center"}>
+                    <HStack align={"start"} gap={4}>
+                      <Text
+                        fontSize={"1.25rem"}
+                        fontWeight={"medium"}
+                        color={"fg.subtle"}
+                      >
+                        {i + 1}.
+                      </Text>
+                      <Text fontSize={"1.25rem"} fontWeight={"medium"}>
+                        {service.solution[lang]}
+                      </Text>
                     </HStack>
-                  </CContainer>
-                </Container>
-              </GridItem>
-            </Grid>
-          ))}
-        </Container>
-      </CContainer>
+                  </Container>
+                </GridItem>
 
-      <CContainer></CContainer>
+                <GridItem
+                  colSpan={3}
+                  borderLeft={["", null, "1px solid"]}
+                  borderColor={"gray.muted !important"}
+                >
+                  <Container p={R_SPACING2} h={"100%"} justify={"center"}>
+                    <CContainer gap={5}>
+                      <Text color={"fg.muted"} lineHeight={1.8}>
+                        {service.description[lang]}
+                      </Text>
+
+                      <HStack wrap={"wrap"} mt={"auto"}>
+                        {service.notes.map((note, ii) => (
+                          <PopoverRoot key={ii}>
+                            <PopoverTrigger>
+                              <Badge
+                                className="btn-outline"
+                                size={"lg"}
+                                cursor={"pointer"}
+                              >
+                                {note.label[lang]}
+                              </Badge>
+                            </PopoverTrigger>
+
+                            <PopoverContent>
+                              <PopoverCloseTrigger />
+                              <PopoverHeader>
+                                <PopoverTitle fontWeight={"medium"}>
+                                  {note.label[lang]}
+                                </PopoverTitle>
+                              </PopoverHeader>
+                              <PopoverBody>
+                                <Text lineHeight={1.6}>
+                                  {note.description[lang]}
+                                </Text>
+                              </PopoverBody>
+                            </PopoverContent>
+                          </PopoverRoot>
+                        ))}
+                      </HStack>
+                    </CContainer>
+                  </Container>
+                </GridItem>
+              </Grid>
+            </Container>
+          </CContainer>
+        ))}
+      </CContainer>
 
       <Footer />
     </CContainer>
