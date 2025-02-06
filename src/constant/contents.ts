@@ -90,7 +90,10 @@ const contents = {
       },
     ],
     works: {
-      title: { id: "Karya Terbaru Exium", en: "Exium's Latest Works" },
+      title: {
+        id: "Lihat karya-karya dari Exium",
+        en: "See Exium's project showcase",
+      },
       intro: {
         id: "Proyek unggulan kami mencerminkan keahlian dalam survei umum dan pemindaian ke BIM.",
         en: "Our standout projects showcase expertise in general surveys and scan-to-BIM.",

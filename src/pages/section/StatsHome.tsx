@@ -5,7 +5,7 @@ import { Center, HStack, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import Container from "./Container";
 import { useLang } from "@/hooks/useLang";
 
-const Stats = () => {
+const StatsHome = () => {
   const { lang } = useLang();
 
   return (
@@ -96,4 +96,4 @@ const Stats = () => {
   );
 };
 
-export default Stats;
+export default StatsHome;
