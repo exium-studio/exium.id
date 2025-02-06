@@ -131,12 +131,13 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
         >
           <Icon
             transform={"rotate(-10deg)"}
+            mt={"-2px"}
             // animation={"rotate 10s linear infinite"}
           >
             <IconMessage />
           </Icon>
-          <Text mt={"-2px"}> Let's Talk</Text>
-          <Icon mt={"-2px"}>
+          <Text mt={"-3px"}> Let's Talk</Text>
+          <Icon mt={"-3px"}>
             <IconArrowRight />
           </Icon>
         </BButton>

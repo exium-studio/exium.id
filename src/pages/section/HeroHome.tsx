@@ -62,7 +62,7 @@ const BgGila = () => {
       zIndex={2}
     >
       <Text
-        color={"#101010"}
+        color={"#121212"}
         // opacity={0.2}
         wordBreak={"break-all"}
         overflow={"hidden"}
