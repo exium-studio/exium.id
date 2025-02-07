@@ -67,7 +67,7 @@ const TheWayWeWork = () => {
 
         <CContainer align={"center"} gap={40}>
           <HStack wrap={"wrap"} gap={12}>
-            <CContainer flex={"1 1 30%"}>
+            <CContainer flex={"1 1 20%"}>
               <Image
                 alt="Brainstorming Illustration"
                 src={content.list[0].image}
@@ -92,7 +92,7 @@ const TheWayWeWork = () => {
               <Text>{content.list[1].description[lang]}</Text>
             </CContainer>
 
-            <CContainer flex={"1 1 30%"}>
+            <CContainer flex={"1 1 20%"}>
               <Image alt="Designing Illustration" src={content.list[1].image} />
             </CContainer>
           </HStack>
@@ -207,7 +207,6 @@ const TheWayWeWork = () => {
                 </VStack>
               </VStack>
             )}
-
             <VStack position={"absolute"} right={0} px={12} opacity={0.1}>
               <VStack
                 gap={8}
