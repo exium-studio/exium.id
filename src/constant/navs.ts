@@ -14,6 +14,7 @@ const navs: Interface__Nav[] = [
       en: "Works",
     },
     link: "/works",
+    disabled: true,
   },
   {
     label: {

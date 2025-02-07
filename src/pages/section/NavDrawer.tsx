@@ -136,12 +136,13 @@ export default function NavDrawer({ activeNavIndex, ...props }: Props) {
                 <Heading2
                   key={i}
                   fontWeight={"500 !important"}
-                  cursor={"pointer"}
+                  cursor={nav.disabled ? "disabled" : "pointer"}
                   onClick={() => {
-                    navigate(nav.link);
+                    if (!nav.disabled) navigate(nav.link);
                   }}
                   transition={"200ms"}
-                  _hover={{ color: "p.500" }}
+                  opacity={nav.disabled ? 0.5 : 1}
+                  _hover={{ color: !nav.disabled ? "p.500" : "" }}
                   borderBottom={"2px solid"}
                   borderColor={activeNavIndex === i ? "p.500" : "transparent"}
                 >

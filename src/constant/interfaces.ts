@@ -29,6 +29,7 @@ export interface Interface__Nav {
   };
   link: string;
   icon?: any;
+  disabled?: boolean;
 }
 
 // Select

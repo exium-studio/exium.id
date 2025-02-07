@@ -96,6 +96,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
                     transition={"200ms"}
                     color={trigger && homeRoute ? "light" : "current"}
                     fontSize={"1rem !important"}
+                    disabled={nav.disabled}
                   >
                     {nav.label[lang]}
                   </BButton>
