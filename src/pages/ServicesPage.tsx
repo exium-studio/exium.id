@@ -32,9 +32,10 @@ import { HouseSimple } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 import Container from "./section/Container";
 import Footer from "./section/Footer";
+import useScrollToTop from "@/hooks/useScrollToTop";
 
 const ServicesPage = () => {
-  // useScrollToTop();
+  useScrollToTop();
 
   const { lang } = useLang();
 

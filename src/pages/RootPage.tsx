@@ -6,9 +6,10 @@ import ServicesHome from "./section/ServicesHome";
 import StatsHome from "./section/StatsHome";
 import TheWayWeWork from "./section/TheWayWeWork";
 import WorksHome from "./section/WorksHome";
+import useScrollToTop from "@/hooks/useScrollToTop";
 
 const RootPage = () => {
-  // useScrollToTop();
+  useScrollToTop();
 
   return (
     <CContainer>
