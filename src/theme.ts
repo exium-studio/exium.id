@@ -90,6 +90,7 @@ const customConfig = defineConfig({
           contrast: { value: "{colors.orange.100} !important" },
         },
         body: { value: { base: "#fff", _dark: "#080808" } },
+        bodytrans: { value: { base: "#ffffffaa", _dark: "#080808aa" } },
         current: { value: { base: "#080808", _dark: "#fff" } },
         ibody: { value: { base: "#080808", _dark: "#FAFAFC" } },
       },

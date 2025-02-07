@@ -1,9 +1,8 @@
 import CContainer from "@/components/ui-custom/CContainer";
+import Heading1 from "@/components/ui-custom/Heading1";
 import Heading2 from "@/components/ui-custom/Heading2";
-import Heading3 from "@/components/ui-custom/Heading3";
 import Heading5 from "@/components/ui-custom/Heading5";
 import { BreadcrumbRoot } from "@/components/ui/breadcrumb";
-import { useLightDarkColor } from "@/constant/colors";
 import contents from "@/constant/contents";
 import navs from "@/constant/navs";
 import { IMAGES_PATH } from "@/constant/path";
@@ -21,6 +20,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { HouseSimple } from "@phosphor-icons/react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Container from "./section/Container";
 import Footer from "./section/Footer";
@@ -30,8 +30,14 @@ interface ValuesitemProps extends StackProps {
   item: any;
 }
 const ValuesItem = ({ index, item, ...props }: ValuesitemProps) => {
-  const lightDarkColor = useLightDarkColor();
   const { lang } = useLang();
+  const [solid, setSolid] = useState(false);
+  function onSolid() {
+    setSolid(true);
+  }
+  function onUnsolid() {
+    setSolid(false);
+  }
 
   return (
     <CContainer maxW={"300px"} mx={"auto"} flex={0} {...props}>
@@ -41,7 +47,11 @@ const ValuesItem = ({ index, item, ...props }: ValuesitemProps) => {
         border={"1px solid var(--divider3)"}
         flex={0}
         transition={"400ms"}
-        _hover={{ bg: lightDarkColor }}
+        bg={solid ? "body" : `bodytrans`}
+        onMouseEnter={onSolid}
+        onMouseLeave={onUnsolid}
+        onTouchStart={onSolid}
+        onTouchEnd={onUnsolid}
       >
         <HStack gap={4}>
           <Heading5 mb={"auto"} lineHeight={"1 !important"} opacity={0.4}>
@@ -50,7 +60,7 @@ const ValuesItem = ({ index, item, ...props }: ValuesitemProps) => {
 
           <CContainer gap={2}>
             <Text fontWeight={600}>{item.title[lang]}</Text>
-            <Text color={"fg.muted"}>{item.description[lang]}</Text>
+            <Text>{item.description[lang]}</Text>
           </CContainer>
         </HStack>
       </CContainer>
@@ -218,7 +228,6 @@ const AboutUsPage = () => {
 
         {/* Values */}
         <CContainer
-          bg={"var(--divider)"}
           py={20}
           // borderTop={"2px solid"}
           // borderBottom={"2px solid"}
@@ -226,12 +235,10 @@ const AboutUsPage = () => {
         >
           <Container overflowX={"clip"}>
             <SimpleGrid columns={[1, null, 2]} gap={R_SPACING3} mb={R_SPACING3}>
-              <Heading3 fontWeight={"semibold"}>
+              <Heading1 fontWeight={"semibold"}>
                 {contents.aboutUs.valuesLabel[lang]}
-              </Heading3>
-              <Text fontSize={"1rem"} color={"fg.muted"}>
-                {contents.aboutUs.valuesIntro[lang]}
-              </Text>
+              </Heading1>
+              <Text fontSize={"2xl"}>{contents.aboutUs.valuesIntro[lang]}</Text>
             </SimpleGrid>
 
             <Stack
@@ -264,7 +271,7 @@ const AboutUsPage = () => {
                 mr={"auto"}
                 columns={[1, null, 3]}
                 h={"100%"}
-                gap={2}
+                gap={4}
                 zIndex={2}
                 // border={"2px solid red"}
               >
