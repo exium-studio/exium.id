@@ -68,7 +68,7 @@ const Problem = () => {
       <CContainer
         borderTop={"1px solid"}
         borderBottom={["none", null, null, "1px solid"]}
-        borderColor={"d2 !important"}
+        borderColor={"d3 !important"}
       >
         <Container px={0}>
           <SimpleGrid columns={[1, 2, null, 4]}>
@@ -81,7 +81,7 @@ const Problem = () => {
                   i !== 0 ? "1px solid" : "",
                 ]}
                 borderBottom={["1px solid", null, null, "none"]}
-                borderColor={"d2 !important"}
+                borderColor={"d3 !important"}
                 p={[5, null, 8]}
                 gap={5}
               >

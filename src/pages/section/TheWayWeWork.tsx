@@ -19,7 +19,14 @@ const TheWayWeWork = () => {
   return (
     <CContainer pt={20} overflowX={"clip"}>
       <Container>
-        <Center w={"30%"} mx={"auto"} mt={20} mb={40} position={"relative"}>
+        <Center
+          minW={sw > 300 ? "250px" : "100%"}
+          w={"30%"}
+          mx={"auto"}
+          mt={20}
+          mb={40}
+          position={"relative"}
+        >
           <Image
             alt="Exium Graphic Logo"
             src={`${IMAGES_PATH}/logo_graphic.png`}
@@ -108,7 +115,7 @@ const TheWayWeWork = () => {
               mt={[`-${500 - sw}px`, null, "35%"]}
             >
               <BgGila
-                w={["200%", null, "100%"]}
+                w={["200%", "150%", "100%"]}
                 position={"static"}
                 textProps={{ color: "dt" }}
               />
@@ -145,7 +152,7 @@ const TheWayWeWork = () => {
               py={4}
               mt={12}
               mb={8}
-              mx={"auto"}
+              mx={["", null, "auto"]}
               bg={"p.500"}
               color={"light"}
               rotate={"-2deg"}
