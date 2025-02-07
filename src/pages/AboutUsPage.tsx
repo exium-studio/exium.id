@@ -44,7 +44,7 @@ const ValuesItem = ({ index, item, ...props }: ValuesitemProps) => {
       <CContainer
         p={4}
         borderRadius={8}
-        border={"1px solid var(--divider3)"}
+        border={"1px solid var(--divider3)"}  
         flex={0}
         transition={"400ms"}
         bg={solid ? "body" : `bodytrans`}
