@@ -223,7 +223,7 @@ const contents = {
     },
     backgroundLabel: { id: "Latar Belakang", en: "Background" },
     list: [
-      // Gis
+      // Gis politik
       {
         index: 2,
         category: 2,
@@ -232,16 +232,16 @@ const contents = {
           logo: `${ASSETS_PATH}/images/clients/rski.png`,
         },
         color: "#3e97ff",
-        thumbnail: `${IMAGES_PATH}/works/gis/thumbnail.png`,
-        thumbnail_gray: `${IMAGES_PATH}/works/gis/thumbnail_gray.png`,
-        image_1: `${IMAGES_PATH}/works/gis/image_1.png`,
-        image_2: `${IMAGES_PATH}/works/gis/image_1.png`,
-        featuredImage: `${IMAGES_PATH}/works/gis/featured_image.png`,
+        thumbnail: `${IMAGES_PATH}/works/gis_politik/thumbnail.png`,
+        thumbnail_gray: `${IMAGES_PATH}/works/gis_politik/thumbnail_gray.png`,
+        image_1: `${IMAGES_PATH}/works/gis_politik/image_1.png`,
+        image_2: `${IMAGES_PATH}/works/gis_politik/image_1.png`,
+        featuredImage: `${IMAGES_PATH}/works/gis_politik/featured_image.png`,
         title: "Geo Information System",
         tag: { id: "HRIS", en: "HRIS" },
         summary: {
-          id: "Data tanah yang terdigitalisasi dengan fitur deteksi cerdas gap & overlap",
-          en: "Digitized land data with intelligent gap & overlap detection features",
+          id: "Data perolehan suara yang terdigitalisasi dengan visual peta",
+          en: "Digitized vote acquisition data with map visuals",
         },
         problem: {
           id: "Aute laborum ut et id ipsum esse in elit Lorem tempor in. Sunt deserunt commodo aliquip incididunt irure voluptate.",

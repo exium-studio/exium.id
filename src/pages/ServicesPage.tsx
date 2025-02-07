@@ -18,6 +18,7 @@ import contents from "@/constant/contents";
 import navs from "@/constant/navs";
 import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import {
   Badge,
   Box,
@@ -25,14 +26,12 @@ import {
   GridItem,
   HStack,
   Icon,
-  SimpleGrid,
   Text,
 } from "@chakra-ui/react";
 import { HouseSimple } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 import Container from "./section/Container";
 import Footer from "./section/Footer";
-import useScrollToTop from "@/hooks/useScrollToTop";
 
 const ServicesPage = () => {
   useScrollToTop();
@@ -70,9 +69,11 @@ const ServicesPage = () => {
 
       {/* Content */}
       <Container maxW={"1280px"}>
-        <SimpleGrid columns={[1, 2, null, 4]} gap={R_SPACING2}>
+        <HStack wrap={"wrap"} justify={"center"} gap={8} mx={"auto"}>
           {contents.services.list.map((service, i) => (
             <CContainer
+              flex={"0 1 300px"}
+              w={"fit"}
               p={R_SPACING2}
               py={12}
               bgGradient={"to-bl"}
@@ -118,7 +119,7 @@ const ServicesPage = () => {
               </Text>
             </CContainer>
           ))}
-        </SimpleGrid>
+        </HStack>
 
         <Heading4 fontWeight={"medium"} textAlign={"center"} my={20}>
           {contents.services.intro[lang]}
