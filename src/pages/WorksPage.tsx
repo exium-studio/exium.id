@@ -1,4 +1,3 @@
-import BButton from "@/components/ui-custom/BButton";
 import CContainer from "@/components/ui-custom/CContainer";
 import FeedbackNotFound from "@/components/ui-custom/FeedbackNotFound";
 import Heading2 from "@/components/ui-custom/Heading2";
@@ -23,7 +22,7 @@ const WorksPage = () => {
   useScrollToTop();
 
   const { lang } = useLang();
-  const [filter, setFilter] = useState<number | undefined>(undefined);
+  const [filter] = useState<number | undefined>(undefined);
 
   const fd = contents.works.list
     .slice()
@@ -66,7 +65,7 @@ const WorksPage = () => {
       {/* Content */}
       <CContainer mb={20}>
         <Container>
-          <HStack wrap={"wrap"} justify={"center"} mb={R_SPACING2}>
+          {/* <HStack wrap={"wrap"} justify={"center"} mb={R_SPACING2}>
             <BButton
               size={"sm"}
               variant={filter === undefined ? "solid" : "subtle"}
@@ -88,11 +87,16 @@ const WorksPage = () => {
                 {item[lang]}
               </BButton>
             ))}
-          </HStack>
+          </HStack> */}
 
           {fd.length === 0 && <FeedbackNotFound />}
 
-          <SimpleGrid columns={[2, null, 4]} gap={5} gapY={R_SPACING2}>
+          <SimpleGrid
+            columns={[2, null, 3]}
+            gap={R_SPACING2}
+            maxW={"900px"}
+            mx={"auto"}
+          >
             {fd.map((work, i) => {
               const ok = filter === work.category || filter === undefined;
 

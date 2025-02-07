@@ -44,7 +44,7 @@ const ValuesItem = ({ index, item, ...props }: ValuesitemProps) => {
       <CContainer
         p={4}
         borderRadius={8}
-        border={"1px solid var(--divider3)"}  
+        border={"1px solid var(--divider3)"}
         flex={0}
         transition={"400ms"}
         bg={solid ? "body" : `bodytrans`}
@@ -114,30 +114,51 @@ const AboutUsPage = () => {
         />
 
         <Container my={20}>
-          <Text fontSize={"1.5rem"} mb={20}>
+          <Text fontSize={"2xl"} fontWeight={"medium"} mb={20}>
             {contents.aboutUs.intro[lang]}
           </Text>
 
           <SimpleGrid columns={[1, null, 2]} gap={R_SPACING3}>
-            <Text color={"fg.muted"} fontSize={"1rem"}>
-              {contents.aboutUs.intro2[lang]}
-            </Text>
-            <Text color={"fg.muted"} fontSize={"1rem"}>
-              {contents.aboutUs.intro3[lang]}
-            </Text>
-          </SimpleGrid>
-
-          <SimpleGrid columns={[2, null, 4]} gap={R_SPACING2} mt={20}>
-            {contents.home.stats.map((stat, i) => (
-              <CContainer key={i}>
-                <Text fontSize={"2rem"}>{stat.value[lang]}</Text>
-                <Text fontSize={"1rem"} color={"fg.muted"}>
-                  {stat.label[lang]}
-                </Text>
-              </CContainer>
-            ))}
+            <Text color={"fg.muted"}>{contents.aboutUs.intro2[lang]}</Text>
+            <Text color={"fg.muted"}>{contents.aboutUs.intro3[lang]}</Text>
           </SimpleGrid>
         </Container>
+
+        <CContainer
+          borderTop={"1px solid"}
+          borderBottom={["none", null, null, "1px solid"]}
+          borderColor={"gray.muted !important"}
+          mb={20}
+        >
+          <Container px={0}>
+            <SimpleGrid columns={[1, 2, null, 4]}>
+              {contents.home.stats.map((item, i) => {
+                return (
+                  <CContainer
+                    key={i}
+                    borderLeft={[
+                      "",
+                      i % 2 !== 0 ? "1px solid" : "",
+                      i !== 0 ? "1px solid" : "",
+                    ]}
+                    borderBottom={["1px solid", null, null, "none"]}
+                    borderColor={"gray.muted !important"}
+                    p={R_SPACING2}
+                    gap={4}
+                  >
+                    <Text fontSize={"1.5rem"}>{item.emoji}</Text>
+                    <Text fontSize={"xl"} fontWeight={"medium"}>
+                      {item.label[lang]}
+                    </Text>
+                    <Text fontWeight={"medium"} color={"fg.subtle"}>
+                      {item.description[lang]}
+                    </Text>
+                  </CContainer>
+                );
+              })}
+            </SimpleGrid>
+          </Container>
+        </CContainer>
 
         {/* Image Collase */}
         <CContainer overflow={"clip"}>
@@ -238,7 +259,9 @@ const AboutUsPage = () => {
               <Heading1 fontWeight={"semibold"}>
                 {contents.aboutUs.valuesLabel[lang]}
               </Heading1>
-              <Text fontSize={"2xl"}>{contents.aboutUs.valuesIntro[lang]}</Text>
+              <Text fontSize={"2xl"} fontWeight={"medium"}>
+                {contents.aboutUs.valuesIntro[lang]}
+              </Text>
             </SimpleGrid>
 
             <Stack

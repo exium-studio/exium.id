@@ -26,7 +26,6 @@ const WorkCard = ({ data, index, setActiveWork, ...props }: Props) => {
         cursor={"pointer"}
         scrollSnapAlign={"center"}
         align={"stretch"}
-        borderRadius={8}
         overflow={"clip"}
         className="clicky"
         transition={"200ms"}
