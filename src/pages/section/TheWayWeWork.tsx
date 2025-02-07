@@ -178,6 +178,7 @@ const TheWayWeWork = () => {
             {!iss && (
               <VStack position={"absolute"} left={0} px={12} opacity={0.1}>
                 <VStack
+                  pt={8}
                   gap={8}
                   animation={"infinite-scroll-t 15s linear infinite"}
                 >
@@ -210,6 +211,7 @@ const TheWayWeWork = () => {
             )}
             <VStack position={"absolute"} right={0} px={12} opacity={0.1}>
               <VStack
+                pt={8}
                 gap={8}
                 animation={"infinite-scroll-t 15s linear infinite"}
               >
