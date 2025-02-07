@@ -2,19 +2,21 @@ import CContainer from "@/components/ui-custom/CContainer";
 import Heading1 from "@/components/ui-custom/Heading1";
 import Heading3 from "@/components/ui-custom/Heading3";
 import Heading4 from "@/components/ui-custom/Heading4";
+import BgGila from "@/components/widget/BgGila";
 import contents from "@/constant/contents";
 import { IMAGES_PATH } from "@/constant/path";
 import { useLang } from "@/hooks/useLang";
-import { Box, Center, HStack, Image, Text } from "@chakra-ui/react";
-import Container from "./Container";
-import BgGila from "@/components/widget/BgGila";
 import useScreen from "@/hooks/useScreen";
+import { Box, Center, HStack, Image, Text, VStack } from "@chakra-ui/react";
+import Container from "./Container";
+import useIsSmScreenWidth from "@/hooks/useIsSmScreenWidth";
 
 const TheWayWeWork = () => {
   const { lang } = useLang();
   const content = contents.home.tww;
 
   const { sw } = useScreen();
+  const iss = useIsSmScreenWidth();
 
   return (
     <CContainer pt={20} overflowX={"clip"}>
@@ -130,7 +132,7 @@ const TheWayWeWork = () => {
           />
         </Container>
 
-        <CContainer bg={"dark"} color={"light"} zIndex={3}>
+        <CContainer bg={"dark"} color={"light"} zIndex={3} overflow={"clip"}>
           <Container py={12} position={"relative"} gap={4}>
             <Heading3
               fontWeight={"semibold"}
@@ -171,6 +173,72 @@ const TheWayWeWork = () => {
             >
               {content.list[3].description[lang]}
             </Text>
+
+            {!iss && (
+              <VStack position={"absolute"} left={0} px={12} opacity={0.1}>
+                <VStack
+                  gap={8}
+                  animation={"infinite-scroll-t 15s linear infinite"}
+                >
+                  {contents.techstack.map((item, i) => {
+                    return (
+                      i % 2 !== 0 && (
+                        <Image
+                          key={i}
+                          alt={item.name}
+                          src={item.logoGray}
+                          w={"60px"}
+                        />
+                      )
+                    );
+                  })}
+                  {contents.techstack.map((item, i) => {
+                    return (
+                      i % 2 !== 0 && (
+                        <Image
+                          key={i}
+                          alt={item.name}
+                          src={item.logoGray}
+                          w={"60px"}
+                        />
+                      )
+                    );
+                  })}
+                </VStack>
+              </VStack>
+            )}
+
+            <VStack position={"absolute"} right={0} px={12} opacity={0.1}>
+              <VStack
+                gap={8}
+                animation={"infinite-scroll-t 15s linear infinite"}
+              >
+                {contents.techstack.map((item, i) => {
+                  return (
+                    i % 2 === 0 && (
+                      <Image
+                        key={i}
+                        alt={item.name}
+                        src={item.logoGray}
+                        w={"60px"}
+                      />
+                    )
+                  );
+                })}
+                {contents.techstack.map((item, i) => {
+                  return (
+                    i % 2 === 0 && (
+                      <Image
+                        key={i}
+                        alt={item.name}
+                        src={item.logoGray}
+                        w={"60px"}
+                      />
+                    )
+                  );
+                })}
+              </VStack>
+            </VStack>
           </Container>
         </CContainer>
       </CContainer>

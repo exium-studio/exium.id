@@ -667,6 +667,14 @@ button {
     transform: translateX(calc(50%));
   }
 }
+@keyframes infinite-scroll-t {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-50%));
+  }
+}
 @keyframes hero-top-0 {
   0% {
     opacity: 0.06;

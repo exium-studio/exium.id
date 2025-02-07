@@ -1142,9 +1142,9 @@ const contents = {
       logoGray: `${IMAGES_PATH}/techstack/gray/corel.png`,
     },
     {
-      name: "Phosphor Icon",
-      logo: `${IMAGES_PATH}/techstack/phosphoricon.png`,
-      logoGray: `${IMAGES_PATH}/techstack/gray/phosphoricon.png`,
+      name: "Tabler Icon",
+      logo: `${IMAGES_PATH}/techstack/tabler.png`,
+      logoGray: `${IMAGES_PATH}/techstack/gray/tabler.png`,
     },
   ],
   faqs: {
