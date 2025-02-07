@@ -129,6 +129,7 @@ const TheWayWeWork = () => {
             alt="Coding Illustration"
             src={content.list[2].image}
             minH={"240px"}
+            mb={"-2px"}
           />
         </Container>
 
