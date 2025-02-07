@@ -69,10 +69,16 @@ const ServicesPage = () => {
 
       {/* Content */}
       <Container maxW={"1280px"}>
-        <HStack wrap={"wrap"} justify={"center"} gap={8} mx={"auto"}>
+        <HStack
+          wrap={"wrap"}
+          align={"start"}
+          justify={"center"}
+          gap={8}
+          mx={"auto"}
+        >
           {contents.services.list.map((service, i) => (
             <CContainer
-              flex={"0 1 300px"}
+              flex={"0 1 270px"}
               w={"fit"}
               p={R_SPACING2}
               py={12}
