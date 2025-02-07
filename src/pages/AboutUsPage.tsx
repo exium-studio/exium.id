@@ -3,11 +3,13 @@ import Heading2 from "@/components/ui-custom/Heading2";
 import Heading3 from "@/components/ui-custom/Heading3";
 import Heading5 from "@/components/ui-custom/Heading5";
 import { BreadcrumbRoot } from "@/components/ui/breadcrumb";
+import { useLightDarkColor } from "@/constant/colors";
+import contents from "@/constant/contents";
 import navs from "@/constant/navs";
 import { IMAGES_PATH } from "@/constant/path";
 import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
+import useIsSmScreenWidth from "@/hooks/useIsSmScreenWidth";
 import { useLang } from "@/hooks/useLang";
-import useScrollToTop from "@/hooks/useScrollToTop";
 import {
   BreadcrumbCurrentLink,
   HStack,
@@ -22,8 +24,6 @@ import { HouseSimple } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 import Container from "./section/Container";
 import Footer from "./section/Footer";
-import contents from "@/constant/contents";
-import { useLightDarkColor } from "@/constant/colors";
 
 interface ValuesitemProps extends StackProps {
   index: number;
@@ -34,7 +34,7 @@ const ValuesItem = ({ index, item, ...props }: ValuesitemProps) => {
   const { lang } = useLang();
 
   return (
-    <CContainer flex={0} {...props}>
+    <CContainer maxW={"300px"} mx={"auto"} flex={0} {...props}>
       <CContainer
         p={4}
         borderRadius={8}
@@ -59,9 +59,10 @@ const ValuesItem = ({ index, item, ...props }: ValuesitemProps) => {
 };
 
 const AboutUsPage = () => {
-  useScrollToTop();
+  // useScrollToTop();
 
   const { lang } = useLang();
+  const iss = useIsSmScreenWidth();
 
   return (
     <CContainer>
@@ -223,7 +224,7 @@ const AboutUsPage = () => {
           // borderBottom={"2px solid"}
           // borderColor={"var(--divider2)"}
         >
-          <Container>
+          <Container overflowX={"clip"}>
             <SimpleGrid columns={[1, null, 2]} gap={R_SPACING3} mb={R_SPACING3}>
               <Heading3 fontWeight={"semibold"}>
                 {contents.aboutUs.valuesLabel[lang]}
@@ -234,32 +235,37 @@ const AboutUsPage = () => {
             </SimpleGrid>
 
             <Stack
-              flexDir={["column-reverse", null, null, "row"]}
-              gap={[12, null, null, 20]}
+              flexDir={["row-reverse", null, "row"]}
+              gap={[12, null, 20]}
               position={"relative"}
             >
               <CContainer
                 mx={"auto"}
+                my={24}
                 id="valuesImage"
-                position={["absolute", null, null, "static"]}
-                opacity={[0.1, null, null, 1]}
-                top={"30%"}
+                position={["absolute", null, "static"]}
+                // opacity={[0.1, null, 1]}
+                right={"-100%"}
+                w={"200%"}
               >
                 <Image
                   // src={`${SVGS_PATH}/ubur3d.svg`}
                   src={`${IMAGES_PATH}/ubur3d.png`}
-                  w={["100%", null, null, "50%"]}
+                  w={["100%", null, "50%"]}
                   mx={"auto"}
                 />
               </CContainer>
 
               <SimpleGrid
-                position={["static", null, null, "absolute"]}
+                position={["static", null, "absolute"]}
                 top={0}
                 left={0}
-                columns={[1, null, null, 3]}
+                w={["", null, "full"]}
+                mr={"auto"}
+                columns={[1, null, 3]}
                 h={"100%"}
                 gap={2}
+                zIndex={2}
                 // border={"2px solid red"}
               >
                 <CContainer gap={4}>
@@ -275,7 +281,7 @@ const AboutUsPage = () => {
                 </CContainer>
 
                 {/* spacer */}
-                <CContainer></CContainer>
+                {!iss && <CContainer></CContainer>}
 
                 <CContainer gap={4}>
                   {contents.aboutUs.values.map((item, i) => {
