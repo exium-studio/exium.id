@@ -119,7 +119,7 @@ const TheWayWeWork = () => {
               <BgGila
                 w={["200%", "150%", "100%"]}
                 position={"static"}
-                textProps={{ color: "dt" }}
+                textProps={{ color: "p.200", opacity: 0.5 }}
               />
             </CContainer>
           </Center>
