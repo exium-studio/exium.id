@@ -43,7 +43,6 @@ const ValuesItem = ({ index, item, ...props }: ValuesitemProps) => {
     <CContainer maxW={"300px"} mx={"auto"} flex={0} {...props}>
       <CContainer
         p={4}
-        borderRadius={8}
         border={"1px solid var(--divider3)"}
         flex={0}
         transition={"400ms"}
@@ -170,22 +169,10 @@ const AboutUsPage = () => {
             _hover={{ animationPlayState: "paused" }}
           >
             {contents.aboutUs.imagesCollase.map((src, i) => (
-              <Image
-                key={i}
-                alt="Exium Image Collase"
-                src={src}
-                h={"300px"}
-                borderRadius={8}
-              />
+              <Image key={i} alt="Exium Image Collase" src={src} h={"300px"} />
             ))}
             {contents.aboutUs.imagesCollase.map((src, i) => (
-              <Image
-                key={i}
-                alt="Exium Image Collase"
-                src={src}
-                h={"300px"}
-                borderRadius={8}
-              />
+              <Image key={i} alt="Exium Image Collase" src={src} h={"300px"} />
             ))}
           </HStack>
         </CContainer>
@@ -197,22 +184,10 @@ const AboutUsPage = () => {
             _hover={{ animationPlayState: "paused" }}
           >
             {contents.aboutUs.imagesCollase2.map((src, i) => (
-              <Image
-                key={i}
-                alt="Exium Image Collase"
-                src={src}
-                h={"300px"}
-                borderRadius={8}
-              />
+              <Image key={i} alt="Exium Image Collase" src={src} h={"300px"} />
             ))}
             {contents.aboutUs.imagesCollase2.map((src, i) => (
-              <Image
-                key={i}
-                alt="Exium Image Collase"
-                src={src}
-                h={"300px"}
-                borderRadius={8}
-              />
+              <Image key={i} alt="Exium Image Collase" src={src} h={"300px"} />
             ))}
           </HStack>
         </CContainer>
