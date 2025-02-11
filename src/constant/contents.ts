@@ -173,12 +173,12 @@ const contents = {
         },
         {
           title: {
-            id: "Implementasi",
-            en: "Implementation",
+            id: "Implementasi Solusi",
+            en: "Solution Implementation",
           },
           description: {
-            id: "Tim teknisi profesional kami mengimplementasikan solusi dengan pendekatan bertahap dan terukur. Kami memastikan transisi minimal gangguan, memberikan pelatihan komprehensif, dan mendukung adaptasi teknologi baru dalam organisasi Anda.",
-            en: "Our professional tech team implements solutions with a phased and measured approach. We ensure minimal disruption, provide comprehensive training, and support the adaptation of new technologies within your organization.",
+            id: "Tim profesional Exium mengimplementasikan solusi webapp dengan pendekatan terstruktur dan terukur. Kami memastikan proses integrasi yang lancar, minim gangguan operasional, serta menyediakan pelatihan lengkap dan dukungan berkelanjutan untuk memastikan adaptasi teknologi baru berjalan optimal dalam organisasi Anda.",
+            en: "Exium's professional team implements webapp solutions with a structured and measured approach. We ensure seamless integration, minimal operational disruption, and provide comprehensive training and ongoing support to ensure optimal adaptation of new technologies within your organization.",
           },
           icon: Devices,
           image: `${SVGS_PATH}/coding.svg`,

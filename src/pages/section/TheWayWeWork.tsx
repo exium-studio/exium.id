@@ -160,6 +160,7 @@ const TheWayWeWork = () => {
               color={"light"}
               rotate={"-2deg"}
               w={"fit"}
+              zIndex={2}
             >
               <Heading4 fontWeight={"medium"}>
                 {content.list[3].title[lang]}
@@ -171,6 +172,7 @@ const TheWayWeWork = () => {
               textAlign={["left", null, "center"]}
               maxW={"600px"}
               mx={"auto"}
+              zIndex={2}
             >
               {content.list[3].description[lang]}
             </Text>
