@@ -55,6 +55,7 @@ const Hero = () => {
 
   return (
     <CContainer
+      pt={"64px"}
       h={sh > 1020 ? "100vh" : ""}
       maxH={sh > 1020 ? "1200px" : ""}
       bg={"dark"}

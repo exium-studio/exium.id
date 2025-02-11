@@ -12,7 +12,11 @@ const Routing = () => {
         <Route
           key={path}
           path={path}
-          element={<PageContainer activeNavIndex={i}>{element}</PageContainer>}
+          element={
+            <PageContainer activeNavIndex={i} pt={path === "/" ? "" : "64px"}>
+              {element}
+            </PageContainer>
+          }
         />
       ))}
 

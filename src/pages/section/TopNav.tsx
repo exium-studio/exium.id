@@ -18,14 +18,11 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
   const { pathname } = useLocation();
 
   const [scrollYPos, setScrollYPos] = useState<number>(window.scrollY);
-  const [trigger, setTrigger] = useState<boolean>(true);
   const [navTop, setNavTop] = useState<number>(0);
   const homeRoute = pathname === "/";
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
-
-    setTrigger(currentScrollY <= 10);
 
     if (currentScrollY > scrollYPos) {
       setNavTop(-64);
@@ -55,7 +52,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
       left={0}
       transition={"400ms"}
       animation={"flyInFromTop 1s"}
-      bg={!trigger ? "body" : ""}
+      bg={navTop !== 0 ? "body" : ""}
       pl={R_SPACING2}
       // bg={"body"}
       // color={darkLightColor}
@@ -73,7 +70,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
           <NavDrawer
             activeNavIndex={activeNavIndex}
             aria-label="Drawer Navs"
-            color={trigger && homeRoute ? "light" : "current"}
+            color={navTop === 0 && homeRoute ? "light" : "current"}
           />
         </HStack>
 
@@ -94,7 +91,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
                       color: "p.500",
                     }}
                     transition={"200ms"}
-                    color={trigger && homeRoute ? "light" : "current"}
+                    color={navTop === 0 && homeRoute ? "light" : "current"}
                     fontSize={"1rem !important"}
                     disabled={nav.disabled}
                   >
