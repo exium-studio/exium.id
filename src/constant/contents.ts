@@ -1210,7 +1210,10 @@ const contents = {
     ],
   },
   contact: {
-    address: "Remotely, based on Semarang, Central Java, Indonesia",
+    address: {
+      id: "Berbasis jarak jauh, berpusat di Semarang, Jawa Tengah, Indonesia",
+      en: "Remotely, based on Semarang, Central Java, Indonesia",
+    },
     email: "contact@exium.com",
     phone: "+6282352222001",
     wa: "https://wa.me/6282352222001?text=Halo%2C%20saya%20tertarik%20untuk%20mendiskusikan%20lebih%20lanjut%20mengenai%20aplikasi%20HR%20yang%20Anda%20tawarkan.%20Apakah%20saya%20bisa%20mendapatkan%20informasi%20lebih%20detail%20atau%20jadwal%20untuk%20berdiskusi%20lebih%20lanjut%3F%20Terima%20kasih%21",

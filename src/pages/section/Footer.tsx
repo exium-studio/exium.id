@@ -161,7 +161,7 @@ const Footer = () => {
 
               <CContainer>
                 <Text fontSize={"1.25rem"} opacity={0.4}>
-                  {contents.contact.address}
+                  {contents.contact.address[lang]}
                 </Text>
               </CContainer>
 
