@@ -62,7 +62,7 @@ const Hero = () => {
       overflow={"clip"}
       position={"relative"}
     >
-      <BgGila />
+      <BgGila textProps={{ color: "dt", opacity: 0.1 }} />
 
       <Container zIndex={3} flex={1} px={0} p={R_SPACING2} pb={12}>
         <VStack flex={1} px={4} py={"200px"} justify={"center"}>
