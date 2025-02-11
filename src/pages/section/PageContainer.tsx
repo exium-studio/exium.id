@@ -9,7 +9,7 @@ type Props = {
 } & StackProps;
 const PageContainer = ({ children, activeNavIndex, withNav = true }: Props) => {
   return (
-    <CContainer minH={"100dvh"}>
+    <CContainer minH={"100dvh"} pt={"64px"}>
       {withNav && <TopNav activeNavIndex={activeNavIndex} />}
 
       <CContainer minH={`100dvh`}>{children}</CContainer>

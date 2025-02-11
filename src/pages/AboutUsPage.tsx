@@ -24,6 +24,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Container from "./section/Container";
 import Footer from "./section/Footer";
+import useScrollToTop from "@/hooks/useScrollToTop";
 
 interface ValuesitemProps extends StackProps {
   index: number;
@@ -68,7 +69,7 @@ const ValuesItem = ({ index, item, ...props }: ValuesitemProps) => {
 };
 
 const AboutUsPage = () => {
-  // useScrollToTop();
+  useScrollToTop();
 
   const { lang } = useLang();
   const iss = useIsSmScreenWidth();
