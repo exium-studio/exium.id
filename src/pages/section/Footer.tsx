@@ -40,7 +40,7 @@ const Footer = () => {
             right={-12}
             bottom={"-100px"}
             w={"280px"}
-            opacity={0.2}
+            opacity={0.07}
           />
 
           <SimpleGrid columns={[1, null, 2]} gap={R_SPACING3}>
