@@ -41,6 +41,8 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
     };
   }, [scrollYPos, pathname]);
 
+  console.log(navTop === 0, navTop);
+
   return (
     <Box
       id="topNav"
@@ -52,7 +54,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
       left={0}
       transition={"400ms"}
       animation={"flyInFromTop 1s"}
-      bg={navTop !== 0 ? "body" : ""}
+      bg={scrollYPos !== 0 ? "body" : ""}
       pl={R_SPACING2}
       // bg={"body"}
       // color={darkLightColor}
@@ -70,7 +72,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
           <NavDrawer
             activeNavIndex={activeNavIndex}
             aria-label="Drawer Navs"
-            color={navTop === 0 && homeRoute ? "light" : "current"}
+            color={scrollYPos === 0 && homeRoute ? "light" : "current"}
           />
         </HStack>
 
@@ -91,7 +93,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
                       color: "p.500",
                     }}
                     transition={"200ms"}
-                    color={navTop === 0 && homeRoute ? "light" : "current"}
+                    color={scrollYPos === 0 && homeRoute ? "light" : "current"}
                     fontSize={"1rem !important"}
                     disabled={nav.disabled}
                   >
