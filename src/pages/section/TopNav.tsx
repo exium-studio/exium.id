@@ -41,8 +41,6 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
     };
   }, [scrollYPos, pathname]);
 
-  console.log(navTop === 0, navTop);
-
   return (
     <Box
       id="topNav"
