@@ -82,7 +82,9 @@ const Problem = () => {
                 ]}
                 borderBottom={["1px solid", null, null, "none"]}
                 borderColor={"d3 !important"}
-                p={[5, null, 8]}
+                pt={7}
+                pb={8}
+                px={[4, 8]}
                 gap={5}
               >
                 <Icon fontSize={52} color={"var(--divider-text)"}>

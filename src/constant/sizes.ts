@@ -1,7 +1,7 @@
-const R_SPACING = [5, null, 8];
-const R_SPACING_REVERSE = [-5, null, -8];
-const R_SPACING2 = [5, null, 12];
-const R_SPACING2_REVERSE = [-5, null, -8];
+const R_SPACING = [4, null, 8];
+const R_SPACING_REVERSE = [-4, null, -8];
+const R_SPACING2 = [4, null, 12];
+const R_SPACING2_REVERSE = [-4, null, -8];
 const R_SPACING3 = [10, null, 16];
 const R_SPACING3_REVERSE = [-10, null, -16];
 const DRAWER_BODY_MAXH = `calc(100dvh - 176px)`;
