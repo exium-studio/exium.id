@@ -35,7 +35,7 @@ const Problem = () => {
 
   return (
     <CContainer py={20} bg={"dark"} color={"light"}>
-      <Container mb={20}>
+      <Container mb={12}>
         <Grid
           gap={R_SPACING3}
           templateColumns={["repeat(1, 1fr)", null, null, "repeat(4, 1fr)"]}

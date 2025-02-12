@@ -84,8 +84,8 @@ const AboutUsPage = () => {
                 path: "/",
               },
               {
-                label: navs[1].label[lang],
-                path: navs[1].path,
+                label: navs[2].label[lang],
+                path: navs[2].path,
               },
             ]}
             mx={[0, null, "auto"]}
