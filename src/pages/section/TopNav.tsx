@@ -44,7 +44,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
   return (
     <Box
       id="topNav"
-      w={"calc(100% - 100px)"}
+      w={"full"}
       // borderRadius={10}
       zIndex={99}
       position={"fixed"}
@@ -75,7 +75,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
         </HStack>
 
         {sw > 900 ? (
-          <HStack gap={5} ml={"100px"}>
+          <HStack gap={5}>
             {navs?.map((nav, i) => {
               return (
                 <Link key={i} to={nav.path}>
