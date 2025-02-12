@@ -1,10 +1,7 @@
+import Breadcrumbs from "@/components/ui-custom/Breadcrumbs";
 import CContainer from "@/components/ui-custom/CContainer";
 import Heading2 from "@/components/ui-custom/Heading2";
 import Heading4 from "@/components/ui-custom/Heading4";
-import {
-  BreadcrumbCurrentLink,
-  BreadcrumbRoot,
-} from "@/components/ui/breadcrumb";
 import {
   PopoverBody,
   PopoverCloseTrigger,
@@ -19,17 +16,8 @@ import navs from "@/constant/navs";
 import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
 import useScrollToTop from "@/hooks/useScrollToTop";
-import {
-  Badge,
-  Box,
-  Grid,
-  GridItem,
-  HStack,
-  Icon,
-  Text,
-} from "@chakra-ui/react";
-import { HouseSimple } from "@phosphor-icons/react";
-import { Link } from "react-router-dom";
+import { Badge, Box, Grid, GridItem, HStack, Text } from "@chakra-ui/react";
+import { IconSmartHome } from "@tabler/icons-react";
 import Container from "./section/Container";
 import Footer from "./section/Footer";
 
@@ -43,22 +31,24 @@ const ServicesPage = () => {
       {/* Header */}
       <CContainer py={20}>
         <Container gap={R_SPACING3}>
-          <BreadcrumbRoot size={"lg"} mx={"auto"}>
-            <Link to={"/"}>
-              <HStack>
-                <Icon>
-                  <HouseSimple />
-                </Icon>
-                <Text>{navs[0].label[lang]}</Text>
-              </HStack>
-            </Link>
-
-            <BreadcrumbCurrentLink>{navs[3].label[lang]}</BreadcrumbCurrentLink>
-          </BreadcrumbRoot>
+          <Breadcrumbs
+            links={[
+              {
+                icon: IconSmartHome,
+                label: navs[0].label[lang],
+                link: "/",
+              },
+              {
+                label: navs[3].label[lang],
+                link: navs[3].path,
+              },
+            ]}
+            mx={[0, null, "auto"]}
+          />
 
           <Heading2
             fontWeight={"semibold"}
-            textAlign={"center"}
+            textAlign={["left", null, "center"]}
             maxW={"600px"}
             mx={"auto"}
           >
@@ -78,8 +68,8 @@ const ServicesPage = () => {
         >
           {contents.services.list.map((service, i) => (
             <CContainer
-              flex={"0 1 270px"}
-              w={"fit"}
+              flex={["1 1 270px", null, "0 1 270px"]}
+              w={["full", null, "fit"]}
               p={R_SPACING2}
               py={12}
               bgGradient={"to-bl"}
@@ -127,7 +117,11 @@ const ServicesPage = () => {
           ))}
         </HStack>
 
-        <Heading4 fontWeight={"medium"} textAlign={"center"} my={20}>
+        <Heading4
+          fontWeight={"medium"}
+          textAlign={["left", null, "center"]}
+          my={20}
+        >
           {contents.services.intro[lang]}
         </Heading4>
       </Container>

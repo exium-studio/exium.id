@@ -138,7 +138,7 @@ export default function NavDrawer({ activeNavIndex, ...props }: Props) {
                   fontWeight={"500 !important"}
                   cursor={nav.disabled ? "disabled" : "pointer"}
                   onClick={() => {
-                    if (!nav.disabled) navigate(nav.link);
+                    if (!nav.disabled) navigate(nav.path);
                   }}
                   transition={"200ms"}
                   opacity={nav.disabled ? 0.5 : 1}

@@ -27,7 +27,7 @@ export interface Interface__Nav {
   label: {
     [lang in LanguageOptions]: string;
   };
-  link: string;
+  path: string;
   icon?: any;
   disabled?: boolean;
 }

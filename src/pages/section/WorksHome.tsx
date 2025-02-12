@@ -14,8 +14,8 @@ const WorksHome = () => {
 
   const work_1 = contents.works.list[1];
   const work_2 = contents.works.list[2];
-  const work_3 = contents.works.list[3];
-  const work_4 = contents.works.list[0];
+  const work_3 = contents.works.list[0];
+  const work_4 = contents.works.list[3];
 
   return (
     <CContainer py={20}>

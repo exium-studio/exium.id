@@ -106,7 +106,7 @@ const Footer = () => {
                     </Text>
 
                     {navs.map((nav, i) => (
-                      <Link key={i} to={nav.link}>
+                      <Link key={i} to={nav.path}>
                         <Text
                           fontSize={"1.25rem"}
                           w={"fit"}

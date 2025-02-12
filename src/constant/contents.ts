@@ -223,25 +223,25 @@ const contents = {
     },
     backgroundLabel: { id: "Latar Belakang", en: "Background" },
     list: [
-      // Gis politik
+      // Poltekkes
       {
-        index: 2,
-        category: 2,
+        index: 0,
+        category: 1,
         client: {
-          name: "Bandung",
-          logo: `${ASSETS_PATH}/images/clients/rski.png`,
+          name: "Poltekkes",
+          logo: `${ASSETS_PATH}/images/clients/poltekkes.png`,
         },
-        color: "#3e97ff",
-        thumbnail: `${IMAGES_PATH}/works/gis_politik/thumbnail.png`,
-        thumbnail_gray: `${IMAGES_PATH}/works/gis_politik/thumbnail_gray.png`,
-        image_1: `${IMAGES_PATH}/works/gis_politik/image_1.png`,
-        image_2: `${IMAGES_PATH}/works/gis_politik/image_1.png`,
-        featuredImage: `${IMAGES_PATH}/works/gis_politik/featured_image.png`,
-        title: "Geo Information System",
-        tag: { id: "HRIS", en: "HRIS" },
+        color: "#34BFAC",
+        thumbnail: `${IMAGES_PATH}/works/rski_personalia/thumbnail.png`,
+        thumbnail_gray: `${IMAGES_PATH}/works/rski_personalia/thumbnail_gray.png`,
+        image_1: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
+        image_2: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
+        featuredImage: `${IMAGES_PATH}/works/silaban/featured_image.png`,
+        title: "Silaban",
+        tag: { id: "Dashboard", en: "Dashboard" },
         summary: {
-          id: "Data perolehan suara yang terdigitalisasi dengan visual peta",
-          en: "Digitized vote acquisition data with map visuals",
+          id: "Platform yang memudahkan transaksi pengujian laboratorium admin",
+          en: "Platform that makes it easy to transact lab tests",
         },
         problem: {
           id: "Aute laborum ut et id ipsum esse in elit Lorem tempor in. Sunt deserunt commodo aliquip incididunt irure voluptate.",
@@ -251,7 +251,7 @@ const contents = {
           id: "Dummy Solution | Dummy Solution | Dummy Solution",
           en: "",
         },
-        duration: { id: "3 Bulan", en: "3 Months" },
+        duration: { id: "2 Bulan", en: "2 Months" },
         background: [
           {
             id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
@@ -464,25 +464,25 @@ const contents = {
         ],
       },
 
-      // Poltekkes
+      // Gis politik
       {
-        index: 0,
-        category: 1,
+        index: 3,
+        category: 2,
         client: {
-          name: "Poltekkes",
-          logo: `${ASSETS_PATH}/images/clients/poltekkes.png`,
+          name: "Bandung",
+          logo: `${ASSETS_PATH}/images/clients/rski.png`,
         },
-        color: "#34BFAC",
-        thumbnail: `${IMAGES_PATH}/works/rski_personalia/thumbnail.png`,
-        thumbnail_gray: `${IMAGES_PATH}/works/rski_personalia/thumbnail_gray.png`,
-        image_1: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
-        image_2: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
-        featuredImage: `${IMAGES_PATH}/works/silaban/featured_image.png`,
-        title: "Silaban",
-        tag: { id: "Dashboard", en: "Dashboard" },
+        color: "#3e97ff",
+        thumbnail: `${IMAGES_PATH}/works/gis_politik/thumbnail.png`,
+        thumbnail_gray: `${IMAGES_PATH}/works/gis_politik/thumbnail_gray.png`,
+        image_1: `${IMAGES_PATH}/works/gis_politik/image_1.png`,
+        image_2: `${IMAGES_PATH}/works/gis_politik/image_1.png`,
+        featuredImage: `${IMAGES_PATH}/works/gis_politik/featured_image.png`,
+        title: "Geo Information System",
+        tag: { id: "HRIS", en: "HRIS" },
         summary: {
-          id: "Platform yang memudahkan transaksi pengujian laboratorium admin",
-          en: "Platform that makes it easy to transact lab tests",
+          id: "Data perolehan suara yang terdigitalisasi dengan visual peta",
+          en: "Digitized vote acquisition data with map visuals",
         },
         problem: {
           id: "Aute laborum ut et id ipsum esse in elit Lorem tempor in. Sunt deserunt commodo aliquip incididunt irure voluptate.",
@@ -492,7 +492,7 @@ const contents = {
           id: "Dummy Solution | Dummy Solution | Dummy Solution",
           en: "",
         },
-        duration: { id: "2 Bulan", en: "2 Months" },
+        duration: { id: "3 Bulan", en: "3 Months" },
         background: [
           {
             id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",

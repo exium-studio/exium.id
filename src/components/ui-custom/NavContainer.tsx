@@ -30,7 +30,7 @@ const NavContainer = ({ label, children, activeNavIndex }: Props) => {
     return (
       <>
         {NAVS.map((nav: any, i) => (
-          <Link key={i} to={nav.link}>
+          <Link key={i} to={nav.path}>
             <BButton
               iconButton
               unclicky

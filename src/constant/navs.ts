@@ -6,14 +6,14 @@ const navs: Interface__Nav[] = [
       id: "Beranda",
       en: "Home",
     },
-    link: "/",
+    path: "/",
   },
   {
     label: {
       id: "Karya",
       en: "Works",
     },
-    link: "/works",
+    path: "/works",
     disabled: true,
   },
   {
@@ -21,28 +21,28 @@ const navs: Interface__Nav[] = [
       id: "Tentang Kami",
       en: "About Us",
     },
-    link: "/about-us",
+    path: "/about-us",
   },
   {
     label: {
       id: "Layanan",
       en: "Services",
     },
-    link: "/services",
+    path: "/services",
   },
   {
     label: {
       id: "Produk",
       en: "Products",
     },
-    link: "/products",
+    path: "/products",
   },
   // {
   //   label: {
   //     id: "FAQs",
   //     en: "FAQs",
   //   },
-  //   link: "/faqs",
+  //   path: "/faqs",
   // },
 ];
 

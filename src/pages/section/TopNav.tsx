@@ -78,7 +78,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
           <HStack gap={5} ml={"100px"}>
             {navs?.map((nav, i) => {
               return (
-                <Link key={i} to={nav.link}>
+                <Link key={i} to={nav.path}>
                   <BButton
                     flexShrink={0}
                     className="btn-clear"

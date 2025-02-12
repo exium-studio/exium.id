@@ -1,20 +1,16 @@
+import Breadcrumbs from "@/components/ui-custom/Breadcrumbs";
 import CContainer from "@/components/ui-custom/CContainer";
 import FeedbackNotFound from "@/components/ui-custom/FeedbackNotFound";
 import Heading2 from "@/components/ui-custom/Heading2";
-import {
-  BreadcrumbCurrentLink,
-  BreadcrumbRoot,
-} from "@/components/ui/breadcrumb";
 import WorkCard from "@/components/widget/WorkCard";
 import contents from "@/constant/contents";
 import navs from "@/constant/navs";
 import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
 import useScrollToTop from "@/hooks/useScrollToTop";
-import { Box, HStack, Icon, SimpleGrid, Text } from "@chakra-ui/react";
-import { HouseSimple } from "@phosphor-icons/react";
+import { Box, SimpleGrid } from "@chakra-ui/react";
+import { IconSmartHome } from "@tabler/icons-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Container from "./section/Container";
 import Footer from "./section/Footer";
 
@@ -38,24 +34,26 @@ const WorksPage = () => {
       {/* Header */}
       <CContainer py={20}>
         <Container gap={R_SPACING3}>
-          <BreadcrumbRoot size={"lg"} mx={"auto"}>
-            <Link to={"/"}>
-              <HStack>
-                <Icon>
-                  <HouseSimple />
-                </Icon>
-                <Text>{navs[0].label[lang]}</Text>
-              </HStack>
-            </Link>
-
-            <BreadcrumbCurrentLink>{navs[1].label[lang]}</BreadcrumbCurrentLink>
-          </BreadcrumbRoot>
+          <Breadcrumbs
+            links={[
+              {
+                icon: IconSmartHome,
+                label: navs[0].label[lang],
+                link: "/",
+              },
+              {
+                label: navs[2].label[lang],
+                link: navs[2].path,
+              },
+            ]}
+            mx={[0, null, "auto"]}
+          />
 
           <Heading2
             fontWeight={"semibold"}
             textAlign={"center"}
             maxW={"600px"}
-            mx={"auto"}
+            mx={["left", null, "auto"]}
           >
             {contents.works.title[lang]}
           </Heading2>

@@ -1,30 +1,27 @@
+import Breadcrumbs from "@/components/ui-custom/Breadcrumbs";
 import CContainer from "@/components/ui-custom/CContainer";
 import Heading1 from "@/components/ui-custom/Heading1";
 import Heading2 from "@/components/ui-custom/Heading2";
 import Heading5 from "@/components/ui-custom/Heading5";
-import { BreadcrumbRoot } from "@/components/ui/breadcrumb";
 import contents from "@/constant/contents";
 import navs from "@/constant/navs";
 import { IMAGES_PATH } from "@/constant/path";
 import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
 import useIsSmScreenWidth from "@/hooks/useIsSmScreenWidth";
 import { useLang } from "@/hooks/useLang";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import {
-  BreadcrumbCurrentLink,
   HStack,
-  Icon,
   Image,
   SimpleGrid,
   Stack,
   StackProps,
   Text,
 } from "@chakra-ui/react";
-import { HouseSimple } from "@phosphor-icons/react";
+import { IconSmartHome } from "@tabler/icons-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Container from "./section/Container";
 import Footer from "./section/Footer";
-import useScrollToTop from "@/hooks/useScrollToTop";
 
 interface ValuesitemProps extends StackProps {
   index: number;
@@ -79,22 +76,24 @@ const AboutUsPage = () => {
       {/* Header */}
       <CContainer py={20}>
         <Container gap={R_SPACING3}>
-          <BreadcrumbRoot size={"lg"} mx={"auto"}>
-            <Link to={"/"}>
-              <HStack>
-                <Icon>
-                  <HouseSimple />
-                </Icon>
-                <Text>{navs[0].label[lang]}</Text>
-              </HStack>
-            </Link>
-
-            <BreadcrumbCurrentLink>{navs[2].label[lang]}</BreadcrumbCurrentLink>
-          </BreadcrumbRoot>
+          <Breadcrumbs
+            links={[
+              {
+                icon: IconSmartHome,
+                label: navs[0].label[lang],
+                link: "/",
+              },
+              {
+                label: navs[1].label[lang],
+                link: navs[1].path,
+              },
+            ]}
+            mx={[0, null, "auto"]}
+          />
 
           <Heading2
             fontWeight={"semibold"}
-            textAlign={"center"}
+            textAlign={["left", null, "center"]}
             maxW={"600px"}
             mx={"auto"}
           >

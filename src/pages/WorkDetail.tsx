@@ -1,19 +1,16 @@
+import Breadcrumbs from "@/components/ui-custom/Breadcrumbs";
 import CContainer from "@/components/ui-custom/CContainer";
 import Heading3 from "@/components/ui-custom/Heading3";
+import contents from "@/constant/contents";
+import navs from "@/constant/navs";
 import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
 import { useLang } from "@/hooks/useLang";
-import { Grid, GridItem, HStack, Icon, Image, Text } from "@chakra-ui/react";
-import { Link, useParams } from "react-router-dom";
+import useScrollToTop from "@/hooks/useScrollToTop";
+import { Grid, GridItem, HStack, Image, Text } from "@chakra-ui/react";
+import { IconSmartHome } from "@tabler/icons-react";
+import { useParams } from "react-router-dom";
 import Container from "./section/Container";
 import Footer from "./section/Footer";
-import {
-  BreadcrumbCurrentLink,
-  BreadcrumbRoot,
-} from "@/components/ui/breadcrumb";
-import { HouseSimple } from "@phosphor-icons/react";
-import navs from "@/constant/navs";
-import useScrollToTop from "@/hooks/useScrollToTop";
-import contents from "@/constant/contents";
 
 const WorkDetail = () => {
   useScrollToTop();
@@ -26,24 +23,23 @@ const WorkDetail = () => {
     <CContainer>
       <CContainer py={20} gap={20}>
         <Container>
-          <BreadcrumbRoot size={"lg"} mb={[20, null, 12]}>
-            <Link to={"/"}>
-              <HStack>
-                <Icon>
-                  <HouseSimple />
-                </Icon>
-                <Text>{navs[0].label[lang]}</Text>
-              </HStack>
-            </Link>
-
-            <Link to={"/works"}>
-              <HStack>
-                <Text>{navs[1].label[lang]}</Text>
-              </HStack>
-            </Link>
-
-            <BreadcrumbCurrentLink>{data?.title}</BreadcrumbCurrentLink>
-          </BreadcrumbRoot>
+          <Breadcrumbs
+            links={[
+              {
+                icon: IconSmartHome,
+                label: navs[0].label[lang],
+                link: "/",
+              },
+              {
+                label: navs[1].label[lang],
+                link: navs[1].path,
+              },
+              {
+                label: data.title,
+              },
+            ]}
+            mb={12}
+          />
 
           <HStack
             flexDir={["column-reverse", null, "row"]}
