@@ -43,6 +43,7 @@ const Problem = () => {
           <GridItem position={"relative"}>
             <Center
               py={4}
+              px={6}
               bg={"p.500"}
               color={"light"}
               position={"absolute"}
