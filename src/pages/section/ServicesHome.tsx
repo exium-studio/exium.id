@@ -42,7 +42,6 @@ const Problem = () => {
         >
           <GridItem position={"relative"}>
             <Center
-              px={8}
               py={4}
               bg={"p.500"}
               color={"light"}
