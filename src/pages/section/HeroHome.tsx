@@ -1,6 +1,5 @@
 import CContainer from "@/components/ui-custom/CContainer";
 import Heading5 from "@/components/ui-custom/Heading5";
-import BgGila from "@/components/widget/BgGila";
 import Rating from "@/components/widget/Rating";
 import contents from "@/constant/contents";
 import { IMAGES_PATH } from "@/constant/path";
@@ -62,7 +61,7 @@ const Hero = () => {
       overflow={"clip"}
       position={"relative"}
     >
-      <BgGila textProps={{ color: "dt", opacity: 0.1 }} />
+      {/* <BgGila textProps={{ color: "dt", opacity: 0.1 }} /> */}
 
       <Container zIndex={3} flex={1} px={0} p={R_SPACING2} pb={12}>
         <VStack flex={1} px={4} py={"200px"} justify={"center"}>
