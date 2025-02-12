@@ -107,7 +107,7 @@ const Hero = () => {
               Semarang, Indonesia
             </Text>
 
-            <HStack>
+            <HStack flexDir={["row-reverse", null, "row"]}>
               <Circle
                 w={"8px"}
                 h={"8px"}
