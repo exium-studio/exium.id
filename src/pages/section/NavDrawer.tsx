@@ -183,7 +183,6 @@ export default function NavDrawer({ activeNavIndex, ...props }: Props) {
                         className="btn-clear"
                         color={"white"}
                         disabled={disabled}
-                        opacity={0.5}
                         ml={[0, null, "auto"]}
                         fontWeight={400}
                         cursor={disabled ? "not-allowed" : "pointer"} // Ubah cursor jika disabled
