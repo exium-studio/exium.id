@@ -36,11 +36,11 @@ const ServicesPage = () => {
               {
                 icon: IconSmartHome,
                 label: navs[0].label[lang],
-                link: "/",
+                path: "/",
               },
               {
                 label: navs[3].label[lang],
-                link: navs[3].path,
+                path: navs[3].path,
               },
             ]}
             mx={[0, null, "auto"]}

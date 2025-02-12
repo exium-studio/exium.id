@@ -28,11 +28,11 @@ const WorkDetail = () => {
               {
                 icon: IconSmartHome,
                 label: navs[0].label[lang],
-                link: "/",
+                path: "/",
               },
               {
                 label: navs[1].label[lang],
-                link: navs[1].path,
+                path: navs[1].path,
               },
               {
                 label: data.title,

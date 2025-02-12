@@ -39,11 +39,11 @@ const WorksPage = () => {
               {
                 icon: IconSmartHome,
                 label: navs[0].label[lang],
-                link: "/",
+                path: "/",
               },
               {
                 label: navs[2].label[lang],
-                link: navs[2].path,
+                path: navs[2].path,
               },
             ]}
             mx={[0, null, "auto"]}
