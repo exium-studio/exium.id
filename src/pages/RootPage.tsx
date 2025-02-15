@@ -1,12 +1,11 @@
 import CContainer from "@/components/ui-custom/CContainer";
-import WAWidget from "@/components/widget/WAWidget";
+import useScrollToTop from "@/hooks/useScrollToTop";
 import HeroHome from "@/pages/section/HeroHome";
 import Footer from "./section/Footer";
 import ServicesHome from "./section/ServicesHome";
 import StatsHome from "./section/StatsHome";
 import TheWayWeWork from "./section/TheWayWeWork";
 import WorksHome from "./section/WorksHome";
-import useScrollToTop from "@/hooks/useScrollToTop";
 
 const RootPage = () => {
   useScrollToTop();
@@ -20,8 +19,6 @@ const RootPage = () => {
       <TheWayWeWork />
       {/* <ClientStory /> */}
       <Footer />
-
-      <WAWidget />
     </CContainer>
   );
 };

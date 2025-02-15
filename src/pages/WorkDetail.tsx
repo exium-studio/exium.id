@@ -1,11 +1,12 @@
 import Breadcrumbs from "@/components/ui-custom/Breadcrumbs";
 import CContainer from "@/components/ui-custom/CContainer";
 import Heading3 from "@/components/ui-custom/Heading3";
+import Heading4 from "@/components/ui-custom/Heading4";
 import contents from "@/constant/contents";
 import navs from "@/constant/navs";
 import { R_SPACING2, R_SPACING3 } from "@/constant/sizes";
+import useIsSmScreenWidth from "@/hooks/useIsSmScreenWidth";
 import { useLang } from "@/hooks/useLang";
-import useScrollToTop from "@/hooks/useScrollToTop";
 import { Grid, GridItem, HStack, Image, Text } from "@chakra-ui/react";
 import { IconSmartHome } from "@tabler/icons-react";
 import { useParams } from "react-router-dom";
@@ -13,11 +14,12 @@ import Container from "./section/Container";
 import Footer from "./section/Footer";
 
 const WorkDetail = () => {
-  useScrollToTop();
+  // useScrollToTop();
 
   const { lang } = useLang();
   const { index } = useParams();
   const data = contents.works.list[(index || 0) as number];
+  const iss = useIsSmScreenWidth();
 
   return (
     <CContainer>
@@ -61,7 +63,7 @@ const WorkDetail = () => {
           objectFit={"cover"}
         />
 
-        <Container gap={20}>
+        <Container gap={12}>
           <Grid
             templateColumns={["repeat(1, 1fr)", null, "repeat(4, 1fr)"]}
             gap={R_SPACING3}
@@ -77,6 +79,7 @@ const WorkDetail = () => {
                     src={data.client.logo}
                     h={"52px"}
                     w={"fit"}
+                    objectFit={"contain"}
                   />
                   <Text fontSize={"1rem"}>{data.client.name}</Text>
                 </CContainer>
@@ -92,7 +95,16 @@ const WorkDetail = () => {
                   <Text fontSize={"1rem"} color={"fg.subtle"}>
                     {contents.workDetail.solutionLabel[lang]}
                   </Text>
-                  <Text fontSize={"1rem"}>{data.solution[lang]}</Text>
+
+                  {iss && (
+                    <CContainer gap={1}>
+                      {data.solution[lang].split(" | ").map((item, i) => {
+                        return <Text key={i}>{item}</Text>;
+                      })}
+                    </CContainer>
+                  )}
+
+                  {!iss && <Text fontSize={"1rem"}>{data.solution[lang]}</Text>}
                 </CContainer>
 
                 <CContainer gap={2}>
@@ -127,16 +139,17 @@ const WorkDetail = () => {
             borderRadius={8}
           />
 
+          {/* Narratives */}
           {data.narratives.map((narrative, i) => (
             <Grid
               key={i}
               templateColumns={["repeat(1, 1fr)", null, "repeat(4, 1fr)"]}
-              gap={R_SPACING3}
+              gap={R_SPACING2}
             >
               <GridItem>
-                <Heading3 maxW={["", null, "300px"]} fontWeight={"semibold"}>
+                <Heading4 maxW={["", null, "300px"]} fontWeight={"semibold"}>
                   {narrative.title[lang]}
-                </Heading3>
+                </Heading4>
               </GridItem>
 
               <GridItem colSpan={3}>

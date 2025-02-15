@@ -1,6 +1,7 @@
 import CContainer from "@/components/ui-custom/CContainer";
 import { StackProps } from "@chakra-ui/react";
 import TopNav from "./TopNav";
+import WAWidget from "@/components/widget/WAWidget";
 
 interface Props extends StackProps {
   children?: any;
@@ -20,6 +21,8 @@ const PageContainer = ({
       <CContainer minH={`100dvh`} {...props}>
         {children}
       </CContainer>
+
+      <WAWidget />
     </CContainer>
   );
 };

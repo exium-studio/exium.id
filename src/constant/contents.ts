@@ -319,66 +319,84 @@ const contents = {
         image_2: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
         featuredImage: `${IMAGES_PATH}/works/rski_personalia/featured_image.png`,
         title: "RSKI Personalia",
-        tag: { id: "HRIS", en: "HRIS" },
+        tag: { id: "HRMS", en: "HRMS" },
         summary: {
           id: "Exium membantu manajemen SDM RSKI agar lebih praktis, efisien dan efektif",
           en: "Exium help hospital HR management to be more practical, efficient and effective",
         },
         problem: {
-          id: "Aute laborum ut et id ipsum esse in elit Lorem tempor in. Sunt deserunt commodo aliquip incididunt irure voluptate.",
-          en: "",
+          id: "RSKI Surakarta menghadapi kendala dalam mengelola HR secara manual, seperti kesulitan memantau data karyawan, menghitung payroll, dan aktivitas HR lainnya. Proses manual rentan kesalahan, tidak efisien, dan kurang terintegrasi.",
+          en: "RSKI Surakarta faces challenges in manual HR management, such as difficulties in tracking employee data, calculating payroll, and other HR activities. Manual processes are error-prone, inefficient, and lack integration.",
         },
         solution: {
-          id: "Dummy Solution | Dummy Solution | Dummy Solution",
-          en: "",
+          id: "Manajemen karyawan terpusat | Payroll Otomatis | Absensi Online | Manajemen Cuti | Pelaporan Kinerja | Sistem Terintegrasi | Efisiensi HR | Akurasi Data",
+          en: "Centralized Employee Management | Automated Payroll | Online Attendance | Leave Management | Performance Reporting | Integrated System | HR Efficiency | Data Accuracy",
         },
-        duration: { id: "3 Bulan", en: "3 Months" },
+        duration: { id: "6 Bulan", en: "6 Months" },
         background: [
           {
-            id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-            en: "",
+            id: "RSKI Surakarta selama ini mengandalkan sistem manual untuk mengelola aktivitas HR, mulai dari pencatatan data karyawan, perhitungan payroll, hingga manajemen cuti dan absensi. Proses manual ini seringkali memakan waktu dan rentan terhadap kesalahan, terutama ketika data harus diperbarui atau dipindahkan antar divisi. Ketidakselarasan informasi antara divisi HR, keuangan, dan manajemen juga sering terjadi, menghambat pengambilan keputusan yang cepat dan akurat.",
+            en: "RSKI Surakarta has relied on manual systems to manage HR activities, ranging from employee data recording, payroll calculations, to leave and attendance management. These manual processes are often time-consuming and prone to errors, especially when data needs to be updated or transferred between departments. Misalignment of information between HR, finance, and management departments also frequently occurs, hindering quick and accurate decision-making.",
           },
           {
-            id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-            en: "",
+            id: "Selain itu, proses perhitungan payroll yang dilakukan secara manual seringkali memicu ketidakakuratan, seperti kesalahan dalam menghitung tunjangan, pajak, atau potongan lainnya. Hal ini tidak hanya berdampak pada keuangan karyawan tetapi juga menambah beban kerja divisi HR yang harus melakukan koreksi berulang kali. Belum lagi, manajemen dokumen karyawan seperti kontrak kerja, sertifikat pelatihan, dan evaluasi kinerja yang masih disimpan secara fisik, membuat pencarian data menjadi lambat dan tidak efisien.",
+            en: "In addition, manual payroll calculation processes often lead to inaccuracies, such as errors in calculating allowances, taxes, or other deductions. This not only affects employees' finances but also increases the workload of the HR department, which has to make repeated corrections. Furthermore, employee document management, such as employment contracts, training certificates, and performance evaluations, which are still stored physically, makes data retrieval slow and inefficient.",
+          },
+          {
+            id: "Dengan semakin berkembangnya RSKI Surakarta dan bertambahnya jumlah karyawan, sistem manual yang digunakan saat ini semakin tidak mampu memenuhi kebutuhan operasional. Dibutuhkan solusi yang dapat mendigitalisasi seluruh proses HR, memastikan integrasi data antar divisi, dan meningkatkan efisiensi serta akurasi dalam pengelolaan sumber daya manusia.",
+            en: "With the growing development of RSKI Surakarta and the increasing number of employees, the current manual system is becoming increasingly inadequate to meet operational needs. A solution is needed to digitize all HR processes, ensure data integration between departments, and improve efficiency and accuracy in human resource management.",
+          },
+          {
+            id: "Oleh karena itu, RSKI Surakarta membutuhkan sistem HRMS (Human Resource Management System) yang terintegrasi dan modern. Sistem ini diharapkan dapat menyederhanakan proses HR, mengurangi beban kerja administratif, dan memberikan data yang akurat serta real-time untuk mendukung pengambilan keputusan yang lebih baik.",
+            en: "Therefore, RSKI Surakarta requires an integrated and modern HRMS (Human Resource Management System). This system is expected to streamline HR processes, reduce administrative workloads, and provide accurate and real-time data to support better decision-making.",
           },
         ],
         narratives: [
           {
-            title: { id: "Latar Belakang", en: "Background" },
+            title: {
+              id: "Optimalkan Manajemen Karyawan",
+              en: "Optimizing Employee Management",
+            },
             contents: [
               {
-                id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-                en: "",
+                id: "Aplikasi HRMS RSKI Surakarta memungkinkan manajemen data karyawan secara terpusat dan real-time. Dengan fitur ini, divisi HR dapat dengan mudah mengakses informasi karyawan seperti data pribadi, riwayat pekerjaan, dan pelatihan yang telah diikuti. Hal ini mengurangi waktu yang dihabiskan untuk pencarian data manual dan memastikan akurasi informasi.",
+                en: "The HRMS application for RSKI Surakarta enables centralized and real-time employee data management. With this feature, the HR department can easily access employee information such as personal data, work history, and completed training. This reduces time spent on manual data retrieval and ensures information accuracy.",
               },
               {
-                id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-                en: "",
+                id: "Selain itu, aplikasi ini juga dilengkapi dengan fitur manajemen dokumen yang memungkinkan penyimpanan dan pengelolaan file penting seperti kontrak kerja, sertifikat, dan evaluasi kinerja. Semua dokumen dapat diakses kapan saja, meningkatkan efisiensi administrasi.",
+                en: "Additionally, the application is equipped with a document management feature that allows the storage and management of important files such as employment contracts, certificates, and performance evaluations. All documents can be accessed anytime, enhancing administrative efficiency.",
               },
             ],
           },
           {
             title: {
-              id: "Ullamco anim velit sint",
-              en: "",
+              id: "Payroll Otomatis dan Akurat",
+              en: "Automated and Accurate Payroll",
             },
             contents: [
               {
-                id: "Esse occaecat sit amet aliqua laborum do quis id tempor exercitation nulla dolor elit. Magna esse ex et anim officia qui esse. Irure ex laborum adipisicing deserunt quis Lorem cupidatat velit esse Lorem. Pariatur culpa irure velit qui ut exercitation excepteur. Incididunt ut voluptate quis commodo veniam magna et enim dolore eu ad tempor tempor.",
-                en: "",
+                id: "Dengan fitur payroll otomatis, aplikasi HRMS ini memastikan perhitungan gaji, tunjangan, dan pajak karyawan dilakukan secara akurat dan tepat waktu. Sistem ini terintegrasi dengan data absensi dan cuti, sehingga perhitungan payroll selalu sesuai dengan kebijakan perusahaan.",
+                en: "With the automated payroll feature, the HRMS application ensures accurate and timely calculation of employee salaries, allowances, and taxes. The system is integrated with attendance and leave data, ensuring payroll calculations always align with company policies.",
               },
               {
-                id: "Esse occaecat sit amet aliqua laborum do quis id tempor exercitation nulla dolor elit. Magna esse ex et anim officia qui esse. Irure ex laborum adipisicing deserunt quis Lorem cupidatat velit esse Lorem. Pariatur culpa irure velit qui ut exercitation excepteur. Incididunt ut voluptate quis commodo veniam magna et enim dolore eu ad tempor tempor.",
-                en: "",
+                id: "Selain itu, laporan payroll dapat dihasilkan secara otomatis dan dikirim ke departemen keuangan, mengurangi risiko kesalahan manusia dan memudahkan proses audit.",
+                en: "Moreover, payroll reports can be generated automatically and sent to the finance department, reducing the risk of human error and simplifying the audit process.",
               },
             ],
           },
           {
-            title: { id: "Laborum consequat anim", en: "" },
+            title: {
+              id: "Meningkatkan Produktivitas HR",
+              en: "Enhancing HR Productivity",
+            },
             contents: [
               {
-                id: "Aliquip labore ex irure mollit irure adipisicing dolor elit qui proident quis consequat nulla irure. Adipisicing sunt ipsum officia anim. Ea cillum consectetur ullamco velit Lorem Lorem sunt eiusmod labore ipsum in.",
-                en: "",
+                id: "Aplikasi HRMS ini dilengkapi dengan fitur absensi online dan manajemen cuti yang memudahkan karyawan untuk mengajukan permohonan cuti dan memantau jadwal kerja. Divisi HR dapat menyetujui atau menolak permohonan secara cepat melalui sistem, mengurangi waktu tunggu dan meningkatkan kepuasan karyawan.",
+                en: "The HRMS application is equipped with online attendance and leave management features, making it easier for employees to submit leave requests and monitor work schedules. The HR department can approve or reject requests quickly through the system, reducing waiting time and improving employee satisfaction.",
+              },
+              {
+                id: "Dengan semua fitur yang terintegrasi dalam satu platform, aplikasi ini membantu divisi HR fokus pada tugas strategis seperti pengembangan karyawan dan perencanaan SDM, alih-alih terjebak dalam pekerjaan administratif yang repetitif.",
+                en: "With all features integrated into one platform, this application helps the HR department focus on strategic tasks such as employee development and workforce planning, rather than being bogged down by repetitive administrative work.",
               },
             ],
           },
@@ -408,10 +426,10 @@ const contents = {
           en: "",
         },
         solution: {
-          id: "Dummy Solution | Dummy Solution | Dummy Solution",
-          en: "",
+          id: "Absensi Online | Pengajuan Cuti | Tukar Jadwal | Penggajian Otomatis | Sistem Terintegrasi | Manajemen Data Karyawan | Akurasi Data",
+          en: "Online Attendance | Leave Application | Change Schedule | Automated Payroll | Integrated System | Employee Data Management | Data Accuracy",
         },
-        duration: { id: "3 Bulan", en: "3 Months" },
+        duration: { id: "6 Bulan", en: "6 Months" },
         background: [
           {
             id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
