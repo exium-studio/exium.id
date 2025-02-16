@@ -157,7 +157,6 @@ const Problem = () => {
             mt={20}
             className="btn"
             color={"white"}
-            textDecor={"underline"}
           >
             {content.cta[lang]}
             <Icon fontSize={"lg"}>
