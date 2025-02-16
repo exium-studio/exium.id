@@ -135,8 +135,9 @@ const WorkDetail = () => {
           <Image
             alt={`Work ${data.title} Image`}
             src={data.image_2}
-            aspectRatio={"16/10"}
+            // aspectRatio={"16/10"}
             objectFit={"cover"}
+            bg={"d1"}
             borderRadius={8}
           />
 
