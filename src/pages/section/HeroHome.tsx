@@ -58,6 +58,7 @@ const Hero = () => {
       h={sh > 1020 ? "100vh" : ""}
       maxH={sh > 1020 ? "1200px" : ""}
       bg={"dark"}
+      color={"light"}
       overflow={"clip"}
       position={"relative"}
     >
@@ -88,7 +89,7 @@ const Hero = () => {
         </VStack>
 
         <SimpleGrid columns={[1, null, 2]} gap={20}>
-          <CContainer gap={2} color={"light"} align={"start"}>
+          <CContainer gap={2} align={"start"}>
             <HStack mb={4} gap={4}>
               <Rating rating={contents.home.hero.averageRating.value} />
 
@@ -102,7 +103,7 @@ const Hero = () => {
             </Text>
           </CContainer>
 
-          <CContainer color={"light"} align={["start", null, "end"]}>
+          <CContainer align={["start", null, "end"]}>
             <Text fontSize={"xl"} textAlign={["left", null, null, "right"]}>
               Semarang, Indonesia
             </Text>
