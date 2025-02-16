@@ -315,8 +315,8 @@ const contents = {
         color: "#34BFAC",
         thumbnail: `${IMAGES_PATH}/works/rski_personalia/thumbnail.png`,
         thumbnail_gray: `${IMAGES_PATH}/works/rski_personalia/thumbnail_gray.png`,
-        image_1: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
-        image_2: `${IMAGES_PATH}/works/rski_karyawan/image_1.png`,
+        image_1: `${IMAGES_PATH}/works/rski_personalia/image_1.png`,
+        image_2: `${IMAGES_PATH}/works/rski_personalia/image_1.png`,
         featuredImage: `${IMAGES_PATH}/works/rski_personalia/featured_image.png`,
         title: "RSKI Personalia",
         tag: { id: "HRMS", en: "HRMS" },
@@ -432,50 +432,100 @@ const contents = {
         duration: { id: "6 Bulan", en: "6 Months" },
         background: [
           {
-            id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-            en: "",
+            id: "RSKI Surakarta saat ini menghadapi tantangan dalam mengelola absensi karyawan, pengajuan cuti, dan permintaan perubahan data karyawan yang masih dilakukan secara manual. Proses ini seringkali memakan waktu, rentan terhadap kesalahan, dan kurang efisien. Selain itu, karyawan kesulitan memantau informasi pribadi seperti jadwal kerja, payroll, dan status cuti secara real-time.",
+            en: "RSKI Surakarta currently faces challenges in managing employee attendance, leave requests, and employee data change requests, which are still done manually. These processes are often time-consuming, prone to errors, and inefficient. Additionally, employees struggle to monitor personal information such as work schedules, payroll, and leave status in real-time.",
           },
           {
-            id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-            en: "",
+            id: "Dengan meningkatnya jumlah karyawan dan tuntutan operasional yang lebih dinamis, sistem manual yang ada tidak lagi mampu memenuhi kebutuhan karyawan. Karyawan membutuhkan solusi yang memudahkan mereka untuk melakukan absensi, mengajukan cuti, menukar jadwal, dan mengakses informasi penting seperti payroll tanpa harus melalui proses yang rumit.",
+            en: "With the increasing number of employees and more dynamic operational demands, the existing manual system is no longer able to meet employee needs. Employees need a solution that makes it easier for them to perform attendance, submit leave requests, swap schedules, and access important information such as payroll without going through complicated processes.",
+          },
+          {
+            id: "Oleh karena itu, RSKI Surakarta membutuhkan aplikasi mobile yang dirancang khusus untuk karyawan. Aplikasi ini akan memungkinkan karyawan untuk melakukan absensi online berbasis geolocation, mengajukan cuti, menukar jadwal, melihat payroll otomatis, mengajukan perubahan data pribadi, dan mengakses fitur-fitur lain yang mendukung kebutuhan sehari-hari mereka.",
+            en: "Therefore, RSKI Surakarta requires a mobile application specifically designed for employees. This application will enable employees to perform online attendance based on geolocation, submit leave requests, swap schedules, view automated payroll, request changes to personal data, and access other features that support their daily needs.",
+          },
+          {
+            id: "Aplikasi ini diharapkan dapat meningkatkan efisiensi, transparansi, dan kepuasan karyawan dengan menyediakan akses mudah dan real-time ke informasi yang mereka butuhkan. Dengan demikian, karyawan dapat fokus pada pekerjaan mereka tanpa terganggu oleh proses administratif yang rumit.",
+            en: "This application is expected to improve efficiency, transparency, and employee satisfaction by providing easy and real-time access to the information they need. As a result, employees can focus on their work without being distracted by complicated administrative processes.",
           },
         ],
         narratives: [
           {
-            title: { id: "Latar Belakang", en: "Background" },
+            title: {
+              id: "Absensi Online Berbasis Geolocation",
+              en: "Online Attendance Based on Geolocation",
+            },
             contents: [
               {
-                id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-                en: "",
+                id: "Aplikasi ini memungkinkan karyawan melakukan absensi online dengan mudah menggunakan fitur geolocation. Sistem akan memastikan bahwa absensi hanya dapat dilakukan di lokasi yang telah ditentukan, meningkatkan akurasi dan mengurangi potensi kecurangan.",
+                en: "This application allows employees to perform online attendance easily using geolocation features. The system ensures that attendance can only be recorded at designated locations, improving accuracy and reducing the potential for fraud.",
               },
               {
-                id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-                en: "",
+                id: "Dengan fitur ini, karyawan tidak perlu lagi mengisi formulir absensi manual atau khawatir tentang kesalahan pencatatan. Semua data absensi akan tersimpan secara otomatis dan dapat diakses oleh divisi HR untuk keperluan pelaporan.",
+                en: "With this feature, employees no longer need to fill out manual attendance forms or worry about recording errors. All attendance data will be stored automatically and can be accessed by the HR department for reporting purposes.",
               },
             ],
           },
           {
             title: {
-              id: "Ullamco anim velit sint",
-              en: "",
+              id: "Pengajuan Cuti dan Tukar Jadwal",
+              en: "Leave Requests and Schedule Swaps",
             },
             contents: [
               {
-                id: "Esse occaecat sit amet aliqua laborum do quis id tempor exercitation nulla dolor elit. Magna esse ex et anim officia qui esse. Irure ex laborum adipisicing deserunt quis Lorem cupidatat velit esse Lorem. Pariatur culpa irure velit qui ut exercitation excepteur. Incididunt ut voluptate quis commodo veniam magna et enim dolore eu ad tempor tempor.",
-                en: "",
+                id: "Karyawan dapat mengajukan cuti atau permintaan tukar jadwal langsung melalui aplikasi. Permintaan akan dikirim ke divisi HR untuk disetujui atau ditolak, dengan notifikasi real-time yang memudahkan karyawan memantau status pengajuan mereka.",
+                en: "Employees can submit leave requests or schedule swap requests directly through the application. Requests will be sent to the HR department for approval or rejection, with real-time notifications making it easy for employees to track the status of their submissions.",
               },
               {
-                id: "Esse occaecat sit amet aliqua laborum do quis id tempor exercitation nulla dolor elit. Magna esse ex et anim officia qui esse. Irure ex laborum adipisicing deserunt quis Lorem cupidatat velit esse Lorem. Pariatur culpa irure velit qui ut exercitation excepteur. Incididunt ut voluptate quis commodo veniam magna et enim dolore eu ad tempor tempor.",
-                en: "",
+                id: "Fitur ini mengurangi waktu tunggu dan memastikan proses pengajuan cuti atau tukar jadwal menjadi lebih transparan dan efisien.",
+                en: "This feature reduces waiting time and ensures that the process of submitting leave or schedule swap requests becomes more transparent and efficient.",
               },
             ],
           },
           {
-            title: { id: "Laborum consequat anim", en: "" },
+            title: {
+              id: "Akses Payroll Otomatis",
+              en: "Automated Payroll Access",
+            },
             contents: [
               {
-                id: "Aliquip labore ex irure mollit irure adipisicing dolor elit qui proident quis consequat nulla irure. Adipisicing sunt ipsum officia anim. Ea cillum consectetur ullamco velit Lorem Lorem sunt eiusmod labore ipsum in.",
-                en: "",
+                id: "Karyawan dapat melihat slip gaji mereka secara real-time melalui aplikasi. Informasi seperti gaji pokok, tunjangan, potongan pajak, dan bonus akan ditampilkan dengan jelas, memudahkan karyawan untuk memantau keuangan mereka.",
+                en: "Employees can view their pay slips in real-time through the application. Information such as basic salary, allowances, tax deductions, and bonuses will be displayed clearly, making it easier for employees to monitor their finances.",
+              },
+              {
+                id: "Dengan fitur ini, karyawan tidak perlu lagi menunggu laporan bulanan atau menghubungi divisi HR untuk mendapatkan informasi payroll.",
+                en: "With this feature, employees no longer need to wait for monthly reports or contact the HR department to obtain payroll information.",
+              },
+            ],
+          },
+          {
+            title: {
+              id: "Pengajuan Perubahan Data Karyawan",
+              en: "Employee Data Change Requests",
+            },
+            contents: [
+              {
+                id: "Karyawan dapat mengajukan perubahan data pribadi seperti alamat, nomor telepon, atau informasi bank melalui aplikasi. Permintaan akan diverifikasi oleh divisi HR sebelum diperbarui dalam sistem, memastikan keakuratan data.",
+                en: "Employees can request changes to personal data such as address, phone number, or bank information through the application. Requests will be verified by the HR department before being updated in the system, ensuring data accuracy.",
+              },
+              {
+                id: "Fitur ini memudahkan karyawan untuk memperbarui informasi mereka tanpa harus melalui proses administrasi yang rumit.",
+                en: "This feature makes it easier for employees to update their information without going through complicated administrative processes.",
+              },
+            ],
+          },
+          {
+            title: {
+              id: "Fitur Pendukung Kebutuhan Karyawan",
+              en: "Features Supporting Employee Needs",
+            },
+            contents: [
+              {
+                id: "Aplikasi ini juga dilengkapi dengan fitur-fitur tambahan seperti notifikasi jadwal kerja, pengingat cuti, dan akses ke dokumen penting seperti kontrak kerja dan sertifikat pelatihan. Semua fitur dirancang untuk meningkatkan kenyamanan dan produktivitas karyawan.",
+                en: "This application is also equipped with additional features such as work schedule notifications, leave reminders, and access to important documents such as employment contracts and training certificates. All features are designed to enhance employee comfort and productivity.",
+              },
+              {
+                id: "Dengan aplikasi ini, karyawan dapat mengelola kebutuhan administratif mereka secara mandiri, mengurangi ketergantungan pada divisi HR dan meningkatkan efisiensi kerja.",
+                en: "With this application, employees can manage their administrative needs independently, reducing reliance on the HR department and improving work efficiency.",
               },
             ],
           },
