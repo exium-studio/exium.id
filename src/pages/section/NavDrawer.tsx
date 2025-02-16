@@ -199,8 +199,9 @@ export default function NavDrawer({ activeNavIndex, ...props }: Props) {
                 textAlign={"center"}
                 opacity={0.5}
                 className="initDrawerContent"
+                fontSize={"sm"}
               >
-                Copyright {new Date().getFullYear()} © Bimtech. All right
+                Copyright {new Date().getFullYear()} © Exium. All right
                 reserved.
               </Text>
             </CContainer>
