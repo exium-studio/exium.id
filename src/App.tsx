@@ -7,12 +7,12 @@ import theme from "./theme";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [reload, setReload] = useState(false);
+  const [reload, setReload] = useState(1);
   useEffect(() => {
     const themeMode = localStorage.getItem("theme");
     if (!themeMode || themeMode === "system") {
       localStorage.setItem("theme", "light");
-      setReload(!reload);
+      setReload(reload + 1);
     }
   }, []);
 
