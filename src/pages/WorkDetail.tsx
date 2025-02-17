@@ -12,9 +12,10 @@ import { IconSmartHome } from "@tabler/icons-react";
 import { useParams } from "react-router-dom";
 import Container from "./section/Container";
 import Footer from "./section/Footer";
+import useScrollToTop from "@/hooks/useScrollToTop";
 
 const WorkDetail = () => {
-  // useScrollToTop();
+  useScrollToTop();
 
   const { lang } = useLang();
   const { index } = useParams();
@@ -149,7 +150,11 @@ const WorkDetail = () => {
               gap={R_SPACING2}
             >
               <GridItem>
-                <Heading4 maxW={["", null, "300px"]} fontWeight={"semibold"}>
+                <Heading4
+                  maxW={["", null, "300px"]}
+                  lineHeight={1.4}
+                  fontWeight={"semibold"}
+                >
                   {narrative.title[lang]}
                 </Heading4>
               </GridItem>

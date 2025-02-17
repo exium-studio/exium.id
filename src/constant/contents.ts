@@ -254,50 +254,100 @@ const contents = {
         duration: { id: "2 Bulan", en: "2 Months" },
         background: [
           {
-            id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-            en: "",
+            id: "Laboratorium di kampus Poltekkes saat ini masih mengandalkan proses manual untuk menerima dan memproses transaksi pengujian. Client yang ingin melakukan pengujian harus datang ke laboratorium, mengisi formulir fisik, dan menyerahkan sampel secara langsung. Proses ini memakan waktu, rentan terhadap kesalahan, dan kurang efisien, terutama ketika jumlah permintaan pengujian meningkat.",
+            en: "The laboratory at the Poltekkes campus currently relies on manual processes to receive and process testing transactions. Clients who wish to conduct tests must come to the laboratory, fill out physical forms, and submit samples in person. This process is time-consuming, prone to errors, and inefficient, especially when the number of testing requests increases.",
           },
           {
-            id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-            en: "",
+            id: "Selain itu, komunikasi antara client dan laboratorium seringkali terhambat karena ketiadaan sistem terpusat untuk melacak status pengujian. Client tidak dapat memantau progres pengujian secara real-time, sementara staf laboratorium kesulitan mengelola antrian sampel dan hasil pengujian yang harus dikirim kembali ke client.",
+            en: "In addition, communication between clients and the laboratory is often hindered by the lack of a centralized system to track testing status. Clients cannot monitor the progress of their tests in real-time, while laboratory staff struggle to manage sample queues and test results that need to be sent back to clients.",
+          },
+          {
+            id: "Dengan berkembangnya teknologi dan kebutuhan akan efisiensi, laboratorium Poltekkes membutuhkan aplikasi transaksi pengujian yang dapat memudahkan client dalam menginput sampel (seperti foto atau data lainnya), melacak status pengujian, dan menerima hasil pengujian secara digital. Aplikasi ini juga harus terintegrasi dengan peralatan laboratorium (pesawat-pesawat) untuk memastikan proses pengujian berjalan lancar.",
+            en: "With the advancement of technology and the need for efficiency, the Poltekkes laboratory requires a testing transaction application that can facilitate clients in submitting samples (such as photos or other data), tracking testing status, and receiving test results digitally. This application must also be integrated with laboratory equipment (devices) to ensure a smooth testing process.",
+          },
+          {
+            id: "Aplikasi ini diharapkan dapat meningkatkan efisiensi operasional laboratorium, mengurangi kesalahan administrasi, dan memberikan pengalaman yang lebih baik bagi client dengan menyediakan akses mudah dan transparan ke informasi pengujian.",
+            en: "This application is expected to improve the laboratory's operational efficiency, reduce administrative errors, and provide a better experience for clients by offering easy and transparent access to testing information.",
           },
         ],
         narratives: [
           {
-            title: { id: "Latar Belakang", en: "Background" },
+            title: {
+              id: "Input Sampel Secara Digital",
+              en: "Digital Sample Input",
+            },
             contents: [
               {
-                id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-                en: "",
+                id: "Client dapat menginput sampel (seperti foto atau data lainnya) secara digital melalui aplikasi. Sampel yang diinput akan langsung terdaftar dalam sistem laboratorium, mengurangi kebutuhan untuk mengisi formulir fisik atau datang ke laboratorium secara langsung.",
+                en: "Clients can input samples (such as photos or other data) digitally through the application. The submitted samples will be immediately registered in the laboratory system, reducing the need to fill out physical forms or visit the laboratory in person.",
               },
               {
-                id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-                en: "",
+                id: "Fitur ini memudahkan client untuk mengirimkan sampel kapan saja dan dari mana saja, meningkatkan fleksibilitas dan efisiensi proses pengujian.",
+                en: "This feature makes it easier for clients to submit samples anytime and from anywhere, increasing the flexibility and efficiency of the testing process.",
               },
             ],
           },
           {
             title: {
-              id: "Ullamco anim velit sint",
-              en: "",
+              id: "Integrasi dengan Peralatan Laboratorium",
+              en: "Integration with Laboratory Equipment",
             },
             contents: [
               {
-                id: "Esse occaecat sit amet aliqua laborum do quis id tempor exercitation nulla dolor elit. Magna esse ex et anim officia qui esse. Irure ex laborum adipisicing deserunt quis Lorem cupidatat velit esse Lorem. Pariatur culpa irure velit qui ut exercitation excepteur. Incididunt ut voluptate quis commodo veniam magna et enim dolore eu ad tempor tempor.",
-                en: "",
+                id: "Aplikasi ini terintegrasi dengan peralatan laboratorium (pesawat-pesawat) untuk memproses sampel yang diinput oleh client. Setelah sampel diterima, sistem akan secara otomatis mengalokasikan pengujian ke peralatan yang sesuai, memastikan proses pengujian berjalan lancar dan efisien.",
+                en: "This application is integrated with laboratory equipment (devices) to process samples submitted by clients. Once the samples are received, the system will automatically allocate the tests to the appropriate equipment, ensuring a smooth and efficient testing process.",
               },
               {
-                id: "Esse occaecat sit amet aliqua laborum do quis id tempor exercitation nulla dolor elit. Magna esse ex et anim officia qui esse. Irure ex laborum adipisicing deserunt quis Lorem cupidatat velit esse Lorem. Pariatur culpa irure velit qui ut exercitation excepteur. Incididunt ut voluptate quis commodo veniam magna et enim dolore eu ad tempor tempor.",
-                en: "",
+                id: "Dengan integrasi ini, staf laboratorium dapat fokus pada analisis hasil tanpa perlu khawatir tentang manajemen antrian sampel.",
+                en: "With this integration, laboratory staff can focus on analyzing results without worrying about sample queue management.",
               },
             ],
           },
           {
-            title: { id: "Laborum consequat anim", en: "" },
+            title: {
+              id: "Pelacakan Status Pengujian Secara Real-Time",
+              en: "Real-Time Testing Status Tracking",
+            },
             contents: [
               {
-                id: "Aliquip labore ex irure mollit irure adipisicing dolor elit qui proident quis consequat nulla irure. Adipisicing sunt ipsum officia anim. Ea cillum consectetur ullamco velit Lorem Lorem sunt eiusmod labore ipsum in.",
-                en: "",
+                id: "Client dapat memantau status pengujian mereka secara real-time melalui aplikasi. Setiap tahap pengujian, mulai dari penerimaan sampel, proses pengujian, hingga penyelesaian hasil, akan ditampilkan secara transparan.",
+                en: "Clients can monitor the status of their tests in real-time through the application. Each stage of the testing process, from sample receipt, testing process, to result completion, will be displayed transparently.",
+              },
+              {
+                id: "Fitur ini memberikan kepastian dan kenyamanan bagi client, mengurangi kebutuhan untuk menghubungi laboratorium secara manual.",
+                en: "This feature provides certainty and convenience for clients, reducing the need to contact the laboratory manually.",
+              },
+            ],
+          },
+          {
+            title: {
+              id: "Penerimaan Hasil Pengujian Secara Digital",
+              en: "Digital Test Result Delivery",
+            },
+            contents: [
+              {
+                id: "Setelah pengujian selesai, hasil pengujian akan dikirimkan secara digital melalui aplikasi. Client dapat mengunduh hasil pengujian dalam format PDF atau format lainnya yang sesuai.",
+                en: "Once the testing is completed, the test results will be delivered digitally through the application. Clients can download the test results in PDF format or other suitable formats.",
+              },
+              {
+                id: "Fitur ini memastikan client menerima hasil pengujian dengan cepat dan aman, tanpa perlu menunggu laporan fisik.",
+                en: "This feature ensures that clients receive test results quickly and securely, without waiting for physical reports.",
+              },
+            ],
+          },
+          {
+            title: {
+              id: "Manajemen Transaksi dan Pembayaran",
+              en: "Transaction and Payment Management",
+            },
+            contents: [
+              {
+                id: "Aplikasi ini juga dilengkapi dengan fitur manajemen transaksi dan pembayaran. Client dapat melihat rincian biaya pengujian, melakukan pembayaran secara online, dan menerima invoice digital melalui aplikasi.",
+                en: "This application is also equipped with transaction and payment management features. Clients can view testing cost details, make online payments, and receive digital invoices through the application.",
+              },
+              {
+                id: "Dengan fitur ini, proses administrasi menjadi lebih efisien dan transparan bagi kedua belah pihak, baik client maupun laboratorium.",
+                en: "With this feature, the administrative process becomes more efficient and transparent for both parties, both clients and the laboratory.",
               },
             ],
           },
@@ -563,50 +613,100 @@ const contents = {
         duration: { id: "3 Bulan", en: "3 Months" },
         background: [
           {
-            id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-            en: "",
+            id: "Selama ini, data perolehan suara dari berbagai pemilihan seperti PEMILU dan PILKADA masih dikelola secara manual dan terpisah-pisah. Proses pengumpulan, pencatatan, dan analisis data seringkali memakan waktu, rentan terhadap kesalahan, dan kurang transparan. Selain itu, visualisasi data perolehan suara per daerah (seperti kelurahan) masih terbatas, sehingga sulit untuk memahami tren dan pola suara secara cepat.",
+            en: "Currently, vote acquisition data from various elections such as general elections (PEMILU) and regional elections (PILKADA) is still managed manually and in a fragmented manner. The process of collecting, recording, and analyzing data is often time-consuming, prone to errors, and lacks transparency. Additionally, visualization of vote acquisition data per region (such as sub-districts) is still limited, making it difficult to quickly understand voting trends and patterns.",
           },
           {
-            id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-            en: "",
+            id: "Dengan berkembangnya teknologi GIS (Geographic Information System), dibutuhkan solusi yang dapat mendigitalisasi data perolehan suara dan menyajikannya dalam bentuk visual yang interaktif. Aplikasi ini harus mampu menampilkan detail suara per kelurahan, termasuk visualisasi doughnut chart untuk persentase suara partai atau calon, serta warna wilayah berdasarkan partai atau calon yang unggul.",
+            en: "With the advancement of GIS (Geographic Information System) technology, a solution is needed to digitize vote acquisition data and present it in an interactive visual form. This application must be able to display vote details per sub-district, including doughnut chart visualizations for party or candidate vote percentages, as well as region colors based on the leading party or candidate.",
+          },
+          {
+            id: "Selain itu, aplikasi ini juga harus memungkinkan pengguna untuk memfilter data berdasarkan tahun dan tipe pemilihan (PEMILU, PILKADA, dll.), serta menambahkan data aktivitas kampanye (seperti status alat peraga, sosialisasi, atau wilayah yang belum didatangi). Fitur ini akan membantu tim kampanye atau pemantau pemilihan dalam mengelola dan menganalisis data secara lebih efektif.",
+            en: "In addition, this application must also allow users to filter data by year and election type (PEMILU, PILKADA, etc.), as well as add campaign activity data (such as the status of campaign tools, socialization, or areas that have not been visited). This feature will help campaign teams or election monitors manage and analyze data more effectively.",
+          },
+          {
+            id: "Dengan adanya aplikasi ini, diharapkan proses pengelolaan data pemilihan menjadi lebih efisien, transparan, dan mudah diakses oleh semua pihak yang berkepentingan.",
+            en: "With this application, it is hoped that the election data management process will become more efficient, transparent, and accessible to all relevant parties.",
           },
         ],
         narratives: [
           {
-            title: { id: "Latar Belakang", en: "Background" },
+            title: {
+              id: "Visualisasi Data Perolehan Suara per Kelurahan",
+              en: "Vote Acquisition Data Visualization per Sub-District",
+            },
             contents: [
               {
-                id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-                en: "",
+                id: "Aplikasi ini menampilkan data perolehan suara per kelurahan dalam bentuk peta interaktif. Setiap kelurahan akan diwarnai berdasarkan partai atau calon yang unggul, memudahkan pengguna untuk melihat pola kemenangan secara geografis.",
+                en: "This application displays vote acquisition data per sub-district in an interactive map. Each sub-district will be colored based on the leading party or candidate, making it easier for users to see winning patterns geographically.",
               },
               {
-                id: "Enim deserunt officia est excepteur deserunt consequat ipsum exercitation elit pariatur ea mollit. Consequat id nostrud sit cupidatat reprehenderit eu sint nulla ullamco consectetur sunt eiusmod ex deserunt. Anim commodo id pariatur ea cillum ipsum sint mollit incididunt labore. Irure officia veniam ad est aliquip exercitation officia velit ad esse voluptate sit occaecat quis. Ullamco id aliquip exercitation commodo qui consequat proident amet. Dolore sint tempor quis duis laborum sit ea non nulla pariatur quis. Cupidatat id dolor culpa laboris occaecat pariatur et.",
-                en: "",
+                id: "Pengguna dapat mengklik suatu kelurahan untuk melihat detail perolehan suara, termasuk doughnut chart yang menampilkan persentase suara untuk setiap partai atau calon.",
+                en: "Users can click on a sub-district to view detailed vote acquisition, including a doughnut chart displaying the vote percentage for each party or candidate.",
               },
             ],
           },
           {
             title: {
-              id: "Ullamco anim velit sint",
-              en: "",
+              id: "Filter Data Berdasarkan Tahun dan Tipe Pemilihan",
+              en: "Filter Data by Year and Election Type",
             },
             contents: [
               {
-                id: "Esse occaecat sit amet aliqua laborum do quis id tempor exercitation nulla dolor elit. Magna esse ex et anim officia qui esse. Irure ex laborum adipisicing deserunt quis Lorem cupidatat velit esse Lorem. Pariatur culpa irure velit qui ut exercitation excepteur. Incididunt ut voluptate quis commodo veniam magna et enim dolore eu ad tempor tempor.",
-                en: "",
+                id: "Aplikasi ini dilengkapi dengan fitur filter yang memungkinkan pengguna memilih data berdasarkan tahun pemilihan dan tipe pemilihan (PEMILU, PILKADA, dll.). Hal ini memudahkan analisis data historis dan perbandingan antar pemilihan.",
+                en: "This application is equipped with a filter feature that allows users to select data based on the election year and election type (PEMILU, PILKADA, etc.). This facilitates historical data analysis and comparisons between elections.",
               },
               {
-                id: "Esse occaecat sit amet aliqua laborum do quis id tempor exercitation nulla dolor elit. Magna esse ex et anim officia qui esse. Irure ex laborum adipisicing deserunt quis Lorem cupidatat velit esse Lorem. Pariatur culpa irure velit qui ut exercitation excepteur. Incididunt ut voluptate quis commodo veniam magna et enim dolore eu ad tempor tempor.",
-                en: "",
+                id: "Dengan fitur ini, pengguna dapat fokus pada data yang relevan tanpa terganggu oleh informasi yang tidak diperlukan.",
+                en: "With this feature, users can focus on relevant data without being distracted by unnecessary information.",
               },
             ],
           },
           {
-            title: { id: "Laborum consequat anim", en: "" },
+            title: {
+              id: "Input Data Aktivitas Kampanye",
+              en: "Campaign Activity Data Input",
+            },
             contents: [
               {
-                id: "Aliquip labore ex irure mollit irure adipisicing dolor elit qui proident quis consequat nulla irure. Adipisicing sunt ipsum officia anim. Ea cillum consectetur ullamco velit Lorem Lorem sunt eiusmod labore ipsum in.",
-                en: "",
+                id: "Aplikasi ini memungkinkan pengguna untuk menambahkan data aktivitas kampanye, seperti status alat peraga (sudah terpasang, belum terpasang), sosialisasi (sudah dilakukan, belum dilakukan), dan wilayah yang belum didatangi. Data ini dapat ditampilkan pada peta untuk memudahkan pemantauan.",
+                en: "This application allows users to add campaign activity data, such as the status of campaign tools (installed, not installed), socialization (done, not done), and areas that have not been visited. This data can be displayed on the map for easy monitoring.",
+              },
+              {
+                id: "Fitur ini membantu tim kampanye dalam mengelola strategi dan memastikan semua wilayah terjangkau dengan baik.",
+                en: "This feature helps campaign teams manage strategies and ensure all areas are well-covered.",
+              },
+            ],
+          },
+          {
+            title: {
+              id: "Tambah Data Perolehan Suara",
+              en: "Add Vote Acquisition Data",
+            },
+            contents: [
+              {
+                id: "Pengguna dapat menambahkan data perolehan suara secara manual atau melalui impor file. Data yang ditambahkan akan langsung terintegrasi dengan sistem dan dapat divisualisasikan pada peta.",
+                en: "Users can add vote acquisition data manually or through file import. The added data will be immediately integrated into the system and can be visualized on the map.",
+              },
+              {
+                id: "Fitur ini memastikan data selalu diperbarui dan akurat, mendukung pengambilan keputusan yang lebih baik.",
+                en: "This feature ensures that data is always updated and accurate, supporting better decision-making.",
+              },
+            ],
+          },
+          {
+            title: {
+              id: "Analisis Data dan Pelaporan",
+              en: "Data Analysis and Reporting",
+            },
+            contents: [
+              {
+                id: "Aplikasi ini menyediakan fitur analisis data dan pelaporan otomatis. Pengguna dapat menghasilkan laporan perolehan suara, aktivitas kampanye, dan tren pemilihan dalam format PDF atau Excel.",
+                en: "This application provides data analysis and automatic reporting features. Users can generate reports on vote acquisition, campaign activities, and election trends in PDF or Excel format.",
+              },
+              {
+                id: "Dengan fitur ini, pengguna dapat dengan mudah membagikan informasi penting kepada pihak terkait atau publik.",
+                en: "With this feature, users can easily share important information with relevant parties or the public.",
               },
             ],
           },
