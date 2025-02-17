@@ -7,7 +7,6 @@ const customConfig = defineConfig({
     },
   },
   theme: {
-    initialColorMode: "light",
     tokens: {
       colors: {
         p: {
