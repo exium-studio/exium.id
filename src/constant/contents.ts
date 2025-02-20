@@ -587,8 +587,8 @@ const contents = {
         index: 3,
         category: 2,
         client: {
-          name: "Bandung",
-          logo: `${ASSETS_PATH}/images/clients/rski.png`,
+          name: "Demokrat Semarang",
+          logo: `${ASSETS_PATH}/images/clients/demokrat.png`,
         },
         color: "#3e97ff",
         thumbnail: `${IMAGES_PATH}/works/gis_politik/thumbnail.png`,
@@ -607,8 +607,8 @@ const contents = {
           en: "",
         },
         solution: {
-          id: "Dummy Solution | Dummy Solution | Dummy Solution",
-          en: "",
+          id: "Digitalisasi data perolehan suara | Visualisasi peta interaktif | Analisis dan insight data | Keamanan dan integritas data | Integrasi dengan sistem eksternal",
+          en: "Digitization of vote acquisition data | Interactive map visualization | Data analysis and insights | Data security and integrity | Integration with external systems",
         },
         duration: { id: "3 Bulan", en: "3 Months" },
         background: [
