@@ -144,7 +144,7 @@ const TheWayWeWork = () => {
 
             <Text
               textAlign={["left", null, "center"]}
-              maxW={"600px"}
+              maxW={["", null, "600px"]}
               mx={"auto"}
             >
               {content.list[2].description[lang]}
@@ -170,7 +170,7 @@ const TheWayWeWork = () => {
             <Text
               color={"fg.subtle"}
               textAlign={["left", null, "center"]}
-              maxW={"600px"}
+              maxW={["", null, "600px"]}
               mx={"auto"}
               zIndex={2}
             >
