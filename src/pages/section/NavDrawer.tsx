@@ -126,7 +126,6 @@ export default function NavDrawer({ activeNavIndex, ...props }: Props) {
           <CContainer
             flex={1}
             align={"center"}
-            justify={"center"}
             gap={8}
             p={5}
             overflowY={"auto"}
