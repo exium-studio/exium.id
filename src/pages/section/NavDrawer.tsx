@@ -150,7 +150,7 @@ export default function NavDrawer({ activeNavIndex, ...props }: Props) {
               ))}
             </CContainer>
 
-            <CContainer p={5}>
+            <CContainer px={5}>
               <HStack mx={"auto"}>
                 <ColorModeButton
                   color={"white"}
