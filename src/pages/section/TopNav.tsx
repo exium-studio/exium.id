@@ -53,7 +53,7 @@ const TopNav = ({ activeNavIndex, ...props }: Props) => {
       transition={"400ms"}
       animation={"flyInFromTop 1s"}
       bg={scrollYPos !== 0 ? "body" : ""}
-      pl={R_SPACING2}
+      px={R_SPACING2}
       // bg={"body"}
       // color={darkLightColor}
       // backdropFilter={!trigger ? "blur(5px)" : ""}
